@@ -1,0 +1,33 @@
+name: Fetch Data Hourly
+
+on:
+  schedule:
+    # Runs every hour at minute 0
+    - cron: '0 * * * *'
+  workflow_dispatch: # Allows manual triggering
+
+jobs:
+  fetch-and-commit:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        
+      - name: Create data directory
+        run: mkdir -p data
+        
+      - name: Fetch TXT data
+        run: |
+          curl -o data/data.txt http://snoop.owenqwen.com/latest/txt
+          
+      - name: Fetch JSON data
+        run: |
+          curl -o data/data.json http://snoop.owenqwen.com/latest/json
+          
+      - name: Commit and push if changed
+        run: |
+          git config --global user.name 'github-actions[bot]'
+          git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+          git add data/data.txt data/data.json
+          git diff --quiet && git diff --staged --quiet || (git commit -m "Update data: $(date -u +'%Y-%m-%d %H:%M:%S UTC')" && git push)
