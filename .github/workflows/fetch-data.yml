@@ -19,11 +19,11 @@ jobs:
         
       - name: Fetch TXT data
         run: |
-          curl -o data/data.txt http://snoop.owenqwen.com/latest/txt
+          curl -o data/data.txt https://snoop.owenqwen.com/latest/txt
           
       - name: Fetch JSON data
         run: |
-          curl -o data/data.json http://snoop.owenqwen.com/latest/json
+          curl -o data/data.json https://snoop.owenqwen.com/latest/json
           
       - name: Commit and push if changed
         run: |
