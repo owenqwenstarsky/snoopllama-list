@@ -1,17 +1,14 @@
 name: Fetch Data Hourly
-
 on:
   schedule:
-    # Runs every hour at minute 0
     - cron: '0 * * * *'
-  workflow_dispatch: # Allows manual triggering
-
-permissions:
-  contents: write
+  workflow_dispatch:
 
 jobs:
   fetch-and-commit:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
     
     steps:
       - name: Checkout repository
