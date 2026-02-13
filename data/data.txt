@@ -6,13 +6,14 @@ Models: 3
   - deepseek-v3.1:671b-cloud
   - smollm2:135m
 ---
-IP: 194.163.137.147
+IP: 194.163.141.47
 Port: 11434
-URL: http://194.163.137.147:11434
-Models: 3
-  - smollm2:135m
-  - llama3:latest
+URL: http://194.163.141.47:11434
+Models: 4
   - deepseek-v3.1:671b-cloud
+  - smollm2:135m
+  - qwen2.5:latest
+  - llama3.1:latest
 ---
 IP: 194.163.132.154
 Port: 11434
@@ -52,13 +53,13 @@ Models: 2
   - deepseek-v3.1:671b-cloud
   - llama3.2:latest
 ---
-IP: 194.163.139.137
+IP: 194.163.137.147
 Port: 11434
-URL: http://194.163.139.137:11434
+URL: http://194.163.137.147:11434
 Models: 3
   - smollm2:135m
-  - llama3-backup:latest
-  - llama3.2:latest
+  - llama3:latest
+  - deepseek-v3.1:671b-cloud
 ---
 IP: 194.163.138.214
 Port: 11434
@@ -68,6 +69,14 @@ Models: 3
   - deepseek-v3.1:671b-cloud
   - jina/jina-embeddings-v2-base-es:latest
 ---
+IP: 194.163.139.137
+Port: 11434
+URL: http://194.163.139.137:11434
+Models: 3
+  - smollm2:135m
+  - llama3-backup:latest
+  - llama3.2:latest
+---
 IP: 194.163.140.137
 Port: 11434
 URL: http://194.163.140.137:11434
@@ -75,15 +84,6 @@ Models: 3
   - smollm2:135m
   - deepseek-v3.1:671b-cloud
   - llama3:latest
----
-IP: 194.163.141.47
-Port: 11434
-URL: http://194.163.141.47:11434
-Models: 4
-  - deepseek-v3.1:671b-cloud
-  - smollm2:135m
-  - qwen2.5:latest
-  - llama3.1:latest
 ---
 IP: 194.163.142.82
 Port: 11434
@@ -95,19 +95,6 @@ Models: 6
   - gemma3:1b
   - llama3.2:latest
   - embeddinggemma:latest
----
-IP: 194.163.151.30
-Port: 11434
-URL: http://194.163.151.30:11434
-Models: 8
-  - smollm2:135m
-  - deepseek-v3.1:671b-cloud
-  - deepseek-v3.2:cloud
-  - llama3.1:8b
-  - phi3:medium
-  - mistral:latest
-  - llama3.2:latest
-  - qwen2.5:7b
 ---
 IP: 194.163.145.78
 Port: 11434
@@ -121,17 +108,60 @@ Models: 7
   - nomic-embed-text:latest
   - llama3.1:latest
 ---
+IP: 194.163.159.115
+Port: 11434
+URL: http://194.163.159.115:11434
+Models: None
+---
+IP: 194.163.159.255
+Port: 11434
+URL: http://194.163.159.255:11434
+Models: 20
+  - smollm2:135m
+  - deepseek-v3.1:671b-cloud
+  - gemma2:2b
+  - phi3.5:3.8b-mini-instruct-q3_K_M
+  - phi3.5:latest
+  - tinyllama:latest
+  - qwen2.5:3b
+  - qwen2.5:14b
+  - llava:latest
+  - llama3.2:3b
+  - qwen2.5:1.5b
+  - qwen2.5:0.5b
+  - nora:latest
+  - ministral-3:8b
+  - saiga3:latest
+  - gemma3:12b
+  - qwen_q4_ru:latest
+  - qwen2:7b-instruct
+  - qwen_q4:latest
+  - qwen2.5:7b-instruct-q4_K_M
+---
 IP: 194.163.149.3
 Port: 11434
 URL: http://194.163.149.3:11434
 Models: 7
   - smollm2:135m
-  - mario:latest
   - mattw/pygmalion:latest
   - llama3-backup:latest
+  - mario:latest
   - llama3.2:latest
   - llama3.2:3b-instruct-q5_K_M
   - deepseek-r1:1.5b
+---
+IP: 194.163.151.30
+Port: 11434
+URL: http://194.163.151.30:11434
+Models: 8
+  - smollm2:135m
+  - deepseek-v3.1:671b-cloud
+  - deepseek-v3.2:cloud
+  - llama3.1:8b
+  - phi3:medium
+  - mistral:latest
+  - llama3.2:latest
+  - qwen2.5:7b
 ---
 IP: 194.163.155.112
 Port: 11434
@@ -174,36 +204,6 @@ Models: 4
   - deepseek-v3.1:671b-cloud
   - deepseek-v3.2:cloud
   - nomic-embed-text:latest
----
-IP: 194.163.159.115
-Port: 11434
-URL: http://194.163.159.115:11434
-Models: None
----
-IP: 194.163.159.255
-Port: 11434
-URL: http://194.163.159.255:11434
-Models: 20
-  - smollm2:135m
-  - deepseek-v3.1:671b-cloud
-  - gemma2:2b
-  - phi3.5:3.8b-mini-instruct-q3_K_M
-  - phi3.5:latest
-  - tinyllama:latest
-  - qwen2.5:3b
-  - qwen2.5:14b
-  - llava:latest
-  - llama3.2:3b
-  - qwen2.5:1.5b
-  - qwen2.5:0.5b
-  - nora:latest
-  - ministral-3:8b
-  - saiga3:latest
-  - gemma3:12b
-  - qwen_q4_ru:latest
-  - qwen2:7b-instruct
-  - qwen_q4:latest
-  - qwen2.5:7b-instruct-q4_K_M
 ---
 IP: 194.163.161.251
 Port: 11434
@@ -301,6 +301,12 @@ Models: 4
   - deepseek-v3.1:671b-cloud
   - llama3.2:1b
   - llama3.2:latest
+---
+IP: 194.163.172.159
+Port: 11434
+URL: http://194.163.172.159:11434
+Models: 1
+  - llama3.2:1b
 ---
 IP: 194.163.173.45
 Port: 11434
@@ -522,18 +528,13 @@ URL: http://38.242.205.7:11434
 Models: 5
   - nema-fast:latest
   - nema-specialized:latest
-  - qwen2.5:3b-instruct
   - mistral:latest
+  - qwen2.5:3b-instruct
   - nomic-embed-text:latest
 ---
 IP: 38.242.205.55
 Port: 11434
 URL: http://38.242.205.55:11434
-Models: None
----
-IP: 38.242.206.85
-Port: 11434
-URL: http://38.242.206.85:11434
 Models: None
 ---
 IP: 38.242.205.139
@@ -543,6 +544,11 @@ Models: 3
   - deepseek-v3.1:671b-cloud
   - llama3.2:3b
   - llama3.1:8b
+---
+IP: 38.242.206.85
+Port: 11434
+URL: http://38.242.206.85:11434
+Models: None
 ---
 IP: 38.242.206.229
 Port: 11434
@@ -594,6 +600,15 @@ Models: 3
   - smollm2:135m
   - qwen2.5:7b
 ---
+IP: 38.242.223.155
+Port: 11434
+URL: http://38.242.223.155:11434
+Models: 4
+  - gpt-oss:120b-cloud
+  - qwen3-coder:480b-cloud
+  - deepseek-v3.1:671b-cloud
+  - deepseek-v3.2:cloud
+---
 IP: 38.242.214.21
 Port: 11434
 URL: http://38.242.214.21:11434
@@ -626,7 +641,8 @@ Models: 4
 IP: 38.242.218.171
 Port: 11434
 URL: http://38.242.218.171:11434
-Models: 3
+Models: 4
+  - gemma3:27b-cloud
   - embeddinggemma:latest
   - gpt-oss:120b-cloud
   - llama2:latest
@@ -640,15 +656,6 @@ Models: 5
   - qwen3:8b
   - qwen3:8b-8k-output
   - llama3:latest
----
-IP: 38.242.223.155
-Port: 11434
-URL: http://38.242.223.155:11434
-Models: 4
-  - gpt-oss:120b-cloud
-  - qwen3-coder:480b-cloud
-  - deepseek-v3.1:671b-cloud
-  - deepseek-v3.2:cloud
 ---
 IP: 38.242.220.255
 Port: 11434
@@ -665,25 +672,6 @@ URL: http://38.242.222.210:11434
 Models: 2
   - qwen2.5:7b
   - llama3.2:latest
----
-IP: 38.242.238.205
-Port: 11434
-URL: http://38.242.238.205:11434
-Models: 5
-  - phi3:mini
-  - qwen2.5:1.5b-instruct-q4_K_M
-  - qwen2.5:7b-instruct-q4_K_M
-  - llama3:8b-instruct-q4_K_S
-  - mistral:7b-instruct-q4_K_M
----
-IP: 38.242.238.243
-Port: 11434
-URL: http://38.242.238.243:11434
-Models: 4
-  - smollm2:135m
-  - deepseek-v3.1:671b-cloud
-  - nomic-embed-text:latest
-  - mistral:latest
 ---
 IP: 38.242.225.116
 Port: 11434
@@ -720,8 +708,7 @@ Models: 3
 IP: 38.242.230.64
 Port: 11434
 URL: http://38.242.230.64:11434
-Models: 8
-  - glm-4.7-flash:latest
+Models: 7
   - deepseek-v3.1:671b-cloud
   - granite4:1b
   - granite4:350m
@@ -756,6 +743,25 @@ Models: 5
   - llama3.1:8b
   - deepseek-coder-v2:16b
   - deepseek-r1:7b
+---
+IP: 38.242.238.205
+Port: 11434
+URL: http://38.242.238.205:11434
+Models: 5
+  - phi3:mini
+  - qwen2.5:1.5b-instruct-q4_K_M
+  - qwen2.5:7b-instruct-q4_K_M
+  - llama3:8b-instruct-q4_K_S
+  - mistral:7b-instruct-q4_K_M
+---
+IP: 38.242.238.243
+Port: 11434
+URL: http://38.242.238.243:11434
+Models: 4
+  - smollm2:135m
+  - deepseek-v3.1:671b-cloud
+  - nomic-embed-text:latest
+  - mistral:latest
 ---
 IP: 38.242.240.178
 Port: 11434
@@ -857,12 +863,12 @@ Models: 17
   - nomic-embed-text:latest
   - hf.co/NikolaiRaitschew/phi3_n8n_f16:F16
   - gemma3n:latest
-  - gemma3:4b
   - gemma3:270m
+  - gemma3:4b
   - embeddinggemma:300m-qat-q8_0
   - gemma3:1b
-  - bge-m3:latest
   - deepseek-r1:8b
+  - bge-m3:latest
 ---
 IP: 75.119.143.108
 Port: 11434
@@ -880,6 +886,12 @@ Models: 6
   - llama3-backup:latest
   - llama3.1:8b
   - llama3.1:8b-instruct-q4_K_M
+  - llama3.2:latest
+---
+IP: 75.119.146.150
+Port: 11434
+URL: http://75.119.146.150:11434
+Models: 1
   - llama3.2:latest
 ---
 IP: 75.119.148.186
@@ -905,14 +917,6 @@ Models: 3
   - smollm2:135m
   - mistral:latest
 ---
-IP: 75.119.152.238
-Port: 11434
-URL: http://75.119.152.238:11434
-Models: 3
-  - deepseek-v3.1:671b-cloud
-  - llama3.1:8b
-  - llama3.2:1b
----
 IP: 75.119.153.102
 Port: 11434
 URL: http://75.119.153.102:11434
@@ -920,6 +924,14 @@ Models: 3
   - deepseek-v3.1:671b-cloud
   - smollm2:135m
   - qwen2.5vl:7b
+---
+IP: 75.119.152.238
+Port: 11434
+URL: http://75.119.152.238:11434
+Models: 3
+  - deepseek-v3.1:671b-cloud
+  - llama3.1:8b
+  - llama3.2:1b
 ---
 IP: 75.119.154.218
 Port: 11434
@@ -945,19 +957,6 @@ Models: 7
   - nomic-embed-text:latest
   - llama3.2:latest
 ---
-IP: 84.247.161.143
-Port: 11434
-URL: http://84.247.161.143:11434
-Models: 8
-  - hf.co/unsloth/Qwen3-Coder-Next-GGUF:Q4_K_M
-  - smollm2:135m
-  - mario:latest
-  - mattw/pygmalion:latest
-  - llama3-backup:latest
-  - llama3.2:latest
-  - gemma2:latest
-  - llava:latest
----
 IP: 84.247.162.131
 Port: 11434
 URL: http://84.247.162.131:11434
@@ -965,6 +964,19 @@ Models: 3
   - deepseek-v3.1:671b-cloud
   - smollm2:135m
   - qwen2.5:7b
+---
+IP: 84.247.161.143
+Port: 11434
+URL: http://84.247.161.143:11434
+Models: 8
+  - hf.co/unsloth/Qwen3-Coder-Next-GGUF:Q4_K_M
+  - smollm2:135m
+  - mario:latest
+  - llama3-backup:latest
+  - mattw/pygmalion:latest
+  - llama3.2:latest
+  - gemma2:latest
+  - llava:latest
 ---
 IP: 84.247.164.215
 Port: 11434
@@ -1027,14 +1039,6 @@ Models: 3
   - nomic-embed-text:latest
   - all-minilm:latest
 ---
-IP: 84.247.182.80
-Port: 11434
-URL: http://84.247.182.80:11434
-Models: 3
-  - smollm2:135m
-  - deepseek-v3.1:671b-cloud
-  - nomic-embed-text:latest
----
 IP: 84.247.175.132
 Port: 11434
 URL: http://84.247.175.132:11434
@@ -1066,6 +1070,14 @@ Models: 5
   - gpt-oss:20b
   - llama3.2:3b
 ---
+IP: 84.247.182.80
+Port: 11434
+URL: http://84.247.182.80:11434
+Models: 3
+  - smollm2:135m
+  - deepseek-v3.1:671b-cloud
+  - nomic-embed-text:latest
+---
 IP: 84.247.188.164
 Port: 11434
 URL: http://84.247.188.164:11434
@@ -1074,6 +1086,39 @@ Models: 4
   - smollm2:135m
   - nomic-embed-text:latest
   - llama3.2:latest
+---
+IP: 161.97.147.201
+Port: 11434
+URL: http://161.97.147.201:11434
+Models: 2
+  - qwen2.5-coder:7b
+  - deepseek-coder:6.7b
+---
+IP: 161.97.148.0
+Port: 11434
+URL: http://161.97.148.0:11434
+Models: 6
+  - smollm2:135m
+  - deepseek-v3.1:671b-cloud
+  - qwen2.5:0.5b
+  - llama3.2:3b
+  - salmatrafi/acegpt:13b
+  - nomic-embed-text:latest
+---
+IP: 161.97.148.30
+Port: 11434
+URL: http://161.97.148.30:11434
+Models: 1
+  - llama3.2:3b
+---
+IP: 161.97.133.110
+Port: 11434
+URL: http://161.97.133.110:11434
+Models: 4
+  - smollm2:135m
+  - deepseek-v3.1:671b-cloud
+  - deepseek-v3.2:cloud
+  - mistral:latest
 ---
 IP: 161.97.137.27
 Port: 11434
@@ -1096,15 +1141,6 @@ Models: 8
   - gpt-oss:20b
   - llama3:8b
 ---
-IP: 161.97.133.110
-Port: 11434
-URL: http://161.97.133.110:11434
-Models: 4
-  - smollm2:135m
-  - deepseek-v3.1:671b-cloud
-  - deepseek-v3.2:cloud
-  - mistral:latest
----
 IP: 161.97.138.106
 Port: 11434
 URL: http://161.97.138.106:11434
@@ -1116,6 +1152,14 @@ Models: 6
   - gemma3:1b
   - gemma3:latest
 ---
+IP: 161.97.141.5
+Port: 11434
+URL: http://161.97.141.5:11434
+Models: 3
+  - smollm2:135m
+  - deepseek-v3.1:671b-cloud
+  - wizard-vicuna-uncensored:latest
+---
 IP: 161.97.140.253
 Port: 11434
 URL: http://161.97.140.253:11434
@@ -1124,14 +1168,6 @@ Models: 4
   - gemma3:270m
   - tinyllama:latest
   - phi3:mini
----
-IP: 161.97.141.5
-Port: 11434
-URL: http://161.97.141.5:11434
-Models: 3
-  - smollm2:135m
-  - deepseek-v3.1:671b-cloud
-  - wizard-vicuna-uncensored:latest
 ---
 IP: 161.97.141.80
 Port: 11434
@@ -1161,14 +1197,6 @@ Models: 7
   - skynet-fast:latest
   - mistral:instruct
 ---
-IP: 161.97.145.25
-Port: 11434
-URL: http://161.97.145.25:11434
-Models: 3
-  - smollm2:135m
-  - qwen2.5-coder:1.5b
-  - llama3.2:1b
----
 IP: 161.97.145.20
 Port: 11434
 URL: http://161.97.145.20:11434
@@ -1177,6 +1205,14 @@ Models: 4
   - smollm2:135m
   - mistral:instruct
   - llama2:latest
+---
+IP: 161.97.145.25
+Port: 11434
+URL: http://161.97.145.25:11434
+Models: 3
+  - smollm2:135m
+  - qwen2.5-coder:1.5b
+  - llama3.2:1b
 ---
 IP: 161.97.145.208
 Port: 11434
@@ -1203,30 +1239,6 @@ Port: 11434
 URL: http://161.97.147.17:11434
 Models: None
 ---
-IP: 161.97.148.0
-Port: 11434
-URL: http://161.97.148.0:11434
-Models: 6
-  - smollm2:135m
-  - deepseek-v3.1:671b-cloud
-  - qwen2.5:0.5b
-  - llama3.2:3b
-  - salmatrafi/acegpt:13b
-  - nomic-embed-text:latest
----
-IP: 161.97.147.201
-Port: 11434
-URL: http://161.97.147.201:11434
-Models: 2
-  - qwen2.5-coder:7b
-  - deepseek-coder:6.7b
----
-IP: 161.97.148.30
-Port: 11434
-URL: http://161.97.148.30:11434
-Models: 1
-  - llama3.2:3b
----
 IP: 161.97.148.154
 Port: 11434
 URL: http://161.97.148.154:11434
@@ -1244,6 +1256,15 @@ Models: 5
   - deepseek-v3.2:cloud
   - qwen2.5:3b-instruct
   - huihui_ai/gemma3-abliterated:1b
+---
+IP: 161.97.156.137
+Port: 11434
+URL: http://161.97.156.137:11434
+Models: 4
+  - qwen3:4b
+  - x/z-image-turbo:latest
+  - mxbai-embed-large:latest
+  - qwen2.5-coder:32b
 ---
 IP: 161.97.155.137
 Port: 11434
@@ -1263,15 +1284,6 @@ Models: 3
   - gemma:2b
   - nomic-embed-text:latest
   - deepseek-v3.1:671b-cloud
----
-IP: 161.97.156.137
-Port: 11434
-URL: http://161.97.156.137:11434
-Models: 4
-  - qwen3:4b
-  - x/z-image-turbo:latest
-  - mxbai-embed-large:latest
-  - qwen2.5-coder:32b
 ---
 IP: 161.97.157.238
 Port: 11434
@@ -1304,6 +1316,14 @@ Models: 13
   - embeddinggemma:latest
   - tazarov/all-minilm-l6-v2-f32:latest
   - gemma3:4b
+---
+IP: 173.212.195.88
+Port: 11434
+URL: http://173.212.195.88:11434
+Models: 3
+  - smollm2:135m
+  - llama3.2:3b
+  - llama3.2:1b
 ---
 IP: 173.212.198.50
 Port: 11434
@@ -1357,12 +1377,33 @@ Models: 4
   - qwen2.5:3b
   - qwen2.5:0.5b
 ---
+IP: 173.212.205.9
+Port: 11434
+URL: http://173.212.205.9:11434
+Models: 6
+  - minimax-m2.5:cloud
+  - glm-5:cloud
+  - smollm2:135m
+  - deepseek-v3.1:671b-cloud
+  - minimax-m2:cloud
+  - qwen3-vl:235b-cloud
+---
 IP: 173.212.205.46
 Port: 11434
 URL: http://173.212.205.46:11434
 Models: 2
   - nomic-embed-text:latest
   - mistral:latest
+---
+IP: 173.212.206.34
+Port: 11434
+URL: http://173.212.206.34:11434
+Models: 5
+  - smollm2:135m
+  - deepseek-v3.1:671b-cloud
+  - qwen2.5-coder:1.5b
+  - llama3.1:8b
+  - deepseek-r1:1.5b
 ---
 IP: 173.212.206.5
 Port: 11434
@@ -1379,27 +1420,6 @@ Models: 11
   - mistral-nemo:latest
   - qwen2.5-coder:latest
   - nomic-embed-text:latest
----
-IP: 173.212.206.34
-Port: 11434
-URL: http://173.212.206.34:11434
-Models: 5
-  - smollm2:135m
-  - deepseek-v3.1:671b-cloud
-  - qwen2.5-coder:1.5b
-  - llama3.1:8b
-  - deepseek-r1:1.5b
----
-IP: 173.212.205.9
-Port: 11434
-URL: http://173.212.205.9:11434
-Models: 6
-  - minimax-m2.5:cloud
-  - glm-5:cloud
-  - smollm2:135m
-  - deepseek-v3.1:671b-cloud
-  - minimax-m2:cloud
-  - qwen3-vl:235b-cloud
 ---
 IP: 173.212.209.162
 Port: 11434
@@ -1432,15 +1452,6 @@ Models: 10
   - llama3:8b
   - gpt-oss:latest
 ---
-IP: 173.212.212.12
-Port: 11434
-URL: http://173.212.212.12:11434
-Models: 4
-  - hf.co/unsloth/Qwen3-Coder-Next-GGUF:Q4_K_M
-  - smollm2:135m
-  - smollm:135m
-  - llama3.1:8b
----
 IP: 173.212.212.118
 Port: 11434
 URL: http://173.212.212.118:11434
@@ -1449,6 +1460,15 @@ Models: 4
   - nemotron-chat:latest
   - llama3.2:3b
   - nomic-embed-text-v2-moe:latest
+---
+IP: 173.212.212.12
+Port: 11434
+URL: http://173.212.212.12:11434
+Models: 4
+  - hf.co/unsloth/Qwen3-Coder-Next-GGUF:Q4_K_M
+  - smollm2:135m
+  - smollm:135m
+  - llama3.1:8b
 ---
 IP: 173.212.212.163
 Port: 11434
@@ -1502,12 +1522,6 @@ Models: 10
   - llama3.2:3b
   - nomic-embed-text:latest
 ---
-IP: 173.212.220.203
-Port: 11434
-URL: http://173.212.220.203:11434
-Models: 1
-  - hermes3:8b
----
 IP: 173.212.222.204
 Port: 11434
 URL: http://173.212.222.204:11434
@@ -1520,6 +1534,15 @@ Models: 8
   - qwen:latest
   - llama3.2:3b-instruct-q5_K_M
   - llama3.1:8b
+---
+IP: 5.189.141.100
+Port: 11434
+URL: http://5.189.141.100:11434
+Models: 4
+  - llava-phi3:latest
+  - bakllava:latest
+  - moondream:latest
+  - llava:7b
 ---
 IP: 5.189.131.230
 Port: 11434
@@ -1553,23 +1576,6 @@ Models: 8
   - deepseek-r1:7b
   - mistral:latest
 ---
-IP: 5.189.143.51
-Port: 11434
-URL: http://5.189.143.51:11434
-Models: 3
-  - deepseek-v3.1:671b-cloud
-  - qwen3:0.6b
-  - codegemma:2b
----
-IP: 5.189.141.100
-Port: 11434
-URL: http://5.189.141.100:11434
-Models: 4
-  - llava-phi3:latest
-  - bakllava:latest
-  - moondream:latest
-  - llava:7b
----
 IP: 5.189.141.244
 Port: 11434
 URL: http://5.189.141.244:11434
@@ -1596,38 +1602,13 @@ Models: 3
   - smollm2:135m
   - tinyllama:latest
 ---
-IP: 5.189.156.30
+IP: 5.189.143.51
 Port: 11434
-URL: http://5.189.156.30:11434
-Models: 4
-  - smollm2:135m
-  - deepseek-v3.1:671b-cloud
-  - llama3.2:3b
-  - llama3.1:8b
----
-IP: 5.189.155.243
-Port: 11434
-URL: http://5.189.155.243:11434
-Models: 4
-  - phi3:latest
-  - deepseek-v3.1:671b-cloud
-  - smollm2:135m
-  - phi3:mini
----
-IP: 5.189.144.52
-Port: 11434
-URL: http://5.189.144.52:11434
-Models: 2
-  - smollm2:135m
-  - nomic-embed-text:latest
----
-IP: 5.189.144.144
-Port: 11434
-URL: http://5.189.144.144:11434
+URL: http://5.189.143.51:11434
 Models: 3
-  - llama3.2:3b
   - deepseek-v3.1:671b-cloud
-  - llama3.1:8b
+  - qwen3:0.6b
+  - codegemma:2b
 ---
 IP: 5.189.144.190
 Port: 11434
@@ -1637,6 +1618,21 @@ Models: 4
   - ministral-3:3b
   - qwen3-vl:4b
   - ministral-3:8b
+---
+IP: 5.189.144.144
+Port: 11434
+URL: http://5.189.144.144:11434
+Models: 3
+  - llama3.2:3b
+  - deepseek-v3.1:671b-cloud
+  - llama3.1:8b
+---
+IP: 5.189.144.52
+Port: 11434
+URL: http://5.189.144.52:11434
+Models: 2
+  - smollm2:135m
+  - nomic-embed-text:latest
 ---
 IP: 5.189.149.239
 Port: 11434
@@ -1662,6 +1658,24 @@ Models: 3
   - smollm2:135m
   - deepseek-v3.1:671b-cloud
   - mistral:latest
+---
+IP: 5.189.155.243
+Port: 11434
+URL: http://5.189.155.243:11434
+Models: 4
+  - phi3:latest
+  - deepseek-v3.1:671b-cloud
+  - smollm2:135m
+  - phi3:mini
+---
+IP: 5.189.156.30
+Port: 11434
+URL: http://5.189.156.30:11434
+Models: 4
+  - smollm2:135m
+  - deepseek-v3.1:671b-cloud
+  - llama3.2:3b
+  - llama3.1:8b
 ---
 IP: 5.189.157.51
 Port: 11434
@@ -1696,6 +1710,22 @@ Models: 5
   - llama3:latest
   - phi3:latest
 ---
+IP: 5.189.175.18
+Port: 11434
+URL: http://5.189.175.18:11434
+Models: 4
+  - deepseek-v3.1:671b-cloud
+  - smollm2:135m
+  - llama3.2:latest
+  - mxbai-embed-large:latest
+---
+IP: 5.189.175.79
+Port: 11434
+URL: http://5.189.175.79:11434
+Models: 2
+  - deepseek-v3.1:671b-cloud
+  - llama3.2:latest
+---
 IP: 5.189.160.201
 Port: 11434
 URL: http://5.189.160.201:11434
@@ -1717,29 +1747,6 @@ Models: 5
   - llama3.2:3b
   - llama3-8b-json:latest
   - llama3:8b
----
-IP: 5.189.164.187
-Port: 11434
-URL: http://5.189.164.187:11434
-Models: 2
-  - nomic-embed-text:latest
-  - gemma3:latest
----
-IP: 5.189.175.79
-Port: 11434
-URL: http://5.189.175.79:11434
-Models: 2
-  - deepseek-v3.1:671b-cloud
-  - llama3.2:latest
----
-IP: 5.189.175.204
-Port: 11434
-URL: http://5.189.175.204:11434
-Models: 4
-  - deepseek-v3.1:671b-cloud
-  - smollm2:135m
-  - nomic-embed-text:latest
-  - llama3.1:8b
 ---
 IP: 5.189.168.90
 Port: 11434
@@ -1773,14 +1780,14 @@ Models: 3
   - deepseek-v3.1:671b-cloud
   - scb10x/llama3.2-typhoon2-1b-instruct:latest
 ---
-IP: 5.189.175.18
+IP: 5.189.175.204
 Port: 11434
-URL: http://5.189.175.18:11434
+URL: http://5.189.175.204:11434
 Models: 4
   - deepseek-v3.1:671b-cloud
   - smollm2:135m
-  - llama3.2:latest
-  - mxbai-embed-large:latest
+  - nomic-embed-text:latest
+  - llama3.1:8b
 ---
 IP: 5.189.176.155
 Port: 11434
@@ -1792,6 +1799,11 @@ Models: 5
   - nomic-embed-text:latest
   - phi3:latest
 ---
+IP: 5.189.177.140
+Port: 11434
+URL: http://5.189.177.140:11434
+Models: None
+---
 IP: 5.189.177.98
 Port: 11434
 URL: http://5.189.177.98:11434
@@ -1799,11 +1811,6 @@ Models: 3
   - smollm2:135m
   - nomic-embed-text:latest
   - gemma3:1b
----
-IP: 5.189.177.140
-Port: 11434
-URL: http://5.189.177.140:11434
-Models: None
 ---
 IP: 5.189.180.91
 Port: 11434
@@ -1859,6 +1866,16 @@ Models: 18
   - llama3.1:latest
   - gemma3n:e2b
 ---
+IP: 37.60.239.149
+Port: 11434
+URL: http://37.60.239.149:11434
+Models: 5
+  - deepseek-v3.1:671b-cloud
+  - smollm2:135m
+  - qwen2.5:1.5b
+  - gemma2:2b
+  - llama3.2:3b
+---
 IP: 37.60.224.117
 Port: 11434
 URL: http://37.60.224.117:11434
@@ -1872,6 +1889,22 @@ Port: 11434
 URL: http://37.60.225.6:11434
 Models: 1
   - llama3.2:1b
+---
+IP: 37.60.239.60
+Port: 11434
+URL: http://37.60.239.60:11434
+Models: 11
+  - smollm2:135m
+  - deepseek-v3.1:671b-cloud
+  - gemma3:4b
+  - gemma3:1b
+  - gemma3:270m
+  - phi4-mini:latest
+  - gpt-oss:latest
+  - mistral:latest
+  - qwen3:latest
+  - deepseek-r1:latest
+  - llama3.2:latest
 ---
 IP: 37.60.226.49
 Port: 11434
@@ -1893,15 +1926,12 @@ Models: 6
   - codestral:latest
   - qwen3:4b
 ---
-IP: 37.60.239.149
+IP: 37.60.227.168
 Port: 11434
-URL: http://37.60.239.149:11434
-Models: 5
+URL: http://37.60.227.168:11434
+Models: 2
   - deepseek-v3.1:671b-cloud
-  - smollm2:135m
-  - qwen2.5:1.5b
-  - gemma2:2b
-  - llama3.2:3b
+  - gemma3:12b
 ---
 IP: 37.60.233.182
 Port: 11434
@@ -1958,41 +1988,12 @@ Models: 8
   - mario:latest
   - llama3.2:latest
 ---
-IP: 37.60.227.168
-Port: 11434
-URL: http://37.60.227.168:11434
-Models: Error fetching (Get "http://37.60.227.168:11434/api/tags": context deadline exceeded (Client.Timeout exceeded while awaiting headers))
----
-IP: 37.60.239.60
-Port: 11434
-URL: http://37.60.239.60:11434
-Models: 11
-  - smollm2:135m
-  - deepseek-v3.1:671b-cloud
-  - gemma3:4b
-  - gemma3:1b
-  - gemma3:270m
-  - phi4-mini:latest
-  - gpt-oss:latest
-  - mistral:latest
-  - qwen3:latest
-  - deepseek-r1:latest
-  - llama3.2:latest
----
 IP: 37.60.242.201
 Port: 11434
 URL: http://37.60.242.201:11434
 Models: 2
   - mixtral:latest
   - llama3:8b
----
-IP: 37.60.242.244
-Port: 11434
-URL: http://37.60.242.244:11434
-Models: 3
-  - deepseek-v3.1:671b-cloud
-  - smollm2:135m
-  - qwen2.5-coder:32b
 ---
 IP: 37.60.242.252
 Port: 11434
@@ -2005,12 +2006,13 @@ URL: http://37.60.243.49:11434
 Models: 1
   - mistral:latest
 ---
-IP: 37.60.244.53
+IP: 37.60.242.244
 Port: 11434
-URL: http://37.60.244.53:11434
-Models: 2
+URL: http://37.60.242.244:11434
+Models: 3
   - deepseek-v3.1:671b-cloud
-  - phi3:mini
+  - smollm2:135m
+  - qwen2.5-coder:32b
 ---
 IP: 37.60.244.8
 Port: 11434
@@ -2018,6 +2020,13 @@ URL: http://37.60.244.8:11434
 Models: 2
   - qwen2.5:1.5b
   - qwen2.5:3b
+---
+IP: 37.60.244.53
+Port: 11434
+URL: http://37.60.244.53:11434
+Models: 2
+  - deepseek-v3.1:671b-cloud
+  - phi3:mini
 ---
 IP: 37.60.245.147
 Port: 11434
@@ -2099,15 +2108,6 @@ URL: http://62.84.179.116:11434
 Models: 2
   - smollm2:135m
   - nomic-embed-text:latest
----
-IP: 62.84.179.68
-Port: 11434
-URL: http://62.84.179.68:11434
-Models: 4
-  - deepseek-v3.1:671b-cloud
-  - smollm2:135m
-  - llama3.2:1b
-  - qwen3:0.6b
 ---
 IP: 62.84.185.130
 Port: 11434
@@ -2195,14 +2195,14 @@ Models: 5
   - llama3.2:1b
   - llama3.2:latest
 ---
-IP: 84.46.249.208
-Port: 11434
-URL: http://84.46.249.208:11434
-Models: None
----
 IP: 84.46.249.250
 Port: 11434
 URL: http://84.46.249.250:11434
+Models: None
+---
+IP: 84.46.249.208
+Port: 11434
+URL: http://84.46.249.208:11434
 Models: None
 ---
 IP: 84.46.250.204
@@ -2215,8 +2215,8 @@ Port: 11434
 URL: http://84.46.254.13:11434
 Models: 7
   - deepseek-v3.1:671b-cloud
-  - llama3.2:3b
   - qwen2.5:7b
+  - llama3.2:3b
   - llama3.2:1b
   - phi4-mini:latest
   - codellama:latest
@@ -2324,26 +2324,21 @@ Port: 11434
 URL: http://84.247.140.65:11434
 Models: None
 ---
+IP: 89.117.59.96
+Port: 11434
+URL: http://89.117.59.96:11434
+Models: 4
+  - deepseek-v3.1:671b-cloud
+  - llama3-1b-fast:latest
+  - llama3.2:1b
+  - llama3.2:3b
+---
 IP: 89.117.48.71
 Port: 11434
 URL: http://89.117.48.71:11434
 Models: 2
   - deepseek-v3.1:671b-cloud
   - llama3:latest
----
-IP: 89.117.57.157
-Port: 11434
-URL: http://89.117.57.157:11434
-Models: 9
-  - deepseek-v3.1:671b-cloud
-  - gemma2:2b
-  - gemma:2b
-  - tinyllama:latest
-  - phi3:latest
-  - mistral:latest
-  - llama3.2:1b
-  - llama3.2:3b
-  - nomic-embed-text:latest
 ---
 IP: 89.117.48.50
 Port: 11434
@@ -2406,21 +2401,26 @@ Models: 7
   - jono-trader:latest
   - llama3.1:latest
 ---
+IP: 89.117.57.157
+Port: 11434
+URL: http://89.117.57.157:11434
+Models: 9
+  - deepseek-v3.1:671b-cloud
+  - gemma2:2b
+  - gemma:2b
+  - tinyllama:latest
+  - phi3:latest
+  - mistral:latest
+  - llama3.2:1b
+  - llama3.2:3b
+  - nomic-embed-text:latest
+---
 IP: 89.117.63.196
 Port: 11434
 URL: http://89.117.63.196:11434
 Models: 2
   - smollm2:135m
   - mistral:latest
----
-IP: 89.117.59.96
-Port: 11434
-URL: http://89.117.59.96:11434
-Models: 4
-  - deepseek-v3.1:671b-cloud
-  - llama3-1b-fast:latest
-  - llama3.2:1b
-  - llama3.2:3b
 ---
 IP: 89.117.61.190
 Port: 11434
@@ -2439,6 +2439,21 @@ Models: 4
   - nomic-embed-text:latest
   - mistral:7b-instruct
   - llama3:8b
+---
+IP: 94.72.111.54
+Port: 11434
+URL: http://94.72.111.54:11434
+Models: 3
+  - deepseek-v3.1:671b-cloud
+  - smollm2:135m
+  - phi3:latest
+---
+IP: 94.72.111.121
+Port: 11434
+URL: http://94.72.111.121:11434
+Models: 2
+  - deepseek-v3.1:671b-cloud
+  - phi3:mini
 ---
 IP: 94.72.99.46
 Port: 11434
@@ -2466,21 +2481,6 @@ Models: 3
   - deepseek-v3.1:671b-cloud
   - qwen2.5:0.5b
   - qwen3-vl:2b
----
-IP: 94.72.111.54
-Port: 11434
-URL: http://94.72.111.54:11434
-Models: 3
-  - deepseek-v3.1:671b-cloud
-  - smollm2:135m
-  - phi3:latest
----
-IP: 94.72.111.121
-Port: 11434
-URL: http://94.72.111.121:11434
-Models: 2
-  - deepseek-v3.1:671b-cloud
-  - phi3:mini
 ---
 IP: 109.123.255.77
 Port: 11434
@@ -2541,6 +2541,14 @@ URL: http://109.123.250.1:11434
 Models: 1
   - qwen2.5:0.5b
 ---
+IP: 109.123.251.112
+Port: 11434
+URL: http://109.123.251.112:11434
+Models: 3
+  - hf.co/unsloth/Qwen3-Coder-Next-GGUF:Q4_K_M
+  - smollm2:135m
+  - llama3.1:8b-instruct-q4_K_M
+---
 IP: 109.123.251.197
 Port: 11434
 URL: http://109.123.251.197:11434
@@ -2550,14 +2558,6 @@ Models: 5
   - llama3.1:8b-instruct-q4_K_M
   - phi3:mini
   - qwen2.5:3b
----
-IP: 109.123.251.112
-Port: 11434
-URL: http://109.123.251.112:11434
-Models: 3
-  - hf.co/unsloth/Qwen3-Coder-Next-GGUF:Q4_K_M
-  - smollm2:135m
-  - llama3.1:8b-instruct-q4_K_M
 ---
 IP: 109.123.254.102
 Port: 11434
@@ -2576,20 +2576,14 @@ Models: 7
   - llama3.2:1b
   - llama3.1:latest
 ---
-IP: 109.199.107.45
+IP: 109.199.111.239
 Port: 11434
-URL: http://109.199.107.45:11434
-Models: 10
+URL: http://109.199.111.239:11434
+Models: 4
   - smollm2:135m
   - deepseek-v3.1:671b-cloud
-  - codellama:latest
-  - ministral-3:latest
-  - codellama:13b
-  - ministral-3:14b
-  - llama3.1:latest
-  - llama3.2:1b
-  - llama3.2:latest
-  - llama3.3:latest
+  - nomic-embed-text:latest
+  - llama3:8b
 ---
 IP: 109.199.97.30
 Port: 11434
@@ -2599,14 +2593,6 @@ Models: 4
   - deepseek-v3.1:671b-cloud
   - deepseek-v3.2:cloud
   - phi3:mini
----
-IP: 109.199.102.90
-Port: 11434
-URL: http://109.199.102.90:11434
-Models: 3
-  - deepseek-v3.1:671b-cloud
-  - smollm2:135m
-  - llama3.2:latest
 ---
 IP: 109.199.102.14
 Port: 11434
@@ -2625,6 +2611,14 @@ Models: 13
   - gemma3:4b
   - qwen2.5:7b
   - qwen2.5:3b
+---
+IP: 109.199.102.90
+Port: 11434
+URL: http://109.199.102.90:11434
+Models: 3
+  - deepseek-v3.1:671b-cloud
+  - smollm2:135m
+  - llama3.2:latest
 ---
 IP: 109.199.103.44
 Port: 11434
@@ -2666,14 +2660,20 @@ Models: 5
   - llama3.2:3b
   - qwen2.5:3b
 ---
-IP: 109.199.111.239
+IP: 109.199.107.45
 Port: 11434
-URL: http://109.199.111.239:11434
-Models: 4
+URL: http://109.199.107.45:11434
+Models: 10
   - smollm2:135m
   - deepseek-v3.1:671b-cloud
-  - nomic-embed-text:latest
-  - llama3:8b
+  - codellama:latest
+  - ministral-3:latest
+  - codellama:13b
+  - ministral-3:14b
+  - llama3.1:latest
+  - llama3.2:1b
+  - llama3.2:latest
+  - llama3.3:latest
 ---
 IP: 109.199.110.191
 Port: 11434
@@ -2695,6 +2695,11 @@ Models: 5
   - llama3.2:3b
   - qwen2.5:3b
 ---
+IP: 109.199.115.12
+Port: 11434
+URL: http://109.199.115.12:11434
+Models: None
+---
 IP: 109.199.115.24
 Port: 11434
 URL: http://109.199.115.24:11434
@@ -2710,11 +2715,6 @@ Models: 10
   - llama3.2:latest
   - deepseek-r1:1.5b
 ---
-IP: 109.199.115.12
-Port: 11434
-URL: http://109.199.115.12:11434
-Models: None
----
 IP: 109.199.117.16
 Port: 11434
 URL: http://109.199.117.16:11434
@@ -2724,6 +2724,13 @@ Models: 5
   - llama3.2:latest
   - gpt-oss:20b
   - mistral:7b
+---
+IP: 109.199.118.25
+Port: 11434
+URL: http://109.199.118.25:11434
+Models: 2
+  - smollm2:135m
+  - qwen3:4b-instruct
 ---
 IP: 109.199.118.24
 Port: 11434
@@ -2741,13 +2748,6 @@ Models: 4
   - llama3.2:latest
   - gemma:2b
   - gemma2:2b
----
-IP: 109.199.118.25
-Port: 11434
-URL: http://109.199.118.25:11434
-Models: 2
-  - smollm2:135m
-  - qwen3:4b-instruct
 ---
 IP: 109.199.118.184
 Port: 11434
@@ -2798,14 +2798,6 @@ Models: 8
   - llama3:latest
   - mistral:latest
 ---
-IP: 109.199.123.65
-Port: 11434
-URL: http://109.199.123.65:11434
-Models: 3
-  - smollm2:135m
-  - gemma3:270m
-  - tinyllama:latest
----
 IP: 109.199.124.189
 Port: 11434
 URL: http://109.199.124.189:11434
@@ -2841,6 +2833,14 @@ URL: http://109.199.126.116:11434
 Models: 1
   - deepseek-r1:8b
 ---
+IP: 109.199.123.65
+Port: 11434
+URL: http://109.199.123.65:11434
+Models: 3
+  - smollm2:135m
+  - gemma3:270m
+  - tinyllama:latest
+---
 IP: 157.173.97.193
 Port: 11434
 URL: http://157.173.97.193:11434
@@ -2854,20 +2854,11 @@ Port: 11434
 URL: http://157.173.100.177:11434
 Models: 6
   - smollm2:135m
-  - nomic-embed-text:latest
   - deepseek-v3.1:671b-cloud
+  - nomic-embed-text:latest
   - glm-4.6:cloud
   - qwen3-coder:480b-cloud
   - gpt-oss:120b-cloud
----
-IP: 157.173.101.38
-Port: 11434
-URL: http://157.173.101.38:11434
-Models: 4
-  - deepseek-v3.1:671b-cloud
-  - deepseek-r1:14b
-  - deepseek-r1:7b
-  - deepseek-r1:1.5b
 ---
 IP: 157.173.101.19
 Port: 11434
@@ -2880,6 +2871,15 @@ Models: 7
   - fleetview-ai-pro:latest
   - fleetview-ai-core:latest
   - fleetview-ai-lite:latest
+---
+IP: 157.173.101.38
+Port: 11434
+URL: http://157.173.101.38:11434
+Models: 4
+  - deepseek-v3.1:671b-cloud
+  - deepseek-r1:14b
+  - deepseek-r1:7b
+  - deepseek-r1:1.5b
 ---
 IP: 157.173.101.239
 Port: 11434
@@ -2894,15 +2894,6 @@ Models: 3
   - deepseek-v3.1:671b-cloud
   - llama3.2:latest
 ---
-IP: 157.173.103.202
-Port: 11434
-URL: http://157.173.103.202:11434
-Models: 4
-  - smollm2:135m
-  - deepseek-v3.1:671b-cloud
-  - deepseek-v3.2:cloud
-  - llama3:latest
----
 IP: 157.173.103.182
 Port: 11434
 URL: http://157.173.103.182:11434
@@ -2913,6 +2904,15 @@ Models: 6
   - gemma3:1b
   - llama3.1:8b
   - llama3.2:latest
+---
+IP: 157.173.103.202
+Port: 11434
+URL: http://157.173.103.202:11434
+Models: 4
+  - smollm2:135m
+  - deepseek-v3.1:671b-cloud
+  - deepseek-v3.2:cloud
+  - llama3:latest
 ---
 IP: 157.173.103.231
 Port: 11434
@@ -2957,13 +2957,13 @@ Models: 3
   - dolphin-llama3:latest
   - llama3:latest
 ---
-IP: 157.173.124.90
+IP: 157.173.122.246
 Port: 11434
-URL: http://157.173.124.90:11434
+URL: http://157.173.122.246:11434
 Models: 3
   - smollm2:135m
   - deepseek-v3.1:671b-cloud
-  - llama3.2:3b
+  - gemma3:latest
 ---
 IP: 157.173.112.79
 Port: 11434
@@ -2980,17 +2980,6 @@ Models: 3
   - deepseek-v3.1:671b-cloud
   - qwen3:0.6b
 ---
-IP: 157.173.114.130
-Port: 11434
-URL: http://157.173.114.130:11434
-Models: 6
-  - deepseek-v3.1:671b-cloud
-  - smollm2:135m
-  - gemma3:270m
-  - functiongemma:latest
-  - nomic-embed-text:latest
-  - granite4:latest
----
 IP: 157.173.114.188
 Port: 11434
 URL: http://157.173.114.188:11434
@@ -3001,6 +2990,17 @@ Models: 6
   - gemma3:4b
   - gemma3:27b
   - llama3.2:latest
+---
+IP: 157.173.114.130
+Port: 11434
+URL: http://157.173.114.130:11434
+Models: 6
+  - deepseek-v3.1:671b-cloud
+  - smollm2:135m
+  - gemma3:270m
+  - functiongemma:latest
+  - nomic-embed-text:latest
+  - granite4:latest
 ---
 IP: 157.173.116.125
 Port: 11434
@@ -3044,14 +3044,6 @@ Models: 4
   - xitao/bge-reranker-v2-m3:latest
   - bge-m3:latest
 ---
-IP: 157.173.122.246
-Port: 11434
-URL: http://157.173.122.246:11434
-Models: 3
-  - smollm2:135m
-  - deepseek-v3.1:671b-cloud
-  - gemma3:latest
----
 IP: 157.173.123.193
 Port: 11434
 URL: http://157.173.123.193:11434
@@ -3060,6 +3052,14 @@ Models: 4
   - llama3.2:1b
   - llama3.2:latest
   - phi3:mini
+---
+IP: 157.173.124.90
+Port: 11434
+URL: http://157.173.124.90:11434
+Models: 3
+  - smollm2:135m
+  - deepseek-v3.1:671b-cloud
+  - llama3.2:3b
 ---
 IP: 157.173.125.245
 Port: 11434
@@ -3093,8 +3093,8 @@ IP: 158.220.81.23
 Port: 11434
 URL: http://158.220.81.23:11434
 Models: 3
-  - llama3.1:latest
   - nomic-embed-text:latest
+  - llama3.1:latest
   - smollm2:135m
 ---
 IP: 158.220.81.159
@@ -3110,23 +3110,17 @@ Models: 3
   - smollm2:135m
   - llama3.1:8b
 ---
-IP: 158.220.111.220
-Port: 11434
-URL: http://158.220.111.220:11434
-Models: 6
-  - deepseek-v3.1:671b-cloud
-  - deepseek-v3.2:cloud
-  - mistral:7b-instruct-q3_K_S
-  - mistral:7b-instruct-q4_K_M
-  - llama3.2:3b
-  - mistral:latest
----
 IP: 158.220.97.104
 Port: 11434
 URL: http://158.220.97.104:11434
 Models: 2
   - smollm2:135m
   - llama3:latest
+---
+IP: 158.220.97.119
+Port: 11434
+URL: http://158.220.97.119:11434
+Models: None
 ---
 IP: 158.220.99.175
 Port: 11434
@@ -3135,11 +3129,6 @@ Models: 3
   - smollm2:135m
   - deepseek-v3.1:671b-cloud
   - llama3.2:latest
----
-IP: 158.220.97.119
-Port: 11434
-URL: http://158.220.97.119:11434
-Models: None
 ---
 IP: 158.220.101.192
 Port: 11434
@@ -3174,6 +3163,14 @@ Models: 7
   - deepseek-r1:latest
   - deepseek-coder:latest
 ---
+IP: 158.220.105.135
+Port: 11434
+URL: http://158.220.105.135:11434
+Models: 3
+  - smollm2:135m
+  - qwen2.5-coder:7b
+  - gemma3:4b
+---
 IP: 158.220.105.209
 Port: 11434
 URL: http://158.220.105.209:11434
@@ -3188,29 +3185,16 @@ Models: 9
   - llama2:13b-text
   - mistral:latest
 ---
-IP: 158.220.105.135
+IP: 158.220.111.220
 Port: 11434
-URL: http://158.220.105.135:11434
-Models: 3
-  - smollm2:135m
-  - qwen2.5-coder:7b
-  - gemma3:4b
----
-IP: 158.220.127.51
-Port: 11434
-URL: http://158.220.127.51:11434
-Models: 1
-  - command-r7b-arabic:latest
----
-IP: 158.220.127.28
-Port: 11434
-URL: http://158.220.127.28:11434
-Models: 5
+URL: http://158.220.111.220:11434
+Models: 6
   - deepseek-v3.1:671b-cloud
-  - game:latest
-  - phi3:latest
-  - buddy-vocabulary:latest
-  - gemma3:1b
+  - deepseek-v3.2:cloud
+  - mistral:7b-instruct-q3_K_S
+  - mistral:7b-instruct-q4_K_M
+  - llama3.2:3b
+  - mistral:latest
 ---
 IP: 158.220.114.110
 Port: 11434
@@ -3264,6 +3248,30 @@ Models: 4
   - qwen2.5-coder:14b
   - qwen3-coder-next:latest
 ---
+IP: 158.220.127.28
+Port: 11434
+URL: http://158.220.127.28:11434
+Models: 5
+  - deepseek-v3.1:671b-cloud
+  - game:latest
+  - phi3:latest
+  - buddy-vocabulary:latest
+  - gemma3:1b
+---
+IP: 158.220.127.51
+Port: 11434
+URL: http://158.220.127.51:11434
+Models: 1
+  - command-r7b-arabic:latest
+---
+IP: 161.97.168.57
+Port: 11434
+URL: http://161.97.168.57:11434
+Models: 3
+  - smollm2:135m
+  - deepseek-v3.1:671b-cloud
+  - embeddinggemma:latest
+---
 IP: 161.97.175.157
 Port: 11434
 URL: http://161.97.175.157:11434
@@ -3277,14 +3285,6 @@ Models: 9
   - qwen2:7b
   - translator:latest
   - llama3:8b
----
-IP: 161.97.168.57
-Port: 11434
-URL: http://161.97.168.57:11434
-Models: 3
-  - smollm2:135m
-  - deepseek-v3.1:671b-cloud
-  - embeddinggemma:latest
 ---
 IP: 161.97.170.174
 Port: 11434
@@ -3327,9 +3327,9 @@ Models: 13
   - hf.co/mradermacher/moirai-agent-GGUF:latest
   - lukashabtoch/plutotext-r3-emotional:latest
   - smollm2:135m
+  - llama3-backup:latest
   - mario:latest
   - mattw/pygmalion:latest
-  - llama3-backup:latest
   - llama3.2:latest
   - llama3.2:3b-instruct-q5_K_M
   - llava:latest
@@ -3345,13 +3345,6 @@ Models: 2
   - qwen2.5:1.5b
   - glm-4.7:cloud
 ---
-IP: 173.212.226.239
-Port: 11434
-URL: http://173.212.226.239:11434
-Models: 2
-  - deepseek-v3.1:671b-cloud
-  - mistral:7b-instruct-q4_K_M
----
 IP: 173.212.227.132
 Port: 11434
 URL: http://173.212.227.132:11434
@@ -3361,13 +3354,20 @@ Models: 12
   - lukashabtoch/plutotext-r3-emotional:latest
   - gemma3:270m
   - mattw/pygmalion:latest
-  - mario:latest
   - llama3-backup:latest
+  - mario:latest
   - llama3.2:latest
   - qwen3:8b
   - deepseek-r1:latest
   - nomic-embed-text:latest
   - llama3.1:8b
+---
+IP: 173.212.226.239
+Port: 11434
+URL: http://173.212.226.239:11434
+Models: 2
+  - deepseek-v3.1:671b-cloud
+  - mistral:7b-instruct-q4_K_M
 ---
 IP: 173.212.228.65
 Port: 11434
@@ -3388,18 +3388,18 @@ Models: 5
   - llama3.1:8b-instruct-q4_K_M
   - deepseek-r1:1.5b
 ---
+IP: 173.212.230.109
+Port: 11434
+URL: http://173.212.230.109:11434
+Models: 1
+  - qwen2.5-coder:7b
+---
 IP: 173.212.230.126
 Port: 11434
 URL: http://173.212.230.126:11434
 Models: 2
   - qwen3-vl:4b-instruct-q4_K_M
   - gemini-3-flash-preview:latest
----
-IP: 173.212.230.109
-Port: 11434
-URL: http://173.212.230.109:11434
-Models: 1
-  - qwen2.5-coder:7b
 ---
 IP: 173.212.231.28
 Port: 11434
@@ -3454,11 +3454,10 @@ Models: 4
 IP: 178.18.241.131
 Port: 11434
 URL: http://178.18.241.131:11434
-Models: 8
+Models: 7
   - minimax-m2.5:cloud
   - kimi-k2.5:cloud
   - qwen3-coder-next:cloud
-  - glm-4.7-flash:latest
   - smollm2:135m
   - qwen3:14b
   - jeffh/intfloat-multilingual-e5-large-instruct:f32
@@ -3566,15 +3565,6 @@ Models: 2
   - all-minilm:22m
   - smollm2:135m
 ---
-IP: 213.199.45.165
-Port: 11434
-URL: http://213.199.45.165:11434
-Models: 4
-  - deepseek-v3.1:671b-cloud
-  - deepseek-v3.2:cloud
-  - qwen2.5-coder:0.5b
-  - qwen2.5-coder:1.5b
----
 IP: 213.199.45.231
 Port: 11434
 URL: http://213.199.45.231:11434
@@ -3584,6 +3574,15 @@ Models: 6
   - qwen2.5-coder:3b
   - nomic-embed-text:latest
   - qwen2.5-coder:7b
+  - qwen2.5-coder:1.5b
+---
+IP: 213.199.45.165
+Port: 11434
+URL: http://213.199.45.165:11434
+Models: 4
+  - deepseek-v3.1:671b-cloud
+  - deepseek-v3.2:cloud
+  - qwen2.5-coder:0.5b
   - qwen2.5-coder:1.5b
 ---
 IP: 213.199.49.154
@@ -3605,6 +3604,18 @@ Models: 7
   - qwen2.5-coder:7b
   - mistral:instruct
 ---
+IP: 213.199.53.222
+Port: 11434
+URL: http://213.199.53.222:11434
+Models: 7
+  - smollm2:135m
+  - deepseek-v3.1:671b-cloud
+  - llama3.2-vision:11b
+  - mistral:7b
+  - deepseek-coder-v2:16b
+  - llama3.1:8b
+  - llama3.2:3b
+---
 IP: 213.199.54.5
 Port: 11434
 URL: http://213.199.54.5:11434
@@ -3620,18 +3631,6 @@ Models: 11
   - qwen:1.8b
   - qwen:0.5b
   - qwen2:7b
----
-IP: 213.199.53.222
-Port: 11434
-URL: http://213.199.53.222:11434
-Models: 7
-  - smollm2:135m
-  - deepseek-v3.1:671b-cloud
-  - llama3.2-vision:11b
-  - mistral:7b
-  - deepseek-coder-v2:16b
-  - llama3.1:8b
-  - llama3.2:3b
 ---
 IP: 213.199.57.120
 Port: 11434
@@ -3758,8 +3757,7 @@ Models: 3
 IP: 31.220.74.144
 Port: 11434
 URL: http://31.220.74.144:11434
-Models: 3
-  - hf.co/unsloth/Qwen3-Coder-Next-GGUF:Q4_K_M
+Models: 2
   - smollm2:135m
   - llama3.1:8b-instruct-q4_K_M
 ---
@@ -3822,12 +3820,6 @@ Models: 3
   - deepseek-v3.1:671b-cloud
   - qwen3-coder:480b-cloud
 ---
-IP: 31.220.85.58
-Port: 11434
-URL: http://31.220.85.58:11434
-Models: 1
-  - mistral:latest
----
 IP: 31.220.85.54
 Port: 11434
 URL: http://31.220.85.54:11434
@@ -3835,6 +3827,12 @@ Models: 3
   - smollm2:135m
   - deepseek-v3.1:671b-cloud
   - phi3:latest
+---
+IP: 31.220.85.58
+Port: 11434
+URL: http://31.220.85.58:11434
+Models: 1
+  - mistral:latest
 ---
 IP: 31.220.86.87
 Port: 11434
@@ -3844,13 +3842,14 @@ Models: 3
   - phi:latest
   - llama2:latest
 ---
-IP: 31.220.95.126
+IP: 31.220.93.212
 Port: 11434
-URL: http://31.220.95.126:11434
-Models: 3
-  - llama3.1:latest
-  - deepseek-v3.1:671b-cloud
+URL: http://31.220.93.212:11434
+Models: 4
   - smollm2:135m
+  - mattw/pygmalion:latest
+  - llama3.1:8b-instruct-q4_K_M
+  - llama3.1:8b
 ---
 IP: 31.220.89.178
 Port: 11434
@@ -3905,14 +3904,13 @@ Models: 7
   - llama3.2:1b
   - llama3.2:3b
 ---
-IP: 31.220.93.212
+IP: 31.220.95.126
 Port: 11434
-URL: http://31.220.93.212:11434
-Models: 4
+URL: http://31.220.95.126:11434
+Models: 3
+  - llama3.1:latest
+  - deepseek-v3.1:671b-cloud
   - smollm2:135m
-  - mattw/pygmalion:latest
-  - llama3.1:8b-instruct-q4_K_M
-  - llama3.1:8b
 ---
 IP: 31.220.94.153
 Port: 11434
@@ -3944,6 +3942,14 @@ Models: 3
   - deepseek-v3.1:671b-cloud
   - llama3.2:latest
 ---
+IP: 38.242.130.143
+Port: 11434
+URL: http://38.242.130.143:11434
+Models: 3
+  - smollm2:135m
+  - deepseek-v3.1:671b-cloud
+  - gpt-oss:120b-cloud
+---
 IP: 38.242.130.120
 Port: 11434
 URL: http://38.242.130.120:11434
@@ -3952,14 +3958,6 @@ Models: 4
   - qwen2:1.5b
   - gemma3:1b
   - llama3.2-vision:latest
----
-IP: 38.242.130.143
-Port: 11434
-URL: http://38.242.130.143:11434
-Models: 3
-  - smollm2:135m
-  - deepseek-v3.1:671b-cloud
-  - gpt-oss:120b-cloud
 ---
 IP: 38.242.131.222
 Port: 11434
@@ -3995,14 +3993,6 @@ URL: http://38.242.143.42:11434
 Models: 2
   - llava:latest
   - llama3:8b
----
-IP: 38.242.143.112
-Port: 11434
-URL: http://38.242.143.112:11434
-Models: 3
-  - smollm2:135m
-  - qwen2.5-coder:1.5b
-  - qwen3:0.6b
 ---
 IP: 38.242.139.250
 Port: 11434
@@ -4041,8 +4031,8 @@ URL: http://38.242.146.241:11434
 Models: 6
   - hf.co/unsloth/Qwen3-Coder-Next-GGUF:Q4_K_M
   - smollm2:135m
-  - llama3-backup:latest
   - mario:latest
+  - llama3-backup:latest
   - mattw/pygmalion:latest
   - llama3.2:latest
 ---
@@ -4136,6 +4126,11 @@ Models: 2
   - deepseek-v3.1:671b-cloud
   - qwen3:0.6b
 ---
+IP: 62.169.31.141
+Port: 11434
+URL: http://62.169.31.141:11434
+Models: None
+---
 IP: 62.169.24.37
 Port: 11434
 URL: http://62.169.24.37:11434
@@ -4168,11 +4163,6 @@ Models: 5
 IP: 62.169.30.133
 Port: 11434
 URL: http://62.169.30.133:11434
-Models: None
----
-IP: 62.169.31.141
-Port: 11434
-URL: http://62.169.31.141:11434
 Models: None
 ---
 IP: 77.237.239.27
@@ -4216,6 +4206,13 @@ Models: 5
   - phi3:mini
   - codellama:7b
 ---
+IP: 77.237.240.125
+Port: 11434
+URL: http://77.237.240.125:11434
+Models: 2
+  - smollm2:135m
+  - deepseek-r1:1.5b
+---
 IP: 77.237.240.101
 Port: 11434
 URL: http://77.237.240.101:11434
@@ -4223,13 +4220,6 @@ Models: 3
   - deepseek-v3.1:671b-cloud
   - llama3.2:latest
   - tinyllama:1.1b
----
-IP: 77.237.240.125
-Port: 11434
-URL: http://77.237.240.125:11434
-Models: 2
-  - smollm2:135m
-  - deepseek-r1:1.5b
 ---
 IP: 77.237.241.183
 Port: 11434
@@ -4354,15 +4344,6 @@ URL: http://100.42.179.18:11434
 Models: 1
   - smollm2:135m
 ---
-IP: 100.42.184.53
-Port: 11434
-URL: http://100.42.184.53:11434
-Models: 4
-  - hf.co/unsloth/Qwen3-Coder-Next-GGUF:Q4_K_M
-  - smollm2:135m
-  - deepseek-r1:1.5b
-  - llama3.1:latest
----
 IP: 100.42.191.244
 Port: 11434
 URL: http://100.42.191.244:11434
@@ -4372,15 +4353,14 @@ Models: 4
   - gemma3:4b
   - llama3:latest
 ---
-IP: 100.42.186.103
+IP: 100.42.184.53
 Port: 11434
-URL: http://100.42.186.103:11434
-Models: 5
-  - deepseek-v3.1:671b-cloud
+URL: http://100.42.184.53:11434
+Models: 4
+  - hf.co/unsloth/Qwen3-Coder-Next-GGUF:Q4_K_M
   - smollm2:135m
-  - qwen3:4b-instruct
-  - qwen2.5:1.5b
-  - qwen2.5:3b-instruct
+  - deepseek-r1:1.5b
+  - llama3.1:latest
 ---
 IP: 100.42.186.119
 Port: 11434
@@ -4399,8 +4379,8 @@ Models: 24
   - qwen3:4b
   - nomic-embed-text:latest
   - mattw/pygmalion:latest
-  - mario:latest
   - llama3.2:latest
+  - mario:latest
   - mistral:7b
   - llava-llama3:8b
   - bakllava:latest
@@ -4410,6 +4390,16 @@ Models: 24
   - llama3:8b
   - phi3:latest
   - gemma3:4b
+---
+IP: 100.42.186.103
+Port: 11434
+URL: http://100.42.186.103:11434
+Models: 5
+  - deepseek-v3.1:671b-cloud
+  - smollm2:135m
+  - qwen3:4b-instruct
+  - qwen2.5:1.5b
+  - qwen2.5:3b-instruct
 ---
 IP: 149.102.129.16
 Port: 11434
@@ -4441,13 +4431,6 @@ Models: 4
   - llama3.1:8b
   - phi3:medium
 ---
-IP: 149.102.137.196
-Port: 11434
-URL: http://149.102.137.196:11434
-Models: 2
-  - qwen2:1.5b
-  - qwen2:0.5b
----
 IP: 149.102.137.152
 Port: 11434
 URL: http://149.102.137.152:11434
@@ -4455,12 +4438,19 @@ Models: 9
   - hf.co/unsloth/Qwen3-Coder-Next-GGUF:Q4_K_M
   - smollm2:135m
   - tinyllama:latest
-  - mattw/pygmalion:latest
   - mario:latest
+  - mattw/pygmalion:latest
   - llama3-backup:latest
   - llama3.2:3b-instruct-q5_K_M
   - llama3.2:latest
   - llama3.1:latest
+---
+IP: 149.102.137.196
+Port: 11434
+URL: http://149.102.137.196:11434
+Models: 2
+  - qwen2:1.5b
+  - qwen2:0.5b
 ---
 IP: 149.102.141.170
 Port: 11434
@@ -4643,6 +4633,14 @@ Models: 2
   - kimi-k2.5:cloud
   - glm-5:cloud
 ---
+IP: 212.47.64.85
+Port: 11434
+URL: http://212.47.64.85:11434
+Models: 3
+  - deepseek-v3.1:671b-cloud
+  - nomic-embed-text:latest
+  - llama3.1:8b
+---
 IP: 212.47.64.84
 Port: 11434
 URL: http://212.47.64.84:11434
@@ -4659,14 +4657,6 @@ Models: 12
   - gemma:2b
   - tinyllama:latest
   - phi3:latest
----
-IP: 212.47.64.85
-Port: 11434
-URL: http://212.47.64.85:11434
-Models: 3
-  - deepseek-v3.1:671b-cloud
-  - nomic-embed-text:latest
-  - llama3.1:8b
 ---
 IP: 212.47.66.117
 Port: 11434
@@ -4699,14 +4689,6 @@ Models: 18
   - nomic-embed-text:latest
   - llama3.1:8b
 ---
-IP: 212.47.73.217
-Port: 11434
-URL: http://212.47.73.217:11434
-Models: 3
-  - deepseek-v3.1:671b-cloud
-  - deepseek-v3.2:cloud
-  - llama3:latest
----
 IP: 212.47.74.41
 Port: 11434
 URL: http://212.47.74.41:11434
@@ -4717,6 +4699,14 @@ Models: 6
   - mistral:latest
   - mistral-nemo:latest
   - qwen2.5-coder:14b
+---
+IP: 212.47.73.217
+Port: 11434
+URL: http://212.47.73.217:11434
+Models: 3
+  - deepseek-v3.1:671b-cloud
+  - deepseek-v3.2:cloud
+  - llama3:latest
 ---
 IP: 81.17.96.177
 Port: 11434
@@ -4820,6 +4810,16 @@ Models: 12
   - deepseek-r1:14b
   - gemma3n:e4b
 ---
+IP: 86.48.3.207
+Port: 11434
+URL: http://86.48.3.207:11434
+Models: 5
+  - hf.co/unsloth/Qwen3-Coder-Next-GGUF:Q4_K_M
+  - smollm2:135m
+  - phi3:mini
+  - tinyllama:latest
+  - mistral:7b-instruct-v0.2-q4_K_M
+---
 IP: 86.48.0.101
 Port: 11434
 URL: http://86.48.0.101:11434
@@ -4834,15 +4834,11 @@ Models: 3
   - smollm2:135m
   - bge-m3:latest
 ---
-IP: 86.48.3.207
+IP: 109.205.179.179
 Port: 11434
-URL: http://86.48.3.207:11434
-Models: 5
-  - hf.co/unsloth/Qwen3-Coder-Next-GGUF:Q4_K_M
-  - smollm2:135m
-  - phi3:mini
-  - tinyllama:latest
-  - mistral:7b-instruct-v0.2-q4_K_M
+URL: http://109.205.179.179:11434
+Models: 1
+  - qwen2.5-coder:7b
 ---
 IP: 109.205.179.220
 Port: 11434
@@ -4850,12 +4846,6 @@ URL: http://109.205.179.220:11434
 Models: 2
   - deepseek-v3.1:671b-cloud
   - llama3.1:8b
----
-IP: 109.205.179.179
-Port: 11434
-URL: http://109.205.179.179:11434
-Models: 1
-  - qwen2.5-coder:7b
 ---
 IP: 109.205.177.250
 Port: 11434
@@ -4886,24 +4876,7 @@ Models: 3
 IP: 109.205.181.171
 Port: 11434
 URL: http://109.205.181.171:11434
-Models: 1
-  - glm-4.7-flash:latest
----
-IP: 156.67.24.2
-Port: 11434
-URL: http://156.67.24.2:11434
-Models: 11
-  - smollm2:135m
-  - mattw/pygmalion:latest
-  - llama3.2:latest
-  - mario:latest
-  - llama3.1:8b-instruct-q4_K_M
-  - llama3.1:8b
-  - llama2:7b
-  - benob/vigostral:latest
-  - TinyLlama:latest
-  - mistral:latest
-  - llama3.2:3b
+Models: None
 ---
 IP: 156.67.31.35
 Port: 11434
@@ -4986,12 +4959,6 @@ Models: 12
   - llama3.1:8b
   - qwen2.5-coder:7b
 ---
-IP: 161.97.186.34
-Port: 11434
-URL: http://161.97.186.34:11434
-Models: 1
-  - llama3.1:latest
----
 IP: 161.97.186.129
 Port: 11434
 URL: http://161.97.186.129:11434
@@ -4999,6 +4966,12 @@ Models: 3
   - qwen2.5:0.5b
   - gemma3:270m
   - llama3.2:1b
+---
+IP: 161.97.186.34
+Port: 11434
+URL: http://161.97.186.34:11434
+Models: 1
+  - llama3.1:latest
 ---
 IP: 2.58.81.109
 Port: 11434
@@ -5010,14 +4983,6 @@ Models: 5
   - llama3.1:8b
   - deepseek-coder:latest
 ---
-IP: 5.180.148.51
-Port: 11434
-URL: http://5.180.148.51:11434
-Models: 3
-  - deepseek-v3.1:671b-cloud
-  - smollm2:135m
-  - qwen2.5:1.5b
----
 IP: 5.180.148.40
 Port: 11434
 URL: http://5.180.148.40:11434
@@ -5027,12 +4992,41 @@ Models: 4
   - EQuIP/EQuIP_3B:latest
   - qwen3-vl:8b
 ---
+IP: 5.180.148.51
+Port: 11434
+URL: http://5.180.148.51:11434
+Models: 3
+  - deepseek-v3.1:671b-cloud
+  - smollm2:135m
+  - qwen2.5:1.5b
+---
+IP: 45.8.132.19
+Port: 11434
+URL: http://45.8.132.19:11434
+Models: 10
+  - glm-ocr:q8_0
+  - ministral-3:3b
+  - deepseek-v3.1:671b-cloud
+  - embeddinggemma:latest
+  - granite-embedding:278m
+  - llama3.2:1b
+  - gemma3:latest
+  - gemma3:1b
+  - qwen3:0.6b
+  - qwen3:4b
+---
 IP: 45.8.132.198
 Port: 11434
 URL: http://45.8.132.198:11434
 Models: 2
   - deepseek-v3.1:671b-cloud
   - deepseek-r1:1.5b
+---
+IP: 45.10.161.104
+Port: 11434
+URL: http://45.10.161.104:11434
+Models: 1
+  - llama3.2:1b
 ---
 IP: 45.10.161.35
 Port: 11434
@@ -5042,15 +5036,9 @@ Models: 7
   - gpt-oss:120b
   - deepseek-v3.1:671b-cloud
   - ministral-3:3b
-  - mistral:latest
   - jan-nano:latest
   - llama3:latest
----
-IP: 45.10.161.104
-Port: 11434
-URL: http://45.10.161.104:11434
-Models: 1
-  - llama3.2:1b
+  - mistral:latest
 ---
 IP: 45.10.160.192
 Port: 11434
@@ -5151,19 +5139,6 @@ Models: 2
   - llama3:latest
   - llama3.1:8b
 ---
-IP: 62.171.132.70
-Port: 11434
-URL: http://62.171.132.70:11434
-Models: 8
-  - llama3.2:1b
-  - mistral:latest
-  - qwen2.5:1.5b-instruct-q4_0
-  - llama3:latest
-  - phi3:latest
-  - phi3:mini
-  - cyber:latest
-  - tinyllama:latest
----
 IP: 62.171.132.11
 Port: 11434
 URL: http://62.171.132.11:11434
@@ -5180,12 +5155,18 @@ Models: 11
   - mxbai-embed-large:latest
   - llama3.1:8b
 ---
-IP: 62.171.136.71
+IP: 62.171.132.70
 Port: 11434
-URL: http://62.171.136.71:11434
-Models: 2
-  - smollm2:135m
-  - deepseek-r1:8b
+URL: http://62.171.132.70:11434
+Models: 8
+  - llama3.2:1b
+  - mistral:latest
+  - qwen2.5:1.5b-instruct-q4_0
+  - phi3:latest
+  - phi3:mini
+  - llama3:latest
+  - cyber:latest
+  - tinyllama:latest
 ---
 IP: 62.171.137.23
 Port: 11434
@@ -5214,6 +5195,13 @@ Models: 11
   - llama3:8b
   - mistral:7b
 ---
+IP: 62.171.136.71
+Port: 11434
+URL: http://62.171.136.71:11434
+Models: 2
+  - smollm2:135m
+  - deepseek-r1:8b
+---
 IP: 62.171.139.225
 Port: 11434
 URL: http://62.171.139.225:11434
@@ -5228,8 +5216,8 @@ URL: http://62.171.143.219:11434
 Models: 6
   - smollm2:135m
   - mattw/pygmalion:latest
-  - llama3-backup:latest
   - mario:latest
+  - llama3-backup:latest
   - nomic-embed-text:latest
   - llama3.2:latest
 ---
@@ -5249,6 +5237,11 @@ Models: 4
   - deepseek-v3.2:cloud
   - llama3:latest
 ---
+IP: 62.171.144.30
+Port: 11434
+URL: http://62.171.144.30:11434
+Models: None
+---
 IP: 62.171.145.92
 Port: 11434
 URL: http://62.171.145.92:11434
@@ -5266,11 +5259,6 @@ Models: 13
   - deepseek-r1:1.5b
   - tinyllama:1.1b
   - DeepSeek-Coder:1.3b
----
-IP: 62.171.144.30
-Port: 11434
-URL: http://62.171.144.30:11434
-Models: None
 ---
 IP: 62.171.147.66
 Port: 11434
@@ -5308,14 +5296,6 @@ Models: 4
   - llama3.1:8b
   - nomic-embed-text:latest
 ---
-IP: 62.171.148.149
-Port: 11434
-URL: http://62.171.148.149:11434
-Models: 3
-  - deepseek-v3.1:671b-cloud
-  - llama3:latest
-  - llama3.2:1b
----
 IP: 62.171.148.145
 Port: 11434
 URL: http://62.171.148.145:11434
@@ -5330,6 +5310,14 @@ Models: 10
   - gemma3:latest
   - granite4:tiny-h
   - gemma3:1b
+---
+IP: 62.171.148.149
+Port: 11434
+URL: http://62.171.148.149:11434
+Models: 3
+  - deepseek-v3.1:671b-cloud
+  - llama3:latest
+  - llama3.2:1b
 ---
 IP: 62.171.151.37
 Port: 11434
@@ -5456,6 +5444,13 @@ Models: 4
   - qwen2.5:14b
   - qwen2.5:32b
 ---
+IP: 62.171.182.79
+Port: 11434
+URL: http://62.171.182.79:11434
+Models: 2
+  - qwen2.5-coder:3b
+  - phi3:3.8b-mini-4k-instruct-q4_K_M
+---
 IP: 62.171.184.85
 Port: 11434
 URL: http://62.171.184.85:11434
@@ -5513,6 +5508,12 @@ Models: 4
   - nomic-embed-text:latest
   - mistral:latest
 ---
+IP: 62.171.191.201
+Port: 11434
+URL: http://62.171.191.201:11434
+Models: 1
+  - llama3.2:latest
+---
 IP: 62.171.191.18
 Port: 11434
 URL: http://62.171.191.18:11434
@@ -5520,12 +5521,6 @@ Models: 3
   - hf.co/unsloth/Qwen3-Coder-Next-GGUF:Q4_K_M
   - smollm2:135m
   - deepseek-r1:latest
----
-IP: 62.171.191.201
-Port: 11434
-URL: http://62.171.191.201:11434
-Models: 1
-  - llama3.2:latest
 ---
 IP: 79.143.185.151
 Port: 11434
@@ -5619,17 +5614,6 @@ Models: 7
   - smollm2:135m
   - nomic-embed-text:latest
 ---
-IP: 95.111.235.157
-Port: 11434
-URL: http://95.111.235.157:11434
-Models: 6
-  - deepseek-v3.1:671b-cloud
-  - smollm2:135m
-  - qllama/bge-m3:f16
-  - bge-large:latest
-  - qllama/bge-m3:latest
-  - bge-m3:latest
----
 IP: 95.111.234.44
 Port: 11434
 URL: http://95.111.234.44:11434
@@ -5650,6 +5634,17 @@ Models: 4
   - qwen2.5:3b
   - qwen2.5:7b
   - gemma2:2b
+---
+IP: 95.111.235.157
+Port: 11434
+URL: http://95.111.235.157:11434
+Models: 6
+  - deepseek-v3.1:671b-cloud
+  - smollm2:135m
+  - qllama/bge-m3:f16
+  - bge-large:latest
+  - qllama/bge-m3:latest
+  - bge-m3:latest
 ---
 IP: 95.111.237.151
 Port: 11434
@@ -5690,6 +5685,16 @@ Models: 2
   - qwen2.5:7b-instruct
   - mistral:7b
 ---
+IP: 95.111.240.130
+Port: 11434
+URL: http://95.111.240.130:11434
+Models: 5
+  - deepseek-v3.1:671b-cloud
+  - smollm2:135m
+  - nomic-embed-text:latest
+  - qwen3:0.6b
+  - gemma3:1b
+---
 IP: 95.111.240.213
 Port: 11434
 URL: http://95.111.240.213:11434
@@ -5701,15 +5706,12 @@ Models: 6
   - huihui_ai/qwen3-abliterated:0.6b
   - DC1LEX/nomic-embed-text-v1.5-multimodal:latest
 ---
-IP: 95.111.240.130
+IP: 95.111.244.159
 Port: 11434
-URL: http://95.111.240.130:11434
-Models: 5
-  - deepseek-v3.1:671b-cloud
+URL: http://95.111.244.159:11434
+Models: 2
   - smollm2:135m
-  - nomic-embed-text:latest
-  - qwen3:0.6b
-  - gemma3:1b
+  - qwen3:4b-instruct
 ---
 IP: 95.111.244.246
 Port: 11434
@@ -5717,13 +5719,6 @@ URL: http://95.111.244.246:11434
 Models: 2
   - deepseek-v3.1:671b-cloud
   - qwen2.5-coder:7b
----
-IP: 95.111.244.159
-Port: 11434
-URL: http://95.111.244.159:11434
-Models: 2
-  - smollm2:135m
-  - qwen3:4b-instruct
 ---
 IP: 95.111.246.35
 Port: 11434
@@ -5748,13 +5743,6 @@ Models: 7
   - llama3.2:1b
   - llama3.2:3b
 ---
-IP: 95.111.249.22
-Port: 11434
-URL: http://95.111.249.22:11434
-Models: 2
-  - llama3:latest
-  - qwen2.5:7b
----
 IP: 95.111.249.80
 Port: 11434
 URL: http://95.111.249.80:11434
@@ -5764,6 +5752,13 @@ Models: 5
   - qwen-sistemista:latest
   - qwen2.5:3b
   - deepseek-coder:1.3b
+---
+IP: 95.111.249.22
+Port: 11434
+URL: http://95.111.249.22:11434
+Models: 2
+  - llama3:latest
+  - qwen2.5:7b
 ---
 IP: 95.111.253.195
 Port: 11434
@@ -5844,6 +5839,16 @@ Models: 2
   - deepseek-v3.1:671b-cloud
   - mistral:latest
 ---
+IP: 144.91.77.216
+Port: 11434
+URL: http://144.91.77.216:11434
+Models: 5
+  - hf.co/unsloth/Qwen3-Coder-Next-GGUF:Q4_K_M
+  - smollm2:135m
+  - llama3.1:8b
+  - deepseek-r1:1.5b
+  - mistral:latest
+---
 IP: 144.91.76.150
 Port: 11434
 URL: http://144.91.76.150:11434
@@ -5865,16 +5870,6 @@ Models: 9
   - gemma3:latest
   - llama3.2:latest
 ---
-IP: 144.91.77.216
-Port: 11434
-URL: http://144.91.77.216:11434
-Models: 5
-  - hf.co/unsloth/Qwen3-Coder-Next-GGUF:Q4_K_M
-  - smollm2:135m
-  - llama3.1:8b
-  - deepseek-r1:1.5b
-  - mistral:latest
----
 IP: 144.91.81.230
 Port: 11434
 URL: http://144.91.81.230:11434
@@ -5887,15 +5882,6 @@ Models: 7
   - deepseek-r1:8b
   - dolphin-llama3:latest
 ---
-IP: 144.91.80.220
-Port: 11434
-URL: http://144.91.80.220:11434
-Models: 4
-  - smollm2:135m
-  - deepseek-v3.1:671b-cloud
-  - llama3.2:3b
-  - llama3.1:8b
----
 IP: 144.91.80.222
 Port: 11434
 URL: http://144.91.80.222:11434
@@ -5905,9 +5891,9 @@ Models: 4
   - llama3.2:3b
   - llama3.1:8b
 ---
-IP: 144.91.80.221
+IP: 144.91.80.220
 Port: 11434
-URL: http://144.91.80.221:11434
+URL: http://144.91.80.220:11434
 Models: 4
   - smollm2:135m
   - deepseek-v3.1:671b-cloud
@@ -5917,6 +5903,15 @@ Models: 4
 IP: 144.91.80.223
 Port: 11434
 URL: http://144.91.80.223:11434
+Models: 4
+  - smollm2:135m
+  - deepseek-v3.1:671b-cloud
+  - llama3.2:3b
+  - llama3.1:8b
+---
+IP: 144.91.80.221
+Port: 11434
+URL: http://144.91.80.221:11434
 Models: 4
   - smollm2:135m
   - deepseek-v3.1:671b-cloud
@@ -5933,6 +5928,13 @@ Models: 5
   - qwen2.5:7b-instruct-q4_K_M
   - llama3.1:8b-instruct-q4_K_M
 ---
+IP: 144.91.87.123
+Port: 11434
+URL: http://144.91.87.123:11434
+Models: 2
+  - smollm2:135m
+  - gemma3:4b
+---
 IP: 144.91.87.155
 Port: 11434
 URL: http://144.91.87.155:11434
@@ -5941,13 +5943,6 @@ Models: 4
   - gemma3:4b
   - deepseek-r1:1.5b
   - llama3.1:8b-instruct-q4_K_M
----
-IP: 144.91.87.123
-Port: 11434
-URL: http://144.91.87.123:11434
-Models: 2
-  - smollm2:135m
-  - gemma3:4b
 ---
 IP: 144.91.88.59
 Port: 11434
@@ -6133,6 +6128,13 @@ Models: 16
   - gemma3:1b
   - mistral:latest
 ---
+IP: 161.97.73.204
+Port: 11434
+URL: http://161.97.73.204:11434
+Models: 2
+  - smollm2:135m
+  - phi3:mini
+---
 IP: 161.97.73.0
 Port: 11434
 URL: http://161.97.73.0:11434
@@ -6140,13 +6142,6 @@ Models: 3
   - deepseek-v3.1:671b-cloud
   - smollm2:135m
   - nomic-embed-text:latest
----
-IP: 161.97.73.204
-Port: 11434
-URL: http://161.97.73.204:11434
-Models: 2
-  - smollm2:135m
-  - phi3:mini
 ---
 IP: 161.97.72.213
 Port: 11434
@@ -6184,6 +6179,14 @@ Models: 4
   - nomic-embed-text:latest
   - llama3.2:latest
 ---
+IP: 161.97.80.142
+Port: 11434
+URL: http://161.97.80.142:11434
+Models: 3
+  - deepseek-v3.1:671b-cloud
+  - mistral:7b-instruct
+  - mixtral:latest
+---
 IP: 161.97.80.168
 Port: 11434
 URL: http://161.97.80.168:11434
@@ -6192,14 +6195,6 @@ Models: 4
   - deepseek-v3.1:671b-cloud
   - deepseek-v3.2:cloud
   - llama3.2:latest
----
-IP: 161.97.80.142
-Port: 11434
-URL: http://161.97.80.142:11434
-Models: 3
-  - deepseek-v3.1:671b-cloud
-  - mistral:7b-instruct
-  - mixtral:latest
 ---
 IP: 161.97.86.154
 Port: 11434
@@ -6232,7 +6227,8 @@ Models: 1
 IP: 161.97.95.101
 Port: 11434
 URL: http://161.97.95.101:11434
-Models: 6
+Models: 7
+  - minimax-m2.5:cloud
   - phi3:mini
   - glm-5:cloud
   - llama3.2:3b
@@ -6323,11 +6319,18 @@ Models: 10
   - gemma3:270m
   - smollm2:135m
   - mattw/pygmalion:latest
-  - llama3.2:latest
   - mario:latest
+  - llama3.2:latest
   - nomic-embed-text:latest
   - gemma3:1b
   - mxbai-embed-large:latest
+---
+IP: 161.97.115.128
+Port: 11434
+URL: http://161.97.115.128:11434
+Models: 2
+  - cogito-2.1:671b-cloud
+  - gemini-3-flash-preview:cloud
 ---
 IP: 161.97.114.80
 Port: 11434
@@ -6341,12 +6344,20 @@ Models: 7
   - llama3.2:1b
   - mistral:latest
 ---
-IP: 161.97.115.128
+IP: 161.97.118.17
 Port: 11434
-URL: http://161.97.115.128:11434
-Models: 2
-  - cogito-2.1:671b-cloud
-  - gemini-3-flash-preview:cloud
+URL: http://161.97.118.17:11434
+Models: 1
+  - mistral:latest
+---
+IP: 161.97.118.151
+Port: 11434
+URL: http://161.97.118.151:11434
+Models: 4
+  - llama3.2:latest
+  - deepseek-r1:1.5b
+  - llama3.1:8b
+  - llama3.1:latest
 ---
 IP: 161.97.119.116
 Port: 11434
@@ -6357,15 +6368,6 @@ Models: 5
   - llama3.2-vision:latest
   - llama3.2:latest
   - deepseek-r1:7b
----
-IP: 161.97.118.151
-Port: 11434
-URL: http://161.97.118.151:11434
-Models: 4
-  - llama3.2:latest
-  - deepseek-r1:1.5b
-  - llama3.1:8b
-  - llama3.1:latest
 ---
 IP: 161.97.118.211
 Port: 11434
@@ -6388,9 +6390,9 @@ URL: http://161.97.123.158:11434
 Models: 7
   - hf.co/unsloth/Qwen3-Coder-Next-GGUF:Q4_K_M
   - smollm2:135m
+  - llama3-backup:latest
   - mario:latest
   - mattw/pygmalion:latest
-  - llama3-backup:latest
   - llama3.2:latest
   - llama3:latest
 ---
@@ -6409,17 +6411,17 @@ Models: 10
   - jeffh/intfloat-multilingual-e5-large-instruct:f32
   - mistral:latest
 ---
-IP: 161.97.126.186
-Port: 11434
-URL: http://161.97.126.186:11434
-Models: None
----
 IP: 161.97.126.194
 Port: 11434
 URL: http://161.97.126.194:11434
 Models: 2
   - llama3.1:8b
   - qwen2.5:7b
+---
+IP: 161.97.126.186
+Port: 11434
+URL: http://161.97.126.186:11434
+Models: None
 ---
 IP: 164.68.97.136
 Port: 11434
@@ -6486,6 +6488,13 @@ Port: 11434
 URL: http://164.68.104.214:11434
 Models: None
 ---
+IP: 164.68.106.74
+Port: 11434
+URL: http://164.68.106.74:11434
+Models: 2
+  - smollm2:135m
+  - nous-hermes:latest
+---
 IP: 164.68.106.172
 Port: 11434
 URL: http://164.68.106.172:11434
@@ -6494,12 +6503,22 @@ Models: 3
   - smollm2:135m
   - llama3.2:latest
 ---
-IP: 164.68.106.74
+IP: 164.68.109.215
 Port: 11434
-URL: http://164.68.106.74:11434
+URL: http://164.68.109.215:11434
 Models: 2
-  - smollm2:135m
-  - nous-hermes:latest
+  - llama3:latest
+  - llama3.2:latest
+---
+IP: 164.68.111.208
+Port: 11434
+URL: http://164.68.111.208:11434
+Models: 5
+  - deepseek-v3.1:671b-cloud
+  - deepseek-v3.2:cloud
+  - llama3.2:3b
+  - mistral:7b-instruct-q4_0
+  - phi3:mini
 ---
 IP: 164.68.110.39
 Port: 11434
@@ -6514,16 +6533,6 @@ Models: 9
   - all-minilm:33m
   - llama3.1:8b
   - mxbai-embed-large:latest
----
-IP: 164.68.111.208
-Port: 11434
-URL: http://164.68.111.208:11434
-Models: 5
-  - deepseek-v3.1:671b-cloud
-  - deepseek-v3.2:cloud
-  - llama3.2:3b
-  - mistral:7b-instruct-q4_0
-  - phi3:mini
 ---
 IP: 164.68.113.148
 Port: 11434
@@ -6551,9 +6560,9 @@ Models: 9
   - hf.co/mradermacher/moirai-agent-GGUF:latest
   - gemma3:270m
   - smollm2:135m
-  - mario:latest
   - llama3-backup:latest
   - mattw/pygmalion:latest
+  - mario:latest
   - llama3.2:1b
   - llama3.2:latest
 ---
@@ -6578,6 +6587,13 @@ Models: 5
   - llava:latest
   - moondream:latest
   - llama3.2-vision:latest
+---
+IP: 164.68.125.220
+Port: 11434
+URL: http://164.68.125.220:11434
+Models: 2
+  - llama3.1:8b
+  - llama3.2:latest
 ---
 IP: 164.68.127.49
 Port: 11434
@@ -6611,16 +6627,6 @@ Port: 11434
 URL: http://167.86.73.55:11434
 Models: None
 ---
-IP: 167.86.75.37
-Port: 11434
-URL: http://167.86.75.37:11434
-Models: 5
-  - smollm2:135m
-  - deepseek-v3.1:671b-cloud
-  - llama3:8b
-  - llava:latest
-  - gemma:7b
----
 IP: 167.86.75.90
 Port: 11434
 URL: http://167.86.75.90:11434
@@ -6630,6 +6636,16 @@ Models: 5
   - llama3.1:8b-instruct-q4_0
   - llama3.2:3b
   - llama3.1:8b
+---
+IP: 167.86.75.37
+Port: 11434
+URL: http://167.86.75.37:11434
+Models: 5
+  - smollm2:135m
+  - deepseek-v3.1:671b-cloud
+  - llama3:8b
+  - llava:latest
+  - gemma:7b
 ---
 IP: 167.86.74.210
 Port: 11434
@@ -6649,6 +6665,15 @@ Models: 5
   - gemma2:latest
   - gemma:latest
 ---
+IP: 167.86.78.147
+Port: 11434
+URL: http://167.86.78.147:11434
+Models: 4
+  - smollm2:135m
+  - deepseek-v3.1:671b-cloud
+  - nomic-embed-text:latest
+  - llama3.1:latest
+---
 IP: 167.86.78.215
 Port: 11434
 URL: http://167.86.78.215:11434
@@ -6659,15 +6684,6 @@ Models: 6
   - phi4:14b
   - gemma3:4b
   - qwen3:4b
----
-IP: 167.86.78.147
-Port: 11434
-URL: http://167.86.78.147:11434
-Models: 4
-  - smollm2:135m
-  - deepseek-v3.1:671b-cloud
-  - nomic-embed-text:latest
-  - llama3.1:latest
 ---
 IP: 167.86.80.235
 Port: 11434
@@ -6680,13 +6696,6 @@ Models: 6
   - mistral:7b
   - llama3.1:8b
 ---
-IP: 167.86.87.207
-Port: 11434
-URL: http://167.86.87.207:11434
-Models: 2
-  - qwen2.5:3b
-  - qwen2.5:7b
----
 IP: 167.86.86.168
 Port: 11434
 URL: http://167.86.86.168:11434
@@ -6694,6 +6703,13 @@ Models: 3
   - deepseek-v3.1:671b-cloud
   - smollm2:135m
   - llama3:latest
+---
+IP: 167.86.87.207
+Port: 11434
+URL: http://167.86.87.207:11434
+Models: 2
+  - qwen2.5:3b
+  - qwen2.5:7b
 ---
 IP: 167.86.91.39
 Port: 11434
@@ -6732,6 +6748,16 @@ Models: 7
   - phi3:latest
   - deepseek-r1:14b
 ---
+IP: 167.86.92.170
+Port: 11434
+URL: http://167.86.92.170:11434
+Models: 5
+  - deepseek-coder:1.3b
+  - phi3:mini
+  - llama3.1:8b-instruct-q4_K_M
+  - qwen2.5-coder:1.5b
+  - codellama:latest
+---
 IP: 167.86.94.80
 Port: 11434
 URL: http://167.86.94.80:11434
@@ -6753,18 +6779,15 @@ Models: None
 IP: 167.86.105.194
 Port: 11434
 URL: http://167.86.105.194:11434
-Models: 6
-  - deepseek-v3.1:671b-cloud
-  - tinyllama:latest
-  - qwen2.5-coder:7b
-  - qwen-socio:latest
-  - llama3.1:8b
-  - qwen2.5-coder:32b
+Models: None
 ---
 IP: 167.86.104.178
 Port: 11434
 URL: http://167.86.104.178:11434
-Models: None
+Models: 3
+  - glm-4.7-flash:latest
+  - qwen2.5:7b
+  - nomic-embed-text:latest
 ---
 IP: 167.86.104.168
 Port: 11434
@@ -6815,18 +6838,18 @@ Models: 2
   - deepseek-v3.1:671b-cloud
   - llama3.2:latest
 ---
+IP: 167.86.114.57
+Port: 11434
+URL: http://167.86.114.57:11434
+Models: 1
+  - llama3.2:1b
+---
 IP: 167.86.114.48
 Port: 11434
 URL: http://167.86.114.48:11434
 Models: 3
   - deepseek-v3.1:671b-cloud
   - llama3.2:3b
-  - llama3.2:1b
----
-IP: 167.86.114.57
-Port: 11434
-URL: http://167.86.114.57:11434
-Models: 1
   - llama3.2:1b
 ---
 IP: 167.86.118.225
@@ -6917,12 +6940,6 @@ URL: http://173.249.8.252:11434
 Models: 1
   - vacuity:latest
 ---
-IP: 173.249.11.228
-Port: 11434
-URL: http://173.249.11.228:11434
-Models: 1
-  - hf.co/mradermacher/Huihui-Qwen3-Coder-30B-A3B-Instruct-abliterated-i1-GGUF:Q4_K_M
----
 IP: 173.249.11.98
 Port: 11434
 URL: http://173.249.11.98:11434
@@ -6932,6 +6949,12 @@ Models: 5
   - llama3.2:1b
   - qwen2.5:1.5b
   - llama3.2:latest
+---
+IP: 173.249.11.228
+Port: 11434
+URL: http://173.249.11.228:11434
+Models: 1
+  - hf.co/mradermacher/Huihui-Qwen3-Coder-30B-A3B-Instruct-abliterated-i1-GGUF:Q4_K_M
 ---
 IP: 173.249.10.19
 Port: 11434
@@ -6969,14 +6992,6 @@ Models: 3
   - deepseek-v3.1:671b-cloud
   - bge-m3:latest
 ---
-IP: 173.249.19.220
-Port: 11434
-URL: http://173.249.19.220:11434
-Models: 3
-  - initium/law_model:latest
-  - llama3:latest
-  - llama3.2:latest
----
 IP: 173.249.19.80
 Port: 11434
 URL: http://173.249.19.80:11434
@@ -6989,6 +7004,14 @@ Models: 8
   - gemma3:1b
   - deepseek-coder:6.7b
   - llama3.1:8b
+---
+IP: 173.249.19.220
+Port: 11434
+URL: http://173.249.19.220:11434
+Models: 3
+  - initium/law_model:latest
+  - llama3:latest
+  - llama3.2:latest
 ---
 IP: 173.249.22.178
 Port: 11434
@@ -7058,6 +7081,16 @@ Models: 4
   - qwen2.5:1.5b
   - qwen2.5:3b
 ---
+IP: 173.249.38.86
+Port: 11434
+URL: http://173.249.38.86:11434
+Models: 5
+  - hf.co/unsloth/Qwen3-Coder-Next-GGUF:Q4_K_M
+  - smollm2:135m
+  - mattw/pygmalion:latest
+  - mario:latest
+  - llama3.2:latest
+---
 IP: 173.249.38.13
 Port: 11434
 URL: http://173.249.38.13:11434
@@ -7067,16 +7100,6 @@ Models: 4
   - llama3.1:latest
   - nomic-embed-text:latest
 ---
-IP: 173.249.38.86
-Port: 11434
-URL: http://173.249.38.86:11434
-Models: 5
-  - hf.co/unsloth/Qwen3-Coder-Next-GGUF:Q4_K_M
-  - smollm2:135m
-  - mattw/pygmalion:latest
-  - llama3.2:latest
-  - mario:latest
----
 IP: 173.249.38.20
 Port: 11434
 URL: http://173.249.38.20:11434
@@ -7084,6 +7107,15 @@ Models: 3
   - hf.co/unsloth/Qwen3-Coder-Next-GGUF:Q4_K_M
   - smollm2:135m
   - llama3.2:3b
+---
+IP: 173.249.49.115
+Port: 11434
+URL: http://173.249.49.115:11434
+Models: 4
+  - deepseek-v3.1:671b-cloud
+  - smollm2:135m
+  - nomic-embed-text:latest
+  - mxbai-embed-large:latest
 ---
 IP: 173.249.49.125
 Port: 11434
@@ -7096,6 +7128,11 @@ Models: 6
   - qwen2.5:3b
   - minicpm-v:8b-2.6-q6_K
 ---
+IP: 173.249.48.2
+Port: 11434
+URL: http://173.249.48.2:11434
+Models: None
+---
 IP: 173.249.49.43
 Port: 11434
 URL: http://173.249.49.43:11434
@@ -7105,20 +7142,6 @@ Models: 5
   - phi:latest
   - c92647822/Gemini2PRO:latest
   - phi:chat
----
-IP: 173.249.49.115
-Port: 11434
-URL: http://173.249.49.115:11434
-Models: 4
-  - deepseek-v3.1:671b-cloud
-  - smollm2:135m
-  - nomic-embed-text:latest
-  - mxbai-embed-large:latest
----
-IP: 173.249.48.2
-Port: 11434
-URL: http://173.249.48.2:11434
-Models: None
 ---
 IP: 173.249.48.55
 Port: 11434
@@ -7154,6 +7177,16 @@ Models: 5
   - tinyllama:1.1b
   - mistral:7b-instruct
 ---
+IP: 173.249.58.164
+Port: 11434
+URL: http://173.249.58.164:11434
+Models: 5
+  - deepseek-v3.1:671b-cloud
+  - llama3.1:8b
+  - qwen2.5-coder:14b
+  - qwen2.5-coder:32b
+  - qwen2.5-coder:7b
+---
 IP: 173.249.58.253
 Port: 11434
 URL: http://173.249.58.253:11434
@@ -7185,8 +7218,8 @@ Models: 8
   - smollm2:135m
   - qwen2:1.5b
   - gemma3:1b
-  - mattw/pygmalion:latest
   - mario:latest
+  - mattw/pygmalion:latest
   - llama3-backup:latest
   - llama3.2:latest
   - llama3.1:8b-instruct-q4_K_M
@@ -7208,8 +7241,7 @@ Models: 1
 IP: 178.238.224.55
 Port: 11434
 URL: http://178.238.224.55:11434
-Models: 7
-  - glm-4.7-flash:latest
+Models: 6
   - deepseek-v3.1:671b-cloud
   - hf.co/bartowski/Llama-3.2-3B-Instruct-uncensored-GGUF:Q4_K_M
   - nomic-embed-text:latest
@@ -7312,6 +7344,11 @@ Models: 4
   - qwen2.5:7b
   - phi3:latest
 ---
+IP: 185.225.233.157
+Port: 11434
+URL: http://185.225.233.157:11434
+Models: None
+---
 IP: 185.225.233.31
 Port: 11434
 URL: http://185.225.233.31:11434
@@ -7321,11 +7358,6 @@ Models: 4
   - tinyllama:latest
   - llama3.2:3b
 ---
-IP: 185.225.233.157
-Port: 11434
-URL: http://185.225.233.157:11434
-Models: None
----
 IP: 185.239.208.140
 Port: 11434
 URL: http://185.239.208.140:11434
@@ -7334,6 +7366,11 @@ Models: 3
   - deepseek-v3.1:671b-cloud
   - llama3.2:3b
 ---
+IP: 185.250.36.63
+Port: 11434
+URL: http://185.250.36.63:11434
+Models: None
+---
 IP: 185.250.37.145
 Port: 11434
 URL: http://185.250.37.145:11434
@@ -7341,11 +7378,6 @@ Models: 3
   - smollm2:135m
   - llama2:latest
   - mistral:latest
----
-IP: 185.250.36.63
-Port: 11434
-URL: http://185.250.36.63:11434
-Models: None
 ---
 IP: 185.252.234.190
 Port: 11434
@@ -7455,18 +7487,6 @@ Port: 11434
 URL: http://207.180.211.93:11434
 Models: None
 ---
-IP: 207.180.213.39
-Port: 11434
-URL: http://207.180.213.39:11434
-Models: 7
-  - deepseek-r1:7b
-  - deepseek-r1:1.5b
-  - qwen2.5:3b
-  - qwen2.5:7b
-  - qwen3-vl:2b
-  - glm-4.7-flash:latest
-  - qwen2.5:14b
----
 IP: 207.180.217.116
 Port: 11434
 URL: http://207.180.217.116:11434
@@ -7485,10 +7505,12 @@ Models: 4
   - deepseek-v3.2:cloud
   - nomic-embed-text:latest
 ---
-IP: 207.180.218.21
+IP: 207.180.219.47
 Port: 11434
-URL: http://207.180.218.21:11434
-Models: None
+URL: http://207.180.219.47:11434
+Models: 2
+  - smollm2:135m
+  - nomic-embed-text:latest
 ---
 IP: 207.180.219.119
 Port: 11434
@@ -7499,12 +7521,10 @@ Models: 4
   - qwen3-embedding:0.6b
   - embeddinggemma:latest
 ---
-IP: 207.180.219.47
+IP: 207.180.218.21
 Port: 11434
-URL: http://207.180.219.47:11434
-Models: 2
-  - smollm2:135m
-  - nomic-embed-text:latest
+URL: http://207.180.218.21:11434
+Models: None
 ---
 IP: 207.180.225.216
 Port: 11434
@@ -7686,13 +7706,6 @@ Models: 4
   - mistral:latest
   - llama3:latest
 ---
-IP: 46.224.17.7
-Port: 11434
-URL: http://46.224.17.7:11434
-Models: 2
-  - deepseek-v3.1:671b-cloud
-  - qwen2.5:0.5b
----
 IP: 46.224.21.136
 Port: 11434
 URL: http://46.224.21.136:11434
@@ -7700,6 +7713,13 @@ Models: 3
   - deepseek-v3.1:671b-cloud
   - tinyllama:latest
   - nomic-embed-text:latest
+---
+IP: 46.224.17.7
+Port: 11434
+URL: http://46.224.17.7:11434
+Models: 2
+  - deepseek-v3.1:671b-cloud
+  - qwen2.5:0.5b
 ---
 IP: 46.224.19.209
 Port: 11434
@@ -7717,14 +7737,6 @@ Models: 2
   - deepseek-v3.1:671b-cloud
   - ministral-3:latest
 ---
-IP: 46.224.22.211
-Port: 11434
-URL: http://46.224.22.211:11434
-Models: 3
-  - deepseek-v3.1:671b-cloud
-  - alibayram/Qwen3-30B-A3B-Instruct-2507:latest
-  - mistral-small:latest
----
 IP: 46.224.25.72
 Port: 11434
 URL: http://46.224.25.72:11434
@@ -7741,6 +7753,14 @@ Models: 4
   - llama3.1:8b
   - llama3.1:latest
 ---
+IP: 46.224.22.211
+Port: 11434
+URL: http://46.224.22.211:11434
+Models: 3
+  - deepseek-v3.1:671b-cloud
+  - alibayram/Qwen3-30B-A3B-Instruct-2507:latest
+  - mistral-small:latest
+---
 IP: 46.224.26.5
 Port: 11434
 URL: http://46.224.26.5:11434
@@ -7755,11 +7775,6 @@ Models: 3
   - llama3.2:latest
   - deepseek-v3.1:671b-cloud
   - deepseek-v3.2:cloud
----
-IP: 46.224.44.171
-Port: 11434
-URL: http://46.224.44.171:11434
-Models: None
 ---
 IP: 46.224.51.200
 Port: 11434
@@ -7797,14 +7812,6 @@ Models: 6
   - llama3.1:8b
   - gpt-oss:latest
 ---
-IP: 46.224.77.102
-Port: 11434
-URL: http://46.224.77.102:11434
-Models: 3
-  - mistral:latest
-  - llama3.2:3b
-  - gemma3:4b
----
 IP: 46.224.67.169
 Port: 11434
 URL: http://46.224.67.169:11434
@@ -7833,6 +7840,14 @@ Models: 3
   - nomic-embed-text:latest
   - llama3.2:latest
 ---
+IP: 46.224.77.102
+Port: 11434
+URL: http://46.224.77.102:11434
+Models: 3
+  - mistral:latest
+  - llama3.2:3b
+  - gemma3:4b
+---
 IP: 46.224.75.18
 Port: 11434
 URL: http://46.224.75.18:11434
@@ -7841,19 +7856,19 @@ Models: 3
   - qwen2.5:14b
   - llama3.1:latest
 ---
-IP: 46.224.75.177
-Port: 11434
-URL: http://46.224.75.177:11434
-Models: 2
-  - qwen2.5:7b
-  - llama3.2:3b
----
 IP: 46.224.75.172
 Port: 11434
 URL: http://46.224.75.172:11434
 Models: 2
   - mxbai-embed-large:latest
   - nomic-embed-text:latest
+---
+IP: 46.224.75.177
+Port: 11434
+URL: http://46.224.75.177:11434
+Models: 2
+  - qwen2.5:7b
+  - llama3.2:3b
 ---
 IP: 46.224.81.40
 Port: 11434
@@ -7918,6 +7933,13 @@ Models: 4
   - phi3:mini
   - llama3.2:1b
 ---
+IP: 46.224.99.128
+Port: 11434
+URL: http://46.224.99.128:11434
+Models: 2
+  - deepseek-v3.1:671b-cloud
+  - gpt-oss:20b
+---
 IP: 46.224.106.26
 Port: 11434
 URL: http://46.224.106.26:11434
@@ -7925,6 +7947,18 @@ Models: 4
   - deepseek-v3.1:671b-cloud
   - smollm2:135m
   - nomic-embed-text:latest
+  - llama3.1:8b
+---
+IP: 46.224.109.41
+Port: 11434
+URL: http://46.224.109.41:11434
+Models: 7
+  - deepseek-v3.1:671b-cloud
+  - smollm2:135m
+  - llava:7b
+  - jewelzufo/LFM2-VL-450M-GGUF:latest
+  - qwen2.5:7b
+  - mistral:7b
   - llama3.1:8b
 ---
 IP: 46.224.113.166
@@ -7941,6 +7975,15 @@ URL: http://46.224.121.93:11434
 Models: 2
   - deepseek-v3.1:671b-cloud
   - llama3.2:3b
+---
+IP: 46.224.152.41
+Port: 11434
+URL: http://46.224.152.41:11434
+Models: 4
+  - tinyllama:latest
+  - qwen2.5:1.5b
+  - phi3:mini
+  - gemma:2b
 ---
 IP: 46.224.127.108
 Port: 11434
@@ -7960,12 +8003,6 @@ Models: 6
   - llama3.2-vision:latest
   - bakllava:latest
 ---
-IP: 46.224.155.202
-Port: 11434
-URL: http://46.224.155.202:11434
-Models: 1
-  - mistral:latest
----
 IP: 46.224.147.115
 Port: 11434
 URL: http://46.224.147.115:11434
@@ -7976,14 +8013,11 @@ Models: 5
   - llama3.2:latest
   - mxbai-embed-large:latest
 ---
-IP: 46.224.152.41
+IP: 46.224.155.202
 Port: 11434
-URL: http://46.224.152.41:11434
-Models: 4
-  - tinyllama:latest
-  - qwen2.5:1.5b
-  - phi3:mini
-  - gemma:2b
+URL: http://46.224.155.202:11434
+Models: 1
+  - mistral:latest
 ---
 IP: 46.224.159.243
 Port: 11434
@@ -7999,6 +8033,17 @@ Models: 10
   - all-minilm:latest
   - ministral-3:latest
   - ministral-3:3b
+---
+IP: 46.224.183.160
+Port: 11434
+URL: http://46.224.183.160:11434
+Models: None
+---
+IP: 46.224.184.24
+Port: 11434
+URL: http://46.224.184.24:11434
+Models: 1
+  - nomic-embed-text:latest
 ---
 IP: 46.224.177.50
 Port: 11434
@@ -8021,17 +8066,6 @@ Models: 6
   - llama3.2:3b
   - llama3:latest
 ---
-IP: 46.224.183.160
-Port: 11434
-URL: http://46.224.183.160:11434
-Models: None
----
-IP: 46.224.184.24
-Port: 11434
-URL: http://46.224.184.24:11434
-Models: 1
-  - nomic-embed-text:latest
----
 IP: 46.224.189.197
 Port: 11434
 URL: http://46.224.189.197:11434
@@ -8046,6 +8080,14 @@ Port: 11434
 URL: http://46.224.191.162:11434
 Models: 1
   - mistral:7b-instruct-q4_K_M
+---
+IP: 46.224.197.52
+Port: 11434
+URL: http://46.224.197.52:11434
+Models: 3
+  - deepseek-v3.1:671b-cloud
+  - nomic-embed-text:latest
+  - llama3.2:1b-instruct-q4_K_M
 ---
 IP: 46.224.201.118
 Port: 11434
@@ -8198,6 +8240,12 @@ Models: 8
   - qwen2.5:7b
   - llava:7b
 ---
+IP: 46.225.28.161
+Port: 11434
+URL: http://46.225.28.161:11434
+Models: 1
+  - qwen2.5-coder:7b
+---
 IP: 46.225.28.167
 Port: 11434
 URL: http://46.225.28.167:11434
@@ -8205,12 +8253,6 @@ Models: 3
   - smollm2:135m
   - llama3.2:latest
   - llama3.1:8b
----
-IP: 46.225.28.161
-Port: 11434
-URL: http://46.225.28.161:11434
-Models: 1
-  - qwen2.5-coder:7b
 ---
 IP: 46.225.29.243
 Port: 11434
@@ -8233,6 +8275,13 @@ IP: 46.225.53.5
 Port: 11434
 URL: http://46.225.53.5:11434
 Models: None
+---
+IP: 46.225.65.202
+Port: 11434
+URL: http://46.225.65.202:11434
+Models: 2
+  - deepseek-v3.1:671b-cloud
+  - llama3:latest
 ---
 IP: 46.225.58.51
 Port: 11434
@@ -8263,13 +8312,6 @@ Models: 3
   - deepseek-v3.1:671b-cloud
   - llama3.1:8b
 ---
-IP: 46.225.65.202
-Port: 11434
-URL: http://46.225.65.202:11434
-Models: 2
-  - deepseek-v3.1:671b-cloud
-  - llama3:latest
----
 IP: 46.225.68.6
 Port: 11434
 URL: http://46.225.68.6:11434
@@ -8284,6 +8326,13 @@ URL: http://46.225.72.183:11434
 Models: 1
   - qwen2.5-coder:14b
 ---
+IP: 46.225.73.168
+Port: 11434
+URL: http://46.225.73.168:11434
+Models: 2
+  - deepseek-v3.1:671b-cloud
+  - llama3.2:latest
+---
 IP: 46.225.73.176
 Port: 11434
 URL: http://46.225.73.176:11434
@@ -8291,13 +8340,6 @@ Models: 3
   - deepseek-v3.1:671b-cloud
   - gemma2:2b
   - llama3:latest
----
-IP: 46.225.73.168
-Port: 11434
-URL: http://46.225.73.168:11434
-Models: 2
-  - deepseek-v3.1:671b-cloud
-  - llama3.2:latest
 ---
 IP: 46.225.75.145
 Port: 11434
@@ -8322,11 +8364,13 @@ URL: http://46.225.78.119:11434
 Models: 1
   - qwen3-coder:latest
 ---
-IP: 46.225.84.175
+IP: 46.225.92.56
 Port: 11434
-URL: http://46.225.84.175:11434
-Models: 1
-  - llama3:latest
+URL: http://46.225.92.56:11434
+Models: 3
+  - qwen2.5:0.5b
+  - phi3:mini
+  - llama3.1:latest
 ---
 IP: 46.225.84.118
 Port: 11434
@@ -8336,6 +8380,12 @@ Models: 4
   - nomic-embed-text:latest
   - deepseek-r1:7b
   - llama3.2:3b
+---
+IP: 46.225.84.175
+Port: 11434
+URL: http://46.225.84.175:11434
+Models: 1
+  - llama3:latest
 ---
 IP: 46.225.85.193
 Port: 11434
@@ -8352,14 +8402,6 @@ Models: 3
   - mistral:7b-instruct
   - deepseek-coder-v2:latest
   - gpt-oss:latest
----
-IP: 46.225.92.56
-Port: 11434
-URL: http://46.225.92.56:11434
-Models: 3
-  - qwen2.5:0.5b
-  - phi3:mini
-  - llama3.1:latest
 ---
 IP: 46.225.96.54
 Port: 11434
@@ -8393,6 +8435,16 @@ URL: http://46.225.114.210:11434
 Models: 2
   - qwen2.5:3b
   - nomic-embed-text:latest
+---
+IP: 46.225.115.18
+Port: 11434
+URL: http://46.225.115.18:11434
+Models: 5
+  - qwen2.5:7b-instruct
+  - qwen2.5:14b-instruct
+  - deepseek-v2:16b
+  - deepseek-r1:latest
+  - llama3.1:8b
 ---
 IP: 46.225.117.147
 Port: 11434
@@ -8582,18 +8634,12 @@ Models: 20
   - mistral-small:24b
   - olmo-3:latest
 ---
-IP: 78.46.101.147
+IP: 78.46.98.185
 Port: 11434
-URL: http://78.46.101.147:11434
-Models: 8
-  - smollm2:135m
-  - qwen3:32b
-  - qwen3:30b
-  - gemma3:latest
+URL: http://78.46.98.185:11434
+Models: 2
+  - qwen3-embedding:8b
   - qwen3:14b
-  - qwen3:latest
-  - qwen2.5:7b
-  - qwen2.5:14b
 ---
 IP: 78.46.100.3
 Port: 11434
@@ -8610,14 +8656,27 @@ Models: 10
   - gemma12B:latest
   - mxbai-embed-large:latest
 ---
+IP: 78.46.101.147
+Port: 11434
+URL: http://78.46.101.147:11434
+Models: 8
+  - smollm2:135m
+  - qwen3:32b
+  - qwen3:30b
+  - gemma3:latest
+  - qwen3:14b
+  - qwen3:latest
+  - qwen2.5:7b
+  - qwen2.5:14b
+---
 IP: 78.46.102.152
 Port: 11434
 URL: http://78.46.102.152:11434
 Models: 5
   - smollm2:135m
-  - mattw/pygmalion:latest
   - llama3-backup:latest
   - mario:latest
+  - mattw/pygmalion:latest
   - llama3.2:latest
 ---
 IP: 78.46.102.217
@@ -8648,8 +8707,8 @@ Models: 41
   - deepseek-v3.1:671b-cloud
   - qwen3-coder:latest
   - vigthoria_master:latest
-  - vigthoria_d1_m:latest
   - vigthoria_p1_m:latest
+  - vigthoria_d1_m:latest
   - vigthoria_c1_m:latest
   - vigthoria_m1_m:latest
   - vigthoria_r1_s:latest
@@ -8754,8 +8813,8 @@ URL: http://78.47.81.54:11434
 Models: 7
   - hf.co/unsloth/Qwen3-Coder-Next-GGUF:Q4_K_M
   - smollm2:135m
-  - mario:latest
   - llama3-backup:latest
+  - mario:latest
   - llama3.1:8b
   - llama3.1:8b-instruct-q4_K_M
   - llama3.2:latest
@@ -8833,13 +8892,13 @@ Models: 15
   - ministral-3:latest
   - smollm2:135m
   - qwen3:1.7B
-  - qwen2.5-coder:latest
   - qwen3-vl:8b
+  - qwen2.5-coder:latest
   - ministral-3:3B
   - llama3.2:1b
   - llama3.2:3B
-  - llama3.1:8b
   - gemma3:latest
+  - llama3.1:8b
   - gemma3:1b
   - gemma3:12B
 ---
@@ -8963,53 +9022,6 @@ Models: 2
   - deepseek-v3.1:671b-cloud
   - gemma3:12b
 ---
-IP: 5.9.30.115
-Port: 11434
-URL: http://5.9.30.115:11434
-Models: 27
-  - hf.co/unsloth/Qwen3-Coder-Next-GGUF:Q4_K_M
-  - smollm2:135m
-  - phi4:14b
-  - mistral-nemo:12b
-  - qwen3:32b
-  - qwen2.5-coder:14b
-  - qwen2.5-coder:7b
-  - qwen2.5-coder:32b
-  - deepseek-r1:70b
-  - deepseek-r1:8b
-  - everythinglm:13b
-  - granite3-moe:3b
-  - granite3-moe:1b
-  - gemma3:1b
-  - smollm:1.7b
-  - qwen2.5:3b
-  - exaone3.5:2.4b
-  - llama3.2:3b
-  - phi4-mini:3.8b
-  - qwen3:4b
-  - gemma3:4b
-  - gemma3:12b
-  - mixtral:8x7b
-  - mistral:7b-instruct
-  - llama3:8b
-  - phi3:3.8b
-  - llama3:latest
----
-IP: 5.9.30.116
-Port: 11434
-URL: http://5.9.30.116:11434
-Models: 10
-  - hf.co/unsloth/Qwen3-Coder-Next-GGUF:Q4_K_M
-  - smollm2:135m
-  - gemma2:9b
-  - gemma:7b
-  - openhermes:latest
-  - mistral:7b
-  - llama3.1:8b
-  - qwen2.5:7b
-  - llama3:instruct
-  - mistral:7b-instruct-v0.3-q8_0
----
 IP: 5.9.28.170
 Port: 11434
 URL: http://5.9.28.170:11434
@@ -9071,6 +9083,53 @@ Models: 23
   - llama2:latest
   - llama3.2-vision:latest
 ---
+IP: 5.9.30.116
+Port: 11434
+URL: http://5.9.30.116:11434
+Models: 10
+  - hf.co/unsloth/Qwen3-Coder-Next-GGUF:Q4_K_M
+  - smollm2:135m
+  - gemma2:9b
+  - gemma:7b
+  - openhermes:latest
+  - mistral:7b
+  - llama3.1:8b
+  - qwen2.5:7b
+  - llama3:instruct
+  - mistral:7b-instruct-v0.3-q8_0
+---
+IP: 5.9.30.115
+Port: 11434
+URL: http://5.9.30.115:11434
+Models: 27
+  - hf.co/unsloth/Qwen3-Coder-Next-GGUF:Q4_K_M
+  - smollm2:135m
+  - phi4:14b
+  - mistral-nemo:12b
+  - qwen3:32b
+  - qwen2.5-coder:14b
+  - qwen2.5-coder:7b
+  - qwen2.5-coder:32b
+  - deepseek-r1:70b
+  - deepseek-r1:8b
+  - everythinglm:13b
+  - granite3-moe:3b
+  - granite3-moe:1b
+  - gemma3:1b
+  - smollm:1.7b
+  - qwen2.5:3b
+  - exaone3.5:2.4b
+  - llama3.2:3b
+  - phi4-mini:3.8b
+  - qwen3:4b
+  - gemma3:4b
+  - gemma3:12b
+  - mixtral:8x7b
+  - mistral:7b-instruct
+  - llama3:8b
+  - phi3:3.8b
+  - llama3:latest
+---
 IP: 5.9.36.40
 Port: 11434
 URL: http://5.9.36.40:11434
@@ -9104,14 +9163,6 @@ Models: 3
   - llama3.2-vision:11b
   - llama3.1:8b
 ---
-IP: 5.9.60.26
-Port: 11434
-URL: http://5.9.60.26:11434
-Models: 3
-  - deepseek-v3.1:671b-cloud
-  - nomic-embed-text:latest
-  - llava:13b
----
 IP: 5.9.50.57
 Port: 11434
 URL: http://5.9.50.57:11434
@@ -9126,6 +9177,30 @@ Models: 9
   - fl0id/teuken-7b-instruct-commercial-v0.4:latest
   - sroecker/sauerkrautlm-7b-hero:latest
 ---
+IP: 5.9.60.26
+Port: 11434
+URL: http://5.9.60.26:11434
+Models: 3
+  - deepseek-v3.1:671b-cloud
+  - nomic-embed-text:latest
+  - llava:13b
+---
+IP: 5.9.68.110
+Port: 11434
+URL: http://5.9.68.110:11434
+Models: 11
+  - deepseek-v3.1:671b-cloud
+  - ministral-3:14b
+  - ministral-3:3b
+  - ministral-3:latest
+  - hf.co/AKI0284/deepset-mxbai-embed-de-large-v1-Q8_0-GGUF:Q8_0
+  - nomic-embed-text:latest
+  - jina/jina-embeddings-v2-base-de:latest
+  - mxbai-embed-large:latest
+  - ministral-3:3b-instruct-2512-q4_K_M
+  - hf.co/bartowski/Llama-3.2-1B-Instruct-GGUF:latest
+  - gemma3:latest
+---
 IP: 5.9.68.148
 Port: 11434
 URL: http://5.9.68.148:11434
@@ -9138,13 +9213,6 @@ Models: 8
   - gpt-oss:20b
   - gemma3:12b
   - gemma3:27b
----
-IP: 5.9.71.106
-Port: 11434
-URL: http://5.9.71.106:11434
-Models: 2
-  - ministral-3:14b
-  - gpt-oss:latest
 ---
 IP: 5.9.71.27
 Port: 11434
@@ -9160,16 +9228,12 @@ Models: 9
   - monotykamary/medichat-llama3:latest
   - alibayram/medgemma:27b
 ---
-IP: 5.9.77.245
+IP: 5.9.71.106
 Port: 11434
-URL: http://5.9.77.245:11434
-Models: 6
-  - deepseek-v3.1:671b-cloud
-  - gpt-oss:20b
-  - smollm2:135m
-  - qwen3:14b
-  - phi3:mini
-  - qwen2.5:14b
+URL: http://5.9.71.106:11434
+Models: 2
+  - ministral-3:14b
+  - gpt-oss:latest
 ---
 IP: 5.9.73.92
 Port: 11434
@@ -9204,6 +9268,26 @@ Models: 18
   - llava:13b
   - phi3:medium
 ---
+IP: 5.9.77.245
+Port: 11434
+URL: http://5.9.77.245:11434
+Models: 7
+  - glm-4.7-flash:latest
+  - deepseek-v3.1:671b-cloud
+  - gpt-oss:20b
+  - smollm2:135m
+  - qwen3:14b
+  - phi3:mini
+  - qwen2.5:14b
+---
+IP: 5.9.81.177
+Port: 11434
+URL: http://5.9.81.177:11434
+Models: 3
+  - deepseek-v3.1:671b-cloud
+  - gemma3:latest
+  - mistral:latest
+---
 IP: 5.9.78.150
 Port: 11434
 URL: http://5.9.78.150:11434
@@ -9236,29 +9320,6 @@ Models: 27
   - gemma3:12b
   - phi4:latest
 ---
-IP: 5.9.95.245
-Port: 11434
-URL: http://5.9.95.245:11434
-Models: 18
-  - deepseek-v3.1:671b-cloud
-  - smollm2:135m
-  - llama3.2-vision:11b
-  - llava:latest
-  - gemma3:12b
-  - qwen3:8b
-  - llava-llama3:latest
-  - granite3.2-vision:latest
-  - dolphin-llama3:latest
-  - llava-phi3:latest
-  - skyware/gemma3-:latest
-  - goekdenizguelmez/JOSIEFIED-Qwen3:latest
-  - qwen2.5vl:latest
-  - minicpm-v:latest
-  - deepseek-r1:latest
-  - gemma3:latest
-  - ministral-3:8b
-  - qwen3-vl:8b
----
 IP: 5.9.79.151
 Port: 11434
 URL: http://5.9.79.151:11434
@@ -9275,18 +9336,18 @@ Models: 11
   - mistral-small3.1:latest
   - dolphin-llama3:8b
 ---
-IP: 5.9.81.177
+IP: 5.9.101.56
 Port: 11434
-URL: http://5.9.81.177:11434
-Models: 3
-  - deepseek-v3.1:671b-cloud
-  - gemma3:latest
-  - mistral:latest
+URL: http://5.9.101.56:11434
+Models: 2
+  - mistral-small:24b
+  - mistral-nemo:12b
 ---
 IP: 5.9.83.215
 Port: 11434
 URL: http://5.9.83.215:11434
-Models: 3
+Models: 4
+  - glm-4.7-flash:latest
   - deepseek-v3.1:671b-cloud
   - smollm2:135m
   - qwen2.5:14b
@@ -9404,6 +9465,48 @@ Models: 4
   - deepseek-v3.2:cloud
   - qwen2.5:7b
 ---
+IP: 5.9.95.245
+Port: 11434
+URL: http://5.9.95.245:11434
+Models: 18
+  - deepseek-v3.1:671b-cloud
+  - smollm2:135m
+  - llama3.2-vision:11b
+  - llava:latest
+  - gemma3:12b
+  - qwen3:8b
+  - llava-llama3:latest
+  - granite3.2-vision:latest
+  - dolphin-llama3:latest
+  - llava-phi3:latest
+  - skyware/gemma3-:latest
+  - goekdenizguelmez/JOSIEFIED-Qwen3:latest
+  - qwen2.5vl:latest
+  - minicpm-v:latest
+  - deepseek-r1:latest
+  - gemma3:latest
+  - ministral-3:8b
+  - qwen3-vl:8b
+---
+IP: 5.9.96.250
+Port: 11434
+URL: http://5.9.96.250:11434
+Models: 6
+  - smollm2:135m
+  - llama3.1:8b-instruct-q4_K_M
+  - llama3.1:8b
+  - llama2:latest
+  - llama3.1:70b-instruct-q2_K
+  - llama3:8b
+---
+IP: 5.9.97.84
+Port: 11434
+URL: http://5.9.97.84:11434
+Models: 3
+  - smollm2:135m
+  - mixtral:8x7b
+  - qwen2:7b-instruct
+---
 IP: 5.9.100.40
 Port: 11434
 URL: http://5.9.100.40:11434
@@ -9428,72 +9531,6 @@ Models: 20
   - mistral:latest
   - gpt-oss:120b
   - gpt-oss:20b
----
-IP: 5.9.96.250
-Port: 11434
-URL: http://5.9.96.250:11434
-Models: 6
-  - smollm2:135m
-  - llama3.1:8b-instruct-q4_K_M
-  - llama3.1:8b
-  - llama2:latest
-  - llama3.1:70b-instruct-q2_K
-  - llama3:8b
----
-IP: 5.9.97.84
-Port: 11434
-URL: http://5.9.97.84:11434
-Models: 3
-  - smollm2:135m
-  - mixtral:8x7b
-  - qwen2:7b-instruct
----
-IP: 5.9.106.19
-Port: 11434
-URL: http://5.9.106.19:11434
-Models: 24
-  - smollm2:135m
-  - deepseek-v3.1:671b-cloud
-  - deepseek-coder-v2:16b
-  - kimi-k2:1t-cloud
-  - kimi-k2-thinking:cloud
-  - deepseek-coder:33b
-  - deepseek-coder:1.3b
-  - deepseek-coder:6.7b
-  - deepseek-r1:latest
-  - llama3.1:latest
-  - qwen2.5:latest
-  - nomic-embed-text:latest
-  - deepseek-r1:14b
-  - llava-llama3:latest
-  - qwen2.5-coder:14b
-  - qwen2.5:14b
-  - llama3.2:latest
-  - llama3.1:8b
-  - qwen2.5:7b
-  - deepseek-coder:latest
-  - codellama:latest
-  - phi3:latest
-  - mistral:latest
-  - llama3.2:1b
----
-IP: 5.9.106.137
-Port: 11434
-URL: http://5.9.106.137:11434
-Models: 6
-  - qwen2.5:3b-instruct
-  - smollm2:135m
-  - llama3.2:12b
-  - qwen3:30b
-  - qwen3:latest
-  - gpt-oss:20b
----
-IP: 5.9.101.56
-Port: 11434
-URL: http://5.9.101.56:11434
-Models: 2
-  - mistral-small:24b
-  - mistral-nemo:12b
 ---
 IP: 5.9.101.241
 Port: 11434
@@ -9538,6 +9575,46 @@ Models: 10
   - llama3:latest
   - llava:latest
   - deepseek-r1:7b
+---
+IP: 5.9.106.19
+Port: 11434
+URL: http://5.9.106.19:11434
+Models: 24
+  - smollm2:135m
+  - deepseek-v3.1:671b-cloud
+  - deepseek-coder-v2:16b
+  - kimi-k2:1t-cloud
+  - kimi-k2-thinking:cloud
+  - deepseek-coder:33b
+  - deepseek-coder:1.3b
+  - deepseek-coder:6.7b
+  - deepseek-r1:latest
+  - llama3.1:latest
+  - qwen2.5:latest
+  - nomic-embed-text:latest
+  - llava-llama3:latest
+  - deepseek-r1:14b
+  - qwen2.5:14b
+  - qwen2.5-coder:14b
+  - llama3.2:latest
+  - llama3.1:8b
+  - qwen2.5:7b
+  - deepseek-coder:latest
+  - codellama:latest
+  - phi3:latest
+  - mistral:latest
+  - llama3.2:1b
+---
+IP: 5.9.106.137
+Port: 11434
+URL: http://5.9.106.137:11434
+Models: 6
+  - qwen2.5:3b-instruct
+  - smollm2:135m
+  - llama3.2:12b
+  - qwen3:30b
+  - qwen3:latest
+  - gpt-oss:20b
 ---
 IP: 5.9.108.45
 Port: 11434
@@ -9596,8 +9673,8 @@ Models: 8
   - gpt-oss:20b
   - smollm2:135m
   - qwen2.5vl:72b
-  - qwen3-vl:30b
   - qwen3-vl:32b
+  - qwen3-vl:30b
   - qwen3-vl:4b
   - qwen3-vl:8b
 ---
@@ -9607,8 +9684,8 @@ URL: http://5.9.118.233:11434
 Models: 24
   - deepseek-v3.1:671b-cloud
   - karanchopda333/whisper:latest
-  - llama3.2:3b
   - deepseek-coder-v2:latest
+  - llama3.2:3b
   - codellama:latest
   - llama3.2:latest
   - sqlcoder:latest
@@ -9667,13 +9744,13 @@ Models: 14
   - deepseek-ocr:latest
   - qwen3-vl:latest
   - qwen3:latest
-  - mistral-small3.2:latest
   - llama3.2:latest
+  - mistral-small3.2:latest
   - gpt-oss:latest
   - devstral:latest
   - llama3.1:latest
-  - mistral:latest
   - phi4-mini:latest
+  - mistral:latest
   - deepseek-r1:latest
   - gemma3:latest
 ---
@@ -9717,6 +9794,15 @@ Models: 12
   - gemma2:27b
   - deepseek-r1:14b
 ---
+IP: 5.9.137.119
+Port: 11434
+URL: http://5.9.137.119:11434
+Models: 4
+  - llama3:8b
+  - qwen2.5:14b
+  - mistral:7b
+  - qwen2.5:7b
+---
 IP: 5.9.133.99
 Port: 11434
 URL: http://5.9.133.99:11434
@@ -9734,15 +9820,6 @@ Models: 12
   - gpt-oss:20b
   - deepseek-r1:70b
 ---
-IP: 5.9.137.119
-Port: 11434
-URL: http://5.9.137.119:11434
-Models: 4
-  - llama3:8b
-  - qwen2.5:14b
-  - mistral:7b
-  - qwen2.5:7b
----
 IP: 5.9.141.125
 Port: 11434
 URL: http://5.9.141.125:11434
@@ -9751,6 +9828,13 @@ Models: 4
   - gemma:2b
   - deepseek-r1:1.5b
   - mistral:7b
+---
+IP: 5.9.141.196
+Port: 11434
+URL: http://5.9.141.196:11434
+Models: 2
+  - qwen2.5:3b
+  - qwen2.5:7b
 ---
 IP: 5.9.143.222
 Port: 11434
@@ -9808,6 +9892,13 @@ Models: 7
   - gpt-oss:120b-cloud
   - gpt-oss:20b-cloud
 ---
+IP: 37.27.24.196
+Port: 11434
+URL: http://37.27.24.196:11434
+Models: 2
+  - deepseek-v3.1:671b-cloud
+  - llama3.1:8b
+---
 IP: 37.27.24.91
 Port: 11434
 URL: http://37.27.24.91:11434
@@ -9817,13 +9908,6 @@ Models: 5
   - lukashabtoch/plutotext-r3-emotional:latest
   - gemma3:270m
   - llama3:latest
----
-IP: 37.27.24.196
-Port: 11434
-URL: http://37.27.24.196:11434
-Models: 2
-  - deepseek-v3.1:671b-cloud
-  - llama3.1:8b
 ---
 IP: 37.27.28.123
 Port: 11434
@@ -9899,14 +9983,13 @@ Models: 17
 IP: 37.27.52.204
 Port: 11434
 URL: http://37.27.52.204:11434
-Models: 19
+Models: 18
   - hf.co/unsloth/Qwen3-Coder-Next-GGUF:Q4_K_M
   - smollm2:135m
   - qwen3-vl:2b
   - qwen3:0.6b
   - gemma3:270m
   - lfm2.5-thinking:latest
-  - glm-4.7-flash:latest
   - gpt-oss:120b
   - deepseek-v3.1:671b-cloud
   - qwen2:1.5b
@@ -9929,6 +10012,20 @@ Models: 4
   - llama3:8b
   - qwen2.5-coder:7b
 ---
+IP: 37.27.96.158
+Port: 11434
+URL: http://37.27.96.158:11434
+Models: 9
+  - smollm2:135m
+  - qwen3:8b
+  - qwen2.5:7b
+  - qwen2.5:3b
+  - qwen2.5-coder:7b
+  - qwen2.5-coder:3b
+  - gemma3:latest
+  - deepseek-r1:8b
+  - deepseek-coder:33b
+---
 IP: 37.27.82.79
 Port: 11434
 URL: http://37.27.82.79:11434
@@ -9950,20 +10047,6 @@ Models: 7
   - tinyllama:latest
   - jina/jina-embeddings-v2-base-de:latest
   - mistral:latest
----
-IP: 37.27.96.158
-Port: 11434
-URL: http://37.27.96.158:11434
-Models: 9
-  - smollm2:135m
-  - qwen3:8b
-  - qwen2.5:7b
-  - qwen2.5:3b
-  - qwen2.5-coder:7b
-  - qwen2.5-coder:3b
-  - gemma3:latest
-  - deepseek-r1:8b
-  - deepseek-coder:33b
 ---
 IP: 37.27.102.29
 Port: 11434
@@ -10008,9 +10091,9 @@ Models: 8
   - hf.co/unsloth/Qwen3-Coder-Next-GGUF:Q4_K_M
   - smollm2:135m
   - lukashabtoch/plutotext-r3-emotional:latest
-  - llama3-backup:latest
   - mario:latest
   - mattw/pygmalion:latest
+  - llama3-backup:latest
   - llama3.2:latest
   - deepseek-r1:70b
 ---
@@ -10053,6 +10136,13 @@ Models: 3
   - llama3-backup:latest
   - llama3.2:latest
 ---
+IP: 37.27.192.189
+Port: 11434
+URL: http://37.27.192.189:11434
+Models: 2
+  - deepseek-v3.1:671b-cloud
+  - llama3.1:8b
+---
 IP: 37.27.166.27
 Port: 11434
 URL: http://37.27.166.27:11434
@@ -10094,13 +10184,6 @@ Port: 11434
 URL: http://37.27.194.164:11434
 Models: None
 ---
-IP: 37.27.192.189
-Port: 11434
-URL: http://37.27.192.189:11434
-Models: 2
-  - deepseek-v3.1:671b-cloud
-  - llama3.1:8b
----
 IP: 37.27.194.20
 Port: 11434
 URL: http://37.27.194.20:11434
@@ -10114,6 +10197,13 @@ Models: 9
   - kimi-k2:1t-cloud
   - gpt-oss:120b-cloud
   - gpt-oss:20b-cloud
+---
+IP: 37.27.209.248
+Port: 11434
+URL: http://37.27.209.248:11434
+Models: 2
+  - smollm2:135m
+  - mistral:7b
 ---
 IP: 37.27.197.34
 Port: 11434
@@ -10137,13 +10227,6 @@ Models: 3
   - llama3:latest
   - moondream:latest
 ---
-IP: 37.27.209.248
-Port: 11434
-URL: http://37.27.209.248:11434
-Models: 2
-  - smollm2:135m
-  - mistral:7b
----
 IP: 37.27.210.136
 Port: 11434
 URL: http://37.27.210.136:11434
@@ -10156,6 +10239,14 @@ Models: 7
   - nomic-embed-text:latest
   - phi4:latest
 ---
+IP: 37.27.223.3
+Port: 11434
+URL: http://37.27.223.3:11434
+Models: 3
+  - qwen2.5-coder:3b
+  - qwen2.5-coder:7b
+  - llama3.1:8b
+---
 IP: 37.27.233.77
 Port: 11434
 URL: http://37.27.233.77:11434
@@ -10164,14 +10255,6 @@ Models: 4
   - deepseek-v3.1:671b-cloud
   - llama3.1:8b
   - gemma3:12b
----
-IP: 37.27.223.3
-Port: 11434
-URL: http://37.27.223.3:11434
-Models: 3
-  - qwen2.5-coder:3b
-  - qwen2.5-coder:7b
-  - llama3.1:8b
 ---
 IP: 37.27.235.97
 Port: 11434
@@ -10239,7 +10322,8 @@ Models: 7
 IP: 46.4.5.38
 Port: 11434
 URL: http://46.4.5.38:11434
-Models: 16
+Models: 17
+  - glm-4.7-flash:latest
   - rwkv-balanced:latest
   - rwkv-clean:latest
   - deepseek-v3.1:671b-cloud
@@ -10348,13 +10432,6 @@ Models: 19
   - mistral:latest
   - gemma3:latest
   - gpt-oss:latest
----
-IP: 46.4.54.183
-Port: 11434
-URL: http://46.4.54.183:11434
-Models: 2
-  - qwen3-coder-16k:latest
-  - qwen3-coder:latest
 ---
 IP: 46.4.57.97
 Port: 11434
@@ -10520,18 +10597,9 @@ Models: 10
   - mario:latest
   - llama3-backup:latest
   - llama4:latest
-  - llama3.2:latest
   - llama3.1:8b
+  - llama3.2:latest
   - deepseek-r1:14b
----
-IP: 46.4.85.29
-Port: 11434
-URL: http://46.4.85.29:11434
-Models: 4
-  - smollm2:135m
-  - gemma:2b
-  - llama3.1:8b-instruct-q4_K_M
-  - gemma2:9b
 ---
 IP: 46.4.94.250
 Port: 11434
@@ -10541,6 +10609,15 @@ Models: 4
   - deepseek-v3.1:671b-cloud
   - deepseek-v3.2:cloud
   - gpt-oss:20b
+---
+IP: 46.4.85.29
+Port: 11434
+URL: http://46.4.85.29:11434
+Models: 4
+  - smollm2:135m
+  - gemma:2b
+  - llama3.1:8b-instruct-q4_K_M
+  - gemma2:9b
 ---
 IP: 46.4.96.100
 Port: 11434
@@ -10555,8 +10632,8 @@ Models: 17
   - nomic-embed-text:latest
   - SalesBot:latest
   - hubbot:latest
-  - charliebot:latest
   - llama3.2:3b
+  - charliebot:latest
   - qwen2.5-coder:7b
   - qwen2.5-coder:14b
   - devstral:latest
@@ -10663,8 +10740,8 @@ Models: 10
   - smollm2:135m
   - qwen3-embedding:8b
   - mistral-small3.1-optimized:latest
-  - mistral-small-optimized:latest
   - mistral-small3.1:latest
+  - mistral-small-optimized:latest
   - LoTUs5494/mistral-small-3.1:latest
 ---
 IP: 46.4.122.18
@@ -10736,14 +10813,6 @@ Port: 11434
 URL: http://46.4.229.236:11434
 Models: None
 ---
-IP: 46.4.244.41
-Port: 11434
-URL: http://46.4.244.41:11434
-Models: 3
-  - deepseek-v3.1:671b-cloud
-  - alibayram/smollm3:latest
-  - mistral:7b-instruct-q4_K_M
----
 IP: 46.4.234.174
 Port: 11434
 URL: http://46.4.234.174:11434
@@ -10751,6 +10820,14 @@ Models: 3
   - smollm2:135m
   - deepseek-v3.1:671b-cloud
   - minimax-m2:cloud
+---
+IP: 46.4.244.41
+Port: 11434
+URL: http://46.4.244.41:11434
+Models: 3
+  - deepseek-v3.1:671b-cloud
+  - alibayram/smollm3:latest
+  - mistral:7b-instruct-q4_K_M
 ---
 IP: 49.12.7.186
 Port: 11434
@@ -10945,12 +11022,6 @@ URL: http://49.13.30.248:11434
 Models: 1
   - gemma2:9b
 ---
-IP: 49.13.36.245
-Port: 11434
-URL: http://49.13.36.245:11434
-Models: 1
-  - llama3.2:latest
----
 IP: 49.13.58.51
 Port: 11434
 URL: http://49.13.58.51:11434
@@ -10978,59 +11049,10 @@ Models: 5
   - llama3.2:latest
   - deepseek-r1:latest
 ---
-IP: 49.13.97.106
-Port: 11434
-URL: http://49.13.97.106:11434
-Models: 43
-  - gemini-3-pro-preview:latest
-  - kimi-k2.5:cloud
-  - deepseek-ocr:3b
-  - translategemma:27b-it-bf16
-  - qwen3:30b-a3b
-  - nomic-embed-text:v1.5
-  - bge-m3:567m
-  - embeddinggemma:300m
-  - phi4-reasoning:14b
-  - mixtral:8x7b-instruct-v0.1-fp16
-  - phi3:mini
-  - phi3:14b
-  - embeddinggemma:300m-bf16
-  - qwen2.5:7b-instruct
-  - qwen2.5:7b-instruct-q4_K_M
-  - qwen2.5:3b-instruct-q5_K_M
-  - gpt-oss:120b
-  - gpt-oss:20b
-  - qwen2.5:7b-instruct-q5_K_M
-  - llama3.1:8b-instruct-q5_K_M
-  - llama3.1:8b-instruct-q4_K_M
-  - qwen3-coder:latest
-  - llava:34b
-  - mannix/llamax3-8b-alpaca:latest
-  - llama4:128x17b
-  - llama4:16x17b
-  - llama3.3:70b
-  - codellama:70b
-  - mistral-small3.2:24b
-  - devstral:24b
-  - qwen3:32b
-  - qwen2.5-coder:32b
-  - mixtral:8x22b
-  - mistral:7b
-  - qwen2.5vl:32b
-  - minicpm-v:8b
-  - llama3.2-vision:90b
-  - llama3.2-vision:11b
-  - gemma3:27b
-  - deepseek-r1:7b
-  - llama3.1:70b
-  - llama3.1:8b
-  - deepseek-r1:70b
----
 IP: 49.13.101.190
 Port: 11434
 URL: http://49.13.101.190:11434
-Models: 7
-  - hf.co/unsloth/Qwen3-Coder-Next-GGUF:Q4_K_M
+Models: 6
   - gpt-oss:120b
   - smollm2:135m
   - translategemma:12b
@@ -11042,7 +11064,7 @@ IP: 49.13.101.231
 Port: 11434
 URL: http://49.13.101.231:11434
 Models: 9
-  - hf.co/unsloth/Qwen3-Coder-Next-GGUF:q4_K_M
+  - glm-4.7-flash:latest
   - gpt-oss:latest
   - gpt-oss:120b
   - glm-4.7:cloud
@@ -11070,18 +11092,6 @@ Models: 13
   - llama3.1:8b-instruct-q4_K_M
   - llama3.1:8b
 ---
-IP: 49.13.102.172
-Port: 11434
-URL: http://49.13.102.172:11434
-Models: 7
-  - hf.co/unsloth/Qwen3-Coder-Next-GGUF:Q4_K_M
-  - smollm2:135m
-  - deepseek-r1:latest
-  - llama3.2-vision:latest
-  - gemma3:4b
-  - hf.co/mradermacher/bge-large-zh-i1-GGUF:Q6_K
-  - huggingface.co/mradermacher/Mistral-Small-24B-Instruct-2501-abliterated-i1-GGUF:latest
----
 IP: 49.13.102.77
 Port: 11434
 URL: http://49.13.102.77:11434
@@ -11097,14 +11107,17 @@ Models: 10
   - gemma3:27b-it-q8_0
   - gemma3:27b
 ---
-IP: 49.13.134.70
+IP: 49.13.102.172
 Port: 11434
-URL: http://49.13.134.70:11434
-Models: 4
+URL: http://49.13.102.172:11434
+Models: 7
   - hf.co/unsloth/Qwen3-Coder-Next-GGUF:Q4_K_M
   - smollm2:135m
-  - gemma3:latest
-  - llama3.2:latest
+  - deepseek-r1:latest
+  - llama3.2-vision:latest
+  - gemma3:4b
+  - hf.co/mradermacher/bge-large-zh-i1-GGUF:Q6_K
+  - huggingface.co/mradermacher/Mistral-Small-24B-Instruct-2501-abliterated-i1-GGUF:latest
 ---
 IP: 49.13.141.190
 Port: 11434
@@ -11113,8 +11126,17 @@ Models: 5
   - smollm2:135m
   - deepseek-v3.1:671b-cloud
   - deepseek-v3.2:cloud
-  - xitao/bge-reranker-v2-m3:latest
   - bge-m3:latest
+  - xitao/bge-reranker-v2-m3:latest
+---
+IP: 49.13.134.70
+Port: 11434
+URL: http://49.13.134.70:11434
+Models: 4
+  - hf.co/unsloth/Qwen3-Coder-Next-GGUF:Q4_K_M
+  - smollm2:135m
+  - gemma3:latest
+  - llama3.2:latest
 ---
 IP: 49.13.160.228
 Port: 11434
@@ -11229,13 +11251,6 @@ Models: 4
   - deepseek-v3.1:671b-cloud
   - llama3:8b
 ---
-IP: 65.21.74.187
-Port: 11434
-URL: http://65.21.74.187:11434
-Models: 2
-  - deepseek-v3.1:671b-cloud
-  - qwen2.5:7b
----
 IP: 65.21.73.187
 Port: 11434
 URL: http://65.21.73.187:11434
@@ -11254,6 +11269,13 @@ Models: 14
   - deepseek-r1:7b
   - gpt-oss:20b
   - gemma3:12b
+---
+IP: 65.21.74.187
+Port: 11434
+URL: http://65.21.74.187:11434
+Models: 2
+  - deepseek-v3.1:671b-cloud
+  - qwen2.5:7b
 ---
 IP: 65.21.84.168
 Port: 11434
@@ -11321,17 +11343,29 @@ Models: 3
   - llama3.1:8b
   - nomic-embed-text:latest
 ---
+IP: 65.21.137.97
+Port: 11434
+URL: http://65.21.137.97:11434
+Models: 7
+  - llama3.3:latest
+  - qwen3-coder:30b
+  - qwen2.5-coder:latest
+  - glm4:latest
+  - deepseek-r1:8b
+  - gemma3:27b
+  - gpt-oss:120b
+---
+IP: 65.21.143.98
+Port: 11434
+URL: http://65.21.143.98:11434
+Models: None
+---
 IP: 65.21.155.195
 Port: 11434
 URL: http://65.21.155.195:11434
 Models: 2
   - deepseek-v3.1:671b-cloud
   - llama3.2:1b
----
-IP: 65.21.143.98
-Port: 11434
-URL: http://65.21.143.98:11434
-Models: None
 ---
 IP: 65.21.151.134
 Port: 11434
@@ -11356,6 +11390,14 @@ Models: 6
   - gemma3:1b
   - nomic-embed-text:latest
   - llama3.2:latest
+---
+IP: 65.21.181.21
+Port: 11434
+URL: http://65.21.181.21:11434
+Models: 3
+  - hf.co/unsloth/Qwen3-Coder-Next-GGUF:Q4_K_M
+  - smollm2:135m
+  - qwen3:4b
 ---
 IP: 65.21.188.208
 Port: 11434
@@ -11391,6 +11433,11 @@ Models: 3
   - smollm2:135m
   - deepseek-v3.1:671b-cloud
   - gemma3:latest
+---
+IP: 65.21.233.211
+Port: 11434
+URL: http://65.21.233.211:11434
+Models: None
 ---
 IP: 65.21.198.117
 Port: 11434
@@ -11444,18 +11491,14 @@ Models: 7
 IP: 65.21.226.84
 Port: 11434
 URL: http://65.21.226.84:11434
-Models: 6
+Models: 7
+  - glm-4.7-flash:latest
   - deepseek-v3.1:671b-cloud
   - smollm2:135m
   - mistral-small3.2:24b
   - qwen3-vl:32b
   - qwen3-coder:latest
   - llama4:latest
----
-IP: 65.21.233.211
-Port: 11434
-URL: http://65.21.233.211:11434
-Models: None
 ---
 IP: 65.21.230.19
 Port: 11434
@@ -11590,8 +11633,8 @@ Models: 14
   - qwen2.5:14b-instruct
   - gemma3:latest
   - mattw/pygmalion:latest
-  - mario:latest
   - llama3.2:latest
+  - mario:latest
   - deepseek-coder:6.7b
   - deepseek-r1:14b
 ---
@@ -11612,15 +11655,6 @@ Models: 4
   - lukashabtoch/plutotext-r3-emotional:latest
   - deepseek-r1:7b
 ---
-IP: 65.108.67.120
-Port: 11434
-URL: http://65.108.67.120:11434
-Models: 4
-  - smollm2:135m
-  - gemma3:latest
-  - tinyllama:latest
-  - llama3:latest
----
 IP: 65.108.54.48
 Port: 11434
 URL: http://65.108.54.48:11434
@@ -11634,6 +11668,15 @@ IP: 65.108.65.162
 Port: 11434
 URL: http://65.108.65.162:11434
 Models: None
+---
+IP: 65.108.67.120
+Port: 11434
+URL: http://65.108.67.120:11434
+Models: 4
+  - smollm2:135m
+  - gemma3:latest
+  - tinyllama:latest
+  - llama3:latest
 ---
 IP: 65.108.71.47
 Port: 11434
@@ -11764,6 +11807,12 @@ Models: 11
   - llama3.2:1b
   - llama3:8b
 ---
+IP: 65.108.227.57
+Port: 11434
+URL: http://65.108.227.57:11434
+Models: 1
+  - smollm2:135m
+---
 IP: 65.108.208.108
 Port: 11434
 URL: http://65.108.208.108:11434
@@ -11781,12 +11830,6 @@ Models: 5
   - deepseek-v3.2:cloud
   - deepseek-r1:1.5b
   - llama3.2:latest
----
-IP: 65.108.227.57
-Port: 11434
-URL: http://65.108.227.57:11434
-Models: 1
-  - smollm2:135m
 ---
 IP: 65.108.232.176
 Port: 11434
@@ -11808,7 +11851,8 @@ Models: 4
 IP: 65.108.237.114
 Port: 11434
 URL: http://65.108.237.114:11434
-Models: 5
+Models: 6
+  - hf.co/unsloth/Qwen3-Coder-Next-GGUF:Q4_K_M
   - smollm2:135m
   - llama3-backup:latest
   - llama3.2:latest
@@ -11903,8 +11947,8 @@ Models: 10
   - lukashabtoch/plutotext-r3-emotional:latest
   - gemma3:270m
   - mattw/pygmalion:latest
-  - mario:latest
   - llama3.2:latest
+  - mario:latest
   - steamdj/llama3.1-cpu-only:latest
 ---
 IP: 65.109.35.154
@@ -11949,9 +11993,8 @@ Models: None
 IP: 65.109.80.119
 Port: 11434
 URL: http://65.109.80.119:11434
-Models: 3
+Models: 2
   - smollm2:135m
-  - glm-4.7-flash:latest
   - deepseek-v3.1:671b-cloud
 ---
 IP: 65.109.81.99
@@ -12007,18 +12050,6 @@ Models: 2
   - deepseek-v3.1:671b-cloud
   - llama3.1:latest
 ---
-IP: 65.109.153.240
-Port: 11434
-URL: http://65.109.153.240:11434
-Models: 7
-  - lukashabtoch/plutotext-r3-emotional:latest
-  - gemma3:270m
-  - smollm2:135m
-  - qwen2.5-coder:7b-instruct
-  - deepseek-r1:7b
-  - dolphin-mistral:latest
-  - openhermes:latest
----
 IP: 65.109.129.158
 Port: 11434
 URL: http://65.109.129.158:11434
@@ -12043,6 +12074,26 @@ Models: 8
   - llama2:7b
   - deepseek-coder:6.7b
   - mistral:latest
+---
+IP: 65.109.153.240
+Port: 11434
+URL: http://65.109.153.240:11434
+Models: 7
+  - lukashabtoch/plutotext-r3-emotional:latest
+  - gemma3:270m
+  - smollm2:135m
+  - qwen2.5-coder:7b-instruct
+  - deepseek-r1:7b
+  - dolphin-mistral:latest
+  - openhermes:latest
+---
+IP: 65.109.170.212
+Port: 11434
+URL: http://65.109.170.212:11434
+Models: 3
+  - smollm2:135m
+  - hf.co/mradermacher/moirai-agent-GGUF:latest
+  - Academic_Research_Probe:latest
 ---
 IP: 65.109.158.219
 Port: 11434
@@ -12069,14 +12120,6 @@ URL: http://65.109.165.207:11434
 Models: 2
   - deepseek-v3.1:671b-cloud
   - nomic-embed-text:latest
----
-IP: 65.109.170.212
-Port: 11434
-URL: http://65.109.170.212:11434
-Models: 3
-  - smollm2:135m
-  - hf.co/mradermacher/moirai-agent-GGUF:latest
-  - Academic_Research_Probe:latest
 ---
 IP: 65.109.175.174
 Port: 11434
@@ -12186,17 +12229,6 @@ Models: 9
   - llama3.1:8b
   - llama3:latest
 ---
-IP: 88.99.100.208
-Port: 11434
-URL: http://88.99.100.208:11434
-Models: 6
-  - deepseek-v3.1:671b-cloud
-  - qwen3:8b
-  - translategemma:12b
-  - lfm2.5-thinking:latest
-  - gemma3:4b
-  - translategemma:4b
----
 IP: 88.99.83.59
 Port: 11434
 URL: http://88.99.83.59:11434
@@ -12255,6 +12287,18 @@ Models: 13
   - llama3.1:8b-instruct-q4_K_M
   - deepseek-coder-v2:16b
 ---
+IP: 88.99.100.208
+Port: 11434
+URL: http://88.99.100.208:11434
+Models: 7
+  - glm-4.7-flash:latest
+  - deepseek-v3.1:671b-cloud
+  - qwen3:8b
+  - translategemma:12b
+  - lfm2.5-thinking:latest
+  - gemma3:4b
+  - translategemma:4b
+---
 IP: 88.99.125.19
 Port: 11434
 URL: http://88.99.125.19:11434
@@ -12287,6 +12331,12 @@ Port: 11434
 URL: http://88.99.145.183:11434
 Models: None
 ---
+IP: 88.99.151.95
+Port: 11434
+URL: http://88.99.151.95:11434
+Models: 1
+  - nela_souveraine:latest
+---
 IP: 88.99.171.222
 Port: 11434
 URL: http://88.99.171.222:11434
@@ -12304,18 +12354,13 @@ Models: 4
   - llama3.1:8b-instruct-q4_K_M
   - llama3.2:3b
 ---
-IP: 88.99.192.38
+IP: 88.99.219.201
 Port: 11434
-URL: http://88.99.192.38:11434
+URL: http://88.99.219.201:11434
 Models: 3
-  - nomic-embed-text:latest
-  - qwen2.5:7b
-  - qwen2.5:1.5b
----
-IP: 88.99.234.62
-Port: 11434
-URL: http://88.99.234.62:11434
-Models: None
+  - smollm2:135m
+  - gemma3:latest
+  - llama3:latest
 ---
 IP: 88.99.214.155
 Port: 11434
@@ -12390,14 +12435,6 @@ Models: 11
   - gpt-oss:latest
   - gemma3:latest
 ---
-IP: 88.99.219.201
-Port: 11434
-URL: http://88.99.219.201:11434
-Models: 3
-  - smollm2:135m
-  - gemma3:latest
-  - llama3:latest
----
 IP: 88.99.220.213
 Port: 11434
 URL: http://88.99.220.213:11434
@@ -12455,6 +12492,11 @@ Models: 14
   - deepseek-r1:8b
   - gpt-oss:20b
 ---
+IP: 88.99.234.62
+Port: 11434
+URL: http://88.99.234.62:11434
+Models: None
+---
 IP: 88.99.244.243
 Port: 11434
 URL: http://88.99.244.243:11434
@@ -12480,20 +12522,28 @@ IP: 88.198.7.117
 Port: 11434
 URL: http://88.198.7.117:11434
 Models: 6
-  - qwen-flash:latest
   - qwen2.5-coder:7b-instruct-q4_K_S
+  - qwen-flash:latest
   - qwen2.5-coder:7b-instruct-q8_0
   - qwen-32b-turbo:latest
   - qwen2.5-coder:14b-instruct-q4_K_M
   - qwen-rapid:latest
 ---
-IP: 88.198.20.19
+IP: 88.198.38.76
 Port: 11434
-URL: http://88.198.20.19:11434
-Models: 3
-  - deepseek-v3.1:671b-cloud
+URL: http://88.198.38.76:11434
+Models: 11
   - smollm2:135m
-  - ministral-3:latest
+  - deepseek-v3.1:671b-cloud
+  - deepseek-v3.2:cloud
+  - mistral-nemo:latest
+  - llama3.2:3b
+  - llama3.1:8b
+  - qwen2.5-coder:7b
+  - moondream:latest
+  - llama3.2-vision:latest
+  - deepseek-r1:8b
+  - gemma3:4b
 ---
 IP: 88.198.38.78
 Port: 11434
@@ -12511,21 +12561,13 @@ Models: 11
   - deepseek-r1:8b
   - gemma3:4b
 ---
-IP: 88.198.38.76
+IP: 88.198.20.19
 Port: 11434
-URL: http://88.198.38.76:11434
-Models: 11
-  - smollm2:135m
+URL: http://88.198.20.19:11434
+Models: 3
   - deepseek-v3.1:671b-cloud
-  - deepseek-v3.2:cloud
-  - mistral-nemo:latest
-  - llama3.2:3b
-  - llama3.1:8b
-  - qwen2.5-coder:7b
-  - moondream:latest
-  - llama3.2-vision:latest
-  - deepseek-r1:8b
-  - gemma3:4b
+  - smollm2:135m
+  - ministral-3:latest
 ---
 IP: 88.198.36.231
 Port: 11434
@@ -12775,8 +12817,8 @@ Models: 11
   - deepseek-v3.2:cloud
   - dengcao/Qwen3-Embedding-8B:Q4_K_M
   - all-minilm:latest
-  - OLLAMA38BGIUSLAV:latest
   - llama3.2:latest
+  - OLLAMA38BGIUSLAV:latest
   - llama3:8b
   - phi3:mini
   - phi3:latest
@@ -12806,6 +12848,14 @@ Models: 3
   - smollm2:135m
   - llama3.2:latest
 ---
+IP: 91.98.77.180
+Port: 11434
+URL: http://91.98.77.180:11434
+Models: 3
+  - smollm2:135m
+  - deepseek-v3.1:671b-cloud
+  - llama3.2:3b
+---
 IP: 91.98.64.45
 Port: 11434
 URL: http://91.98.64.45:11434
@@ -12827,6 +12877,14 @@ Models: 3
   - deepseek-v3.1:671b-cloud
   - llama3:latest
 ---
+IP: 91.98.68.42
+Port: 11434
+URL: http://91.98.68.42:11434
+Models: 3
+  - deepseek-v3.1:671b-cloud
+  - smollm2:135m
+  - phi3:mini
+---
 IP: 91.98.68.175
 Port: 11434
 URL: http://91.98.68.175:11434
@@ -12843,13 +12901,16 @@ Models: 3
   - smollm2:135m
   - llama3.2:latest
 ---
-IP: 91.98.77.180
+IP: 91.98.74.49
 Port: 11434
-URL: http://91.98.77.180:11434
-Models: 3
+URL: http://91.98.74.49:11434
+Models: 6
+  - hf.co/unsloth/Qwen3-Coder-Next-GGUF:Q4_K_M
   - smollm2:135m
-  - deepseek-v3.1:671b-cloud
-  - llama3.2:3b
+  - gpt-oss:20b
+  - gemma3:latest
+  - llama3.1:8b-instruct-q4_K_M
+  - llama3:latest
 ---
 IP: 91.98.78.22
 Port: 11434
@@ -12865,6 +12926,14 @@ Models: 9
   - tinyllama:latest
   - llama2:latest
 ---
+IP: 91.98.116.224
+Port: 11434
+URL: http://91.98.116.224:11434
+Models: 3
+  - smollm2:135m
+  - deepseek-v3.1:671b-cloud
+  - llama3.2:latest
+---
 IP: 91.98.84.149
 Port: 11434
 URL: http://91.98.84.149:11434
@@ -12874,6 +12943,13 @@ Models: 4
   - mxbai-embed-large:latest
   - llama3.2:1b
 ---
+IP: 91.98.86.89
+Port: 11434
+URL: http://91.98.86.89:11434
+Models: 2
+  - deepseek-v3.1:671b-cloud
+  - mistral:7b-instruct-v0.2-q4_0
+---
 IP: 91.98.87.1
 Port: 11434
 URL: http://91.98.87.1:11434
@@ -12881,13 +12957,6 @@ Models: 3
   - smollm2:135m
   - deepseek-v3.1:671b-cloud
   - deepseek-r1:1.5b
----
-IP: 91.98.86.89
-Port: 11434
-URL: http://91.98.86.89:11434
-Models: 2
-  - deepseek-v3.1:671b-cloud
-  - mistral:7b-instruct-v0.2-q4_0
 ---
 IP: 91.98.88.226
 Port: 11434
@@ -12899,14 +12968,6 @@ Models: 7
   - mistral:7b
   - llama3.2:1b
   - nomic-embed-text:latest
-  - llama3.2:latest
----
-IP: 91.98.116.224
-Port: 11434
-URL: http://91.98.116.224:11434
-Models: 3
-  - smollm2:135m
-  - deepseek-v3.1:671b-cloud
   - llama3.2:latest
 ---
 IP: 91.98.115.123
@@ -13038,16 +13099,14 @@ Models: 5
   - qwen3:30b
   - qwen3-coder:30b
 ---
-IP: 91.98.197.124
+IP: 91.98.186.43
 Port: 11434
-URL: http://91.98.197.124:11434
-Models: 6
-  - smollm2:135m
+URL: http://91.98.186.43:11434
+Models: 4
   - deepseek-v3.1:671b-cloud
   - deepseek-v3.2:cloud
-  - nomic-embed-text:latest
-  - phi3:mini
-  - gemma3:1b
+  - llama3.1:8b
+  - llama3.1:70b
 ---
 IP: 91.98.196.38
 Port: 11434
@@ -13058,6 +13117,17 @@ Models: 5
   - llama3.1:8b-instruct-q4_0
   - llava:7b
   - finalend/llama-3.1-storm:8b
+---
+IP: 91.98.197.124
+Port: 11434
+URL: http://91.98.197.124:11434
+Models: 6
+  - smollm2:135m
+  - deepseek-v3.1:671b-cloud
+  - deepseek-v3.2:cloud
+  - nomic-embed-text:latest
+  - phi3:mini
+  - gemma3:1b
 ---
 IP: 91.98.199.149
 Port: 11434
@@ -13241,15 +13311,6 @@ Models: 4
   - gpt-oss:20b-cloud
   - gpt-oss:120b-cloud
 ---
-IP: 91.99.78.38
-Port: 11434
-URL: http://91.99.78.38:11434
-Models: 4
-  - smollm2:135m
-  - deepseek-v3.1:671b-cloud
-  - deepseek-v3.2:cloud
-  - tinyllama:latest
----
 IP: 91.99.78.59
 Port: 11434
 URL: http://91.99.78.59:11434
@@ -13258,6 +13319,23 @@ Models: 4
   - deepseek-v3.1:671b-cloud
   - deepseek-v3.2:cloud
   - cas/ministral-8b-instruct-2410_q4km:latest
+---
+IP: 91.99.105.254
+Port: 11434
+URL: http://91.99.105.254:11434
+Models: 3
+  - smollm2:135m
+  - nomic-embed-text:latest
+  - bge-m3:latest
+---
+IP: 91.99.78.38
+Port: 11434
+URL: http://91.99.78.38:11434
+Models: 4
+  - smollm2:135m
+  - deepseek-v3.1:671b-cloud
+  - deepseek-v3.2:cloud
+  - tinyllama:latest
 ---
 IP: 91.99.80.222
 Port: 11434
@@ -13327,21 +13405,6 @@ Models: 5
   - zongwei/gemma3-translator:1b
   - embeddinggemma:latest
 ---
-IP: 91.99.105.254
-Port: 11434
-URL: http://91.99.105.254:11434
-Models: 3
-  - smollm2:135m
-  - nomic-embed-text:latest
-  - bge-m3:latest
----
-IP: 91.99.116.62
-Port: 11434
-URL: http://91.99.116.62:11434
-Models: 2
-  - deepseek-v3.1:671b-cloud
-  - hf.co/bartowski/Qwen2.5-Coder-3B-Instruct-abliterated-GGUF:Q4_K_M
----
 IP: 91.99.111.59
 Port: 11434
 URL: http://91.99.111.59:11434
@@ -13366,6 +13429,13 @@ Models: 5
   - deepseek-v3.2:cloud
   - llama3:latest
   - llama3:8b-instruct-q4_k_m
+---
+IP: 91.99.116.62
+Port: 11434
+URL: http://91.99.116.62:11434
+Models: 2
+  - deepseek-v3.1:671b-cloud
+  - hf.co/bartowski/Qwen2.5-Coder-3B-Instruct-abliterated-GGUF:Q4_K_M
 ---
 IP: 91.99.121.25
 Port: 11434
@@ -13420,6 +13490,17 @@ Models: 6
   - llama3:latest
   - llama3.2:latest
 ---
+IP: 91.99.156.133
+Port: 11434
+URL: http://91.99.156.133:11434
+Models: 6
+  - llama3.2-vision:11b-instruct-q4_K_M
+  - synai-v2:latest
+  - all-minilm:latest
+  - llava:v1.6
+  - llama3.1:latest
+  - deepseek-r1:8b
+---
 IP: 91.99.158.33
 Port: 11434
 URL: http://91.99.158.33:11434
@@ -13438,16 +13519,6 @@ Models: 13
   - gemma:2b
   - qwen:latest
 ---
-IP: 91.99.156.133
-Port: 11434
-URL: http://91.99.156.133:11434
-Models: 5
-  - synai-v2:latest
-  - all-minilm:latest
-  - llava:v1.6
-  - llama3.1:latest
-  - deepseek-r1:8b
----
 IP: 91.99.164.129
 Port: 11434
 URL: http://91.99.164.129:11434
@@ -13458,6 +13529,20 @@ Models: 6
   - gemma3:270m
   - smollm2:135m
   - mistral:latest
+---
+IP: 91.99.172.47
+Port: 11434
+URL: http://91.99.172.47:11434
+Models: 9
+  - smollm2:135m
+  - mxbai-embed-large:latest
+  - gemma2:2b
+  - qwen2.5:3b
+  - mistral:7b
+  - phi3:mini
+  - llama3.2:1b
+  - nomic-embed-text:latest
+  - llama3.2:3b
 ---
 IP: 91.99.176.125
 Port: 11434
@@ -13612,10 +13697,12 @@ Models: 4
   - gemma3:latest
   - llama3.2:latest
 ---
-IP: 91.99.225.158
+IP: 91.99.226.248
 Port: 11434
-URL: http://91.99.225.158:11434
-Models: 1
+URL: http://91.99.226.248:11434
+Models: 3
+  - nomic-embed-text:latest
+  - deepseek-r1:8b
   - llama3.2:latest
 ---
 IP: 91.99.227.30
@@ -13898,7 +13985,8 @@ Models: 2
 IP: 95.216.7.177
 Port: 11434
 URL: http://95.216.7.177:11434
-Models: 3
+Models: 4
+  - glm-4.7-flash:latest
   - deepseek-v3.1:671b-cloud
   - text-embedding-3-small:latest
   - nomic-embed-text:latest
@@ -14174,6 +14262,24 @@ Models: 2
   - huggingface.co/unsloth/Qwen2.5-Coder-7B-Instruct-GGUF:latest
   - huggingface.co/unsloth/Qwen3-Coder-Next-GGUF:latest
 ---
+IP: 95.217.58.241
+Port: 11434
+URL: http://95.217.58.241:11434
+Models: 5
+  - smollm2:135m
+  - deepseek-v3.1:671b-cloud
+  - deepseek-v3.2:cloud
+  - gpt-oss:latest
+  - llama3:instruct
+---
+IP: 95.217.58.238
+Port: 11434
+URL: http://95.217.58.238:11434
+Models: 3
+  - deepseek-v3.1:671b-cloud
+  - smollm2:135m
+  - llama3:instruct
+---
 IP: 95.217.41.173
 Port: 11434
 URL: http://95.217.41.173:11434
@@ -14207,24 +14313,6 @@ Models: 11
   - gemma3:4b
   - gemma3:1b
   - gemma3:latest
----
-IP: 95.217.58.241
-Port: 11434
-URL: http://95.217.58.241:11434
-Models: 5
-  - smollm2:135m
-  - deepseek-v3.1:671b-cloud
-  - deepseek-v3.2:cloud
-  - gpt-oss:latest
-  - llama3:instruct
----
-IP: 95.217.58.238
-Port: 11434
-URL: http://95.217.58.238:11434
-Models: 3
-  - deepseek-v3.1:671b-cloud
-  - smollm2:135m
-  - llama3:instruct
 ---
 IP: 95.217.66.226
 Port: 11434
@@ -14333,15 +14421,6 @@ Models: 5
   - llama3.2:3b
   - qwen2.5:7b
 ---
-IP: 95.217.135.66
-Port: 11434
-URL: http://95.217.135.66:11434
-Models: 4
-  - deepseek-v3.1:671b-cloud
-  - tinyllama:latest
-  - smollm2:135m
-  - qwen3:8b
----
 IP: 95.217.121.189
 Port: 11434
 URL: http://95.217.121.189:11434
@@ -14363,6 +14442,15 @@ Models: 3
   - smollm2:135m
   - gemma3:latest
   - llama3:latest
+---
+IP: 95.217.135.66
+Port: 11434
+URL: http://95.217.135.66:11434
+Models: 4
+  - deepseek-v3.1:671b-cloud
+  - tinyllama:latest
+  - smollm2:135m
+  - qwen3:8b
 ---
 IP: 95.217.148.89
 Port: 11434
@@ -14400,6 +14488,34 @@ Models: 5
   - llama3:latest
   - phi4:latest
   - llama3:instruct
+---
+IP: 95.217.226.172
+Port: 11434
+URL: http://95.217.226.172:11434
+Models: 13
+  - lukashabtoch/moirai-agent:latest
+  - lukashabtoch/plutotext-r3-emotional:latest
+  - smollm2:135m
+  - codestral:latest
+  - qwen2.5:14b
+  - gemma:2b
+  - llama3:8b
+  - mistral:7b
+  - mistral-small:latest
+  - phi:latest
+  - llama3.1:8b-instruct-q4_K_M
+  - phi3.5:latest
+  - qwen2.5:0.5b
+---
+IP: 95.217.226.190
+Port: 11434
+URL: http://95.217.226.190:11434
+Models: 5
+  - nomic-embed-text:latest
+  - qwen2.5:1.5b
+  - qwen3:30b
+  - mistral-nemo:latest
+  - mistral-nemo-cylitics:latest
 ---
 IP: 95.217.198.188
 Port: 11434
@@ -14473,34 +14589,6 @@ Models: 4
   - smollm2:135m
   - gemma3:latest
 ---
-IP: 95.217.226.172
-Port: 11434
-URL: http://95.217.226.172:11434
-Models: 13
-  - lukashabtoch/moirai-agent:latest
-  - lukashabtoch/plutotext-r3-emotional:latest
-  - smollm2:135m
-  - codestral:latest
-  - qwen2.5:14b
-  - gemma:2b
-  - llama3:8b
-  - mistral-small:latest
-  - mistral:7b
-  - phi:latest
-  - llama3.1:8b-instruct-q4_K_M
-  - phi3.5:latest
-  - qwen2.5:0.5b
----
-IP: 95.217.226.190
-Port: 11434
-URL: http://95.217.226.190:11434
-Models: 5
-  - nomic-embed-text:latest
-  - qwen2.5:1.5b
-  - qwen3:30b
-  - mistral-nemo:latest
-  - mistral-nemo-cylitics:latest
----
 IP: 116.202.3.238
 Port: 11434
 URL: http://116.202.3.238:11434
@@ -14535,7 +14623,8 @@ Models: 2
 IP: 116.202.97.183
 Port: 11434
 URL: http://116.202.97.183:11434
-Models: 6
+Models: 7
+  - mistral:7b
   - llama3.1:8b
   - deepseek-v3.1:671b-cloud
   - llama3.2:latest
@@ -14561,17 +14650,17 @@ Models: 4
   - gemma3:latest
   - mxbai-embed-large:335m
 ---
+IP: 116.202.146.155
+Port: 11434
+URL: http://116.202.146.155:11434
+Models: None
+---
 IP: 116.202.146.197
 Port: 11434
 URL: http://116.202.146.197:11434
 Models: 2
   - smollm2:135m
   - gemini-3-pro-preview:latest
----
-IP: 116.202.146.155
-Port: 11434
-URL: http://116.202.146.155:11434
-Models: None
 ---
 IP: 116.202.182.117
 Port: 11434
@@ -14704,6 +14793,11 @@ Models: 2
   - deepseek-v3.1:671b-cloud
   - nomic-embed-text:latest
 ---
+IP: 116.203.89.241
+Port: 11434
+URL: http://116.203.89.241:11434
+Models: None
+---
 IP: 116.203.99.175
 Port: 11434
 URL: http://116.203.99.175:11434
@@ -14792,23 +14886,12 @@ Models: None
 IP: 135.181.30.219
 Port: 11434
 URL: http://135.181.30.219:11434
-Models: 6
-  - hf.co/unsloth/Qwen3-Coder-Next-GGUF:Q4_K_M
+Models: 5
   - smollm2:135m
   - gemma3:latest
   - llama3.2:1b
   - llama3.2:3b
   - llama3:8b
----
-IP: 135.181.99.172
-Port: 11434
-URL: http://135.181.99.172:11434
-Models: 5
-  - smollm2:135m
-  - deepseek-v3.1:671b-cloud
-  - mistral:latest
-  - phi3:latest
-  - deepseek-coder:6.7b-instruct
 ---
 IP: 135.181.78.114
 Port: 11434
@@ -14848,6 +14931,16 @@ Models: 5
   - gemma:2b
   - gemma2:2b
 ---
+IP: 135.181.99.172
+Port: 11434
+URL: http://135.181.99.172:11434
+Models: 5
+  - smollm2:135m
+  - deepseek-v3.1:671b-cloud
+  - mistral:latest
+  - phi3:latest
+  - deepseek-coder:6.7b-instruct
+---
 IP: 135.181.104.250
 Port: 11434
 URL: http://135.181.104.250:11434
@@ -14865,14 +14958,14 @@ Models: 5
   - nomic-embed-text:latest
   - gemma3:latest
 ---
-IP: 135.181.118.47
+IP: 135.181.123.45
 Port: 11434
-URL: http://135.181.118.47:11434
+URL: http://135.181.123.45:11434
 Models: 4
-  - hf.co/unsloth/Qwen3-Coder-Next-GGUF:Q4_K_M
   - smollm2:135m
-  - gemma3:latest
-  - mistral:latest
+  - qwen2.5:0.5b
+  - qwen-fast:latest
+  - qwen3:0.6b
 ---
 IP: 135.181.117.157
 Port: 11434
@@ -14883,14 +14976,24 @@ Models: 4
   - qwen2.5:7b-instruct-q4_K_M
   - mixtral:8x7b-instruct-v0.1-q4_K_M
 ---
-IP: 135.181.123.45
+IP: 135.181.118.47
 Port: 11434
-URL: http://135.181.123.45:11434
-Models: 4
+URL: http://135.181.118.47:11434
+Models: 3
   - smollm2:135m
-  - qwen2.5:0.5b
-  - qwen-fast:latest
-  - qwen3:0.6b
+  - gemma3:latest
+  - mistral:latest
+---
+IP: 135.181.145.201
+Port: 11434
+URL: http://135.181.145.201:11434
+Models: 6
+  - deepseek-v3.1:671b-cloud
+  - smollm2:135m
+  - gemma2:latest
+  - phi3:latest
+  - tinyllama:latest
+  - nomic-embed-text:latest
 ---
 IP: 135.181.128.168
 Port: 11434
@@ -14948,17 +15051,6 @@ Models: 5
   - gemma3:latest
   - phi:latest
 ---
-IP: 135.181.145.201
-Port: 11434
-URL: http://135.181.145.201:11434
-Models: 6
-  - deepseek-v3.1:671b-cloud
-  - smollm2:135m
-  - gemma2:latest
-  - phi3:latest
-  - tinyllama:latest
-  - nomic-embed-text:latest
----
 IP: 135.181.161.136
 Port: 11434
 URL: http://135.181.161.136:11434
@@ -14984,6 +15076,54 @@ Models: 3
   - qwen3-coder:30b
   - qwen2.5:0.5b
   - devstral-small-2:latest
+---
+IP: 135.181.233.226
+Port: 11434
+URL: http://135.181.233.226:11434
+Models: 11
+  - hf.co/unsloth/Qwen3-Coder-Next-GGUF:Q4_K_M
+  - smollm2:135m
+  - gemma3:latest
+  - qwen2.5vl:7b
+  - llama4:scout
+  - qwen2.5vl:72b
+  - qwen2.5vl:latest
+  - llama3.2-vision:90b
+  - llama3.2-vision:latest
+  - i:latest
+  - llama3.3:latest
+---
+IP: 135.181.233.224
+Port: 11434
+URL: http://135.181.233.224:11434
+Models: 11
+  - hf.co/unsloth/Qwen3-Coder-Next-GGUF:Q4_K_M
+  - smollm2:135m
+  - gemma3:latest
+  - qwen2.5vl:7b
+  - llama4:scout
+  - qwen2.5vl:72b
+  - qwen2.5vl:latest
+  - llama3.2-vision:90b
+  - llama3.2-vision:latest
+  - i:latest
+  - llama3.3:latest
+---
+IP: 135.181.233.225
+Port: 11434
+URL: http://135.181.233.225:11434
+Models: 11
+  - hf.co/unsloth/Qwen3-Coder-Next-GGUF:Q4_K_M
+  - smollm2:135m
+  - gemma3:latest
+  - qwen2.5vl:7b
+  - llama4:scout
+  - qwen2.5vl:72b
+  - qwen2.5vl:latest
+  - llama3.2-vision:90b
+  - llama3.2-vision:latest
+  - i:latest
+  - llama3.3:latest
 ---
 IP: 135.181.206.219
 Port: 11434
@@ -15041,54 +15181,6 @@ URL: http://135.181.214.108:11434
 Models: 2
   - qwen2.5:7b
   - tinyllama:latest
----
-IP: 135.181.233.224
-Port: 11434
-URL: http://135.181.233.224:11434
-Models: 11
-  - hf.co/unsloth/Qwen3-Coder-Next-GGUF:Q4_K_M
-  - smollm2:135m
-  - gemma3:latest
-  - qwen2.5vl:7b
-  - llama4:scout
-  - qwen2.5vl:72b
-  - qwen2.5vl:latest
-  - llama3.2-vision:90b
-  - llama3.2-vision:latest
-  - i:latest
-  - llama3.3:latest
----
-IP: 135.181.233.225
-Port: 11434
-URL: http://135.181.233.225:11434
-Models: 11
-  - hf.co/unsloth/Qwen3-Coder-Next-GGUF:Q4_K_M
-  - smollm2:135m
-  - gemma3:latest
-  - qwen2.5vl:7b
-  - llama4:scout
-  - qwen2.5vl:72b
-  - qwen2.5vl:latest
-  - llama3.2-vision:90b
-  - llama3.2-vision:latest
-  - i:latest
-  - llama3.3:latest
----
-IP: 135.181.233.226
-Port: 11434
-URL: http://135.181.233.226:11434
-Models: 11
-  - hf.co/unsloth/Qwen3-Coder-Next-GGUF:Q4_K_M
-  - smollm2:135m
-  - gemma3:latest
-  - qwen2.5vl:7b
-  - llama4:scout
-  - qwen2.5vl:72b
-  - qwen2.5vl:latest
-  - llama3.2-vision:90b
-  - llama3.2-vision:latest
-  - i:latest
-  - llama3.3:latest
 ---
 IP: 135.181.229.246
 Port: 11434
@@ -15227,8 +15319,8 @@ Models: 11
   - llama3.1:latest
   - gpt-oss:20b
   - gpt-oss:latest
-  - gemma3:latest
   - gpt-oss:120b
+  - gemma3:latest
   - gemma3:27b
 ---
 IP: 136.243.37.21
@@ -15245,17 +15337,16 @@ Models: 15
   - granite4:1b-h
   - granite4:350m-bf16
   - granite4:1b
-  - granite4:350m-h-q8_0
   - granite4:350m-h
+  - granite4:350m-h-q8_0
   - granite4:350m
-  - granite4:micro
   - granite4:3b
+  - granite4:micro
 ---
 IP: 136.243.37.84
 Port: 11434
 URL: http://136.243.37.84:11434
-Models: 15
-  - hf.co/unsloth/Qwen3-Coder-Next-GGUF:Q4_K_M
+Models: 14
   - gpt-oss:120b
   - notam-gpt:latest
   - llama3.1:8b
@@ -15280,13 +15371,6 @@ Models: 4
   - gpt-oss:latest
   - gemma3:1b
 ---
-IP: 136.243.50.123
-Port: 11434
-URL: http://136.243.50.123:11434
-Models: 2
-  - gemma3:latest
-  - gemini-3-pro-preview:latest
----
 IP: 136.243.49.216
 Port: 11434
 URL: http://136.243.49.216:11434
@@ -15299,6 +15383,13 @@ Models: 8
   - mixtral:instruct
   - llama2:latest
   - mixtral:latest
+---
+IP: 136.243.50.123
+Port: 11434
+URL: http://136.243.50.123:11434
+Models: 2
+  - gemma3:latest
+  - gemini-3-pro-preview:latest
 ---
 IP: 136.243.57.187
 Port: 11434
@@ -15519,11 +15610,6 @@ Models: 2
   - smollm2:135m
   - gemma2:2b
 ---
-IP: 136.243.154.32
-Port: 11434
-URL: http://136.243.154.32:11434
-Models: None
----
 IP: 136.243.174.154
 Port: 11434
 URL: http://136.243.174.154:11434
@@ -15577,6 +15663,15 @@ Models: 8
   - llama3.2:1b
   - gemma3:4b
 ---
+IP: 138.201.16.38
+Port: 11434
+URL: http://138.201.16.38:11434
+Models: 4
+  - deepseek-v3.1:671b-cloud
+  - mistral:latest
+  - mistral-nemo:latest
+  - llama3.2:latest
+---
 IP: 138.201.20.189
 Port: 11434
 URL: http://138.201.20.189:11434
@@ -15594,15 +15689,6 @@ Models: 5
   - tech-editor-cn:latest
   - qwen3-coder:30b
   - qwen3-coder:latest
----
-IP: 138.201.16.38
-Port: 11434
-URL: http://138.201.16.38:11434
-Models: 4
-  - deepseek-v3.1:671b-cloud
-  - mistral:latest
-  - mistral-nemo:latest
-  - llama3.2:latest
 ---
 IP: 138.201.34.174
 Port: 11434
@@ -15804,14 +15890,6 @@ Models: 4
   - gpt-oss:20b
   - llama3:latest
 ---
-IP: 144.76.34.86
-Port: 11434
-URL: http://144.76.34.86:11434
-Models: 3
-  - deepseek-v3.1:671b-cloud
-  - qwen2.5-coder:7b
-  - codestral:22b
----
 IP: 144.76.33.232
 Port: 11434
 URL: http://144.76.33.232:11434
@@ -15832,10 +15910,19 @@ Models: 15
   - llama3:70b
   - llama3:latest
 ---
+IP: 144.76.34.86
+Port: 11434
+URL: http://144.76.34.86:11434
+Models: 3
+  - deepseek-v3.1:671b-cloud
+  - qwen2.5-coder:7b
+  - codestral:22b
+---
 IP: 144.76.45.87
 Port: 11434
 URL: http://144.76.45.87:11434
-Models: 47
+Models: 48
+  - glm-4.7-flash:latest
   - qwen3-embedding:0.6b
   - qwen3-embedding:latest
   - bge-large:latest
@@ -15921,6 +16008,13 @@ Models: 3
   - deepseek-v3.1:671b-cloud
   - qwen2.5:14b-instruct
 ---
+IP: 144.76.63.48
+Port: 11434
+URL: http://144.76.63.48:11434
+Models: 2
+  - deepseek-v3.1:671b-cloud
+  - llama3.2:latest
+---
 IP: 144.76.63.43
 Port: 11434
 URL: http://144.76.63.43:11434
@@ -15930,13 +16024,6 @@ Models: 5
   - llama3.2:1b
   - qwen2.5:72b-instruct-q4_K_M
   - llama3.1:70b-instruct-q4_K_M
----
-IP: 144.76.63.48
-Port: 11434
-URL: http://144.76.63.48:11434
-Models: 2
-  - deepseek-v3.1:671b-cloud
-  - llama3.2:latest
 ---
 IP: 144.76.67.19
 Port: 11434
@@ -15969,6 +16056,21 @@ Models: 4
   - llava:latest
   - qwen2.5:latest
 ---
+IP: 144.76.107.113
+Port: 11434
+URL: http://144.76.107.113:11434
+Models: 10
+  - deepseek-v3.1:671b-cloud
+  - smollm2:135m
+  - qwen2:1.5b
+  - gemma3:1b
+  - gemma3:latest
+  - llama3.1:8b
+  - llama3.2:3b-instruct-q5_K_M
+  - phi4:latest
+  - qwen3:latest
+  - tinyllama:latest
+---
 IP: 144.76.99.83
 Port: 11434
 URL: http://144.76.99.83:11434
@@ -15995,21 +16097,6 @@ Models: 4
   - mistral:7b-instruct-fp16
   - deepseek-v3.1:671b-cloud
   - mistral:7b-instruct-q4_K_M
----
-IP: 144.76.107.113
-Port: 11434
-URL: http://144.76.107.113:11434
-Models: 10
-  - deepseek-v3.1:671b-cloud
-  - smollm2:135m
-  - qwen2:1.5b
-  - gemma3:1b
-  - gemma3:latest
-  - llama3.1:8b
-  - llama3.2:3b-instruct-q5_K_M
-  - phi4:latest
-  - qwen3:latest
-  - tinyllama:latest
 ---
 IP: 144.76.109.45
 Port: 11434
@@ -16038,8 +16125,8 @@ Port: 11434
 URL: http://144.76.146.53:11434
 Models: 3
   - smollm2:135m
-  - llama3.1:latest
   - nomic-embed-text:latest
+  - llama3.1:latest
 ---
 IP: 144.76.167.120
 Port: 11434
@@ -16082,6 +16169,16 @@ Models: 9
   - llava:13b
   - qwen2.5:14b-instruct
   - qwen2.5:32b-instruct-q4_K_M
+---
+IP: 144.76.201.87
+Port: 11434
+URL: http://144.76.201.87:11434
+Models: 5
+  - glm-4.7-flash:latest
+  - smollm2:135m
+  - llama3.1:8b
+  - deepseek-v3.1:671b-cloud
+  - nomic-embed-text:latest
 ---
 IP: 144.76.201.108
 Port: 11434
@@ -16135,15 +16232,6 @@ Models: 4
   - mxbai-embed-large:latest
   - gemma3:27b-it-qat
 ---
-IP: 144.76.201.252
-Port: 11434
-URL: http://144.76.201.252:11434
-Models: 4
-  - nomic-embed-text:latest
-  - qwen2.5:7b-instruct-q4_K_M
-  - bsahane/Qwen2.5-VL-7B-Instruct:Q4_K_M_benxh
-  - gpt-oss:20b
----
 IP: 144.76.201.226
 Port: 11434
 URL: http://144.76.201.226:11434
@@ -16152,14 +16240,14 @@ Models: 3
   - deepseek-v3.1:671b-cloud
   - ryanshillington/Qwen3-Embedding-4B:latest
 ---
-IP: 144.76.201.87
+IP: 144.76.201.252
 Port: 11434
-URL: http://144.76.201.87:11434
+URL: http://144.76.201.252:11434
 Models: 4
-  - smollm2:135m
-  - llama3.1:8b
-  - deepseek-v3.1:671b-cloud
   - nomic-embed-text:latest
+  - qwen2.5:7b-instruct-q4_K_M
+  - bsahane/Qwen2.5-VL-7B-Instruct:Q4_K_M_benxh
+  - gpt-oss:20b
 ---
 IP: 144.76.218.208
 Port: 11434
@@ -16170,24 +16258,6 @@ Models: 5
   - nomic-embed-text:latest
   - jina/jina-embeddings-v2-base-de:latest
   - gemma3:latest
----
-IP: 144.76.221.151
-Port: 11434
-URL: http://144.76.221.151:11434
-Models: 13
-  - hf.co/unsloth/Qwen3-Coder-Next-GGUF:Q4_K_M
-  - gpt-oss:120b
-  - deepseek-v3.1:671b-cloud
-  - granite4:latest
-  - smollm2:135m
-  - gemma3:latest
-  - llama3.2:latest
-  - mario:latest
-  - llama3-backup:latest
-  - deepseek-r1:1.5b
-  - llama3.1:8b-instruct-q4_K_M
-  - gemma3:12b
-  - deepseek-r1:14b
 ---
 IP: 144.76.221.30
 Port: 11434
@@ -16215,6 +16285,24 @@ Models: 22
   - nomic-embed-text:v1.5
   - mistral:7b
   - benhaotang/Nanonets-OCR-s:F16
+---
+IP: 144.76.221.151
+Port: 11434
+URL: http://144.76.221.151:11434
+Models: 13
+  - hf.co/unsloth/Qwen3-Coder-Next-GGUF:Q4_K_M
+  - gpt-oss:120b
+  - deepseek-v3.1:671b-cloud
+  - granite4:latest
+  - smollm2:135m
+  - gemma3:latest
+  - llama3.2:latest
+  - mario:latest
+  - llama3-backup:latest
+  - deepseek-r1:1.5b
+  - llama3.1:8b-instruct-q4_K_M
+  - gemma3:12b
+  - deepseek-r1:14b
 ---
 IP: 144.76.224.179
 Port: 11434
@@ -16293,22 +16381,6 @@ Models: 5
   - gemma3:27b
   - gpt-oss:20b
 ---
-IP: 148.251.2.139
-Port: 11434
-URL: http://148.251.2.139:11434
-Models: 11
-  - smollm2:135m
-  - deepseek-v3.1:671b-cloud
-  - qwen3-vl:2b-instruct
-  - voxai:latest
-  - qwen3-vl:4b-instruct
-  - qwen3-vl:4b
-  - qwen3:4b
-  - qwen2:1.5b
-  - qwen2:0.5b
-  - qwen2.5:0.5b
-  - exaone3.5:2.4b
----
 IP: 148.251.2.133
 Port: 11434
 URL: http://148.251.2.133:11434
@@ -16330,6 +16402,22 @@ Models: 17
   - qwen3:32b
   - mistral-small3.1:latest
   - llama4:latest
+---
+IP: 148.251.2.139
+Port: 11434
+URL: http://148.251.2.139:11434
+Models: 11
+  - smollm2:135m
+  - deepseek-v3.1:671b-cloud
+  - voxai:latest
+  - qwen3-vl:2b-instruct
+  - qwen3-vl:4b-instruct
+  - qwen3-vl:4b
+  - qwen3:4b
+  - qwen2:1.5b
+  - qwen2:0.5b
+  - qwen2.5:0.5b
+  - exaone3.5:2.4b
 ---
 IP: 148.251.14.46
 Port: 11434
@@ -16446,17 +16534,6 @@ Models: 9
   - qwen2.5:7b
   - deepseek-r1:latest
 ---
-IP: 148.251.22.54
-Port: 11434
-URL: http://148.251.22.54:11434
-Models: 6
-  - deepseek-v3.1:671b-cloud
-  - smollm2:135m
-  - llama3.1:70b
-  - moneypenny:latest
-  - llama3:70b
-  - llama3:8b
----
 IP: 148.251.21.229
 Port: 11434
 URL: http://148.251.21.229:11434
@@ -16506,11 +16583,21 @@ Models: 44
   - gemma2:9b
   - phi4:latest
 ---
+IP: 148.251.22.54
+Port: 11434
+URL: http://148.251.22.54:11434
+Models: 6
+  - deepseek-v3.1:671b-cloud
+  - smollm2:135m
+  - llama3.1:70b
+  - moneypenny:latest
+  - llama3:70b
+  - llama3:8b
+---
 IP: 148.251.22.148
 Port: 11434
 URL: http://148.251.22.148:11434
-Models: 4
-  - hf.co/unsloth/Qwen3-Coder-Next-GGUF:Q4_K_M
+Models: 3
   - smollm2:135m
   - gemma3:latest
   - dengcao/Qwen3-Embedding-8B:Q4_K_M
@@ -16521,13 +16608,13 @@ URL: http://148.251.22.176:11434
 Models: 16
   - hf.co/unsloth/Qwen3-Coder-Next-GGUF:Q4_K_M
   - mxbai-embed-large:latest
-  - llama3.1:8b
   - nomic-embed-text:latest
+  - llama3.1:8b
   - smollm2:135m
   - gemma3:latest
+  - mario:latest
   - mattw/pygmalion:latest
   - llama3-backup:latest
-  - mario:latest
   - llama3.2:latest
   - qwen3:8b
   - llama3.1:8b-instruct-q4_K_M
@@ -16678,6 +16765,29 @@ Models: 6
   - llama3.2:1b
   - llama3:latest
 ---
+IP: 148.251.54.215
+Port: 11434
+URL: http://148.251.54.215:11434
+Models: 18
+  - deepseek-v3.1:671b-cloud
+  - nomic-embed-text:latest
+  - mxbai-embed-large:latest
+  - llava:34b
+  - phi4-mini-reasoning:3.8b
+  - qwen2.5vl:7b
+  - phi4-reasoning:14b
+  - granite3.3:8b
+  - mistral-small3.1:24b
+  - mannix/llamax3-8b-alpaca:latest
+  - deepseek-r1:32b
+  - mistral-small3.2:24b
+  - gemma3n:latest
+  - gpt-oss:20b
+  - qwen3-embedding:8b
+  - aya-expanse:32b
+  - ministral-3:14b
+  - gemma3:27b
+---
 IP: 148.251.69.239
 Port: 11434
 URL: http://148.251.69.239:11434
@@ -16721,7 +16831,8 @@ Models: 3
 IP: 148.251.86.100
 Port: 11434
 URL: http://148.251.86.100:11434
-Models: 5
+Models: 6
+  - glm-4.7-flash:latest
   - hf.co/unsloth/Qwen3-Coder-Next-GGUF:Q4_K_M
   - deepseek-v3.1:671b-cloud
   - smollm2:135m
@@ -16731,7 +16842,8 @@ Models: 5
 IP: 148.251.88.48
 Port: 11434
 URL: http://148.251.88.48:11434
-Models: 6
+Models: 7
+  - glm-4.7-flash:latest
   - smollm2:135m
   - qwen3:235b
   - qwen3:30b
@@ -16813,6 +16925,18 @@ Models: 8
   - gpt-oss:latest
   - llama3:latest
 ---
+IP: 148.251.137.54
+Port: 11434
+URL: http://148.251.137.54:11434
+Models: 7
+  - smollm2:135m
+  - gpt-oss:latest
+  - gpt-oss:20b
+  - qwen3:32b
+  - deepseek-r1:32b
+  - PetrosStav/gemma3-tools:27b
+  - PetrosStav/gemma3-tools:12b
+---
 IP: 148.251.137.44
 Port: 11434
 URL: http://148.251.137.44:11434
@@ -16837,18 +16961,6 @@ Models: 20
   - llama2-uncensored:7b
   - llama3.2-vision:latest
   - qwen2.5-coder:14b-instruct-q5_K_M
----
-IP: 148.251.137.54
-Port: 11434
-URL: http://148.251.137.54:11434
-Models: 7
-  - smollm2:135m
-  - gpt-oss:latest
-  - gpt-oss:20b
-  - qwen3:32b
-  - deepseek-r1:32b
-  - PetrosStav/gemma3-tools:27b
-  - PetrosStav/gemma3-tools:12b
 ---
 IP: 148.251.155.143
 Port: 11434
@@ -16883,6 +16995,19 @@ Models: 29
   - gemma3:latest
   - gemma3:27b
   - qwen3-coder:latest
+---
+IP: 148.251.189.183
+Port: 11434
+URL: http://148.251.189.183:11434
+Models: 8
+  - qwen3-embedding:8b
+  - qwen3:8b
+  - bge-m3:latest
+  - deepseek-v3.1:671b-cloud
+  - smollm2:135m
+  - paraphrase-multilingual:latest
+  - embeddinggemma:latest
+  - nomic-embed-text:latest
 ---
 IP: 148.251.176.227
 Port: 11434
@@ -16921,21 +17046,40 @@ Models: 3
   - deepseek-ocr:latest
   - mistral:latest
 ---
+IP: 148.251.179.98
+Port: 11434
+URL: http://148.251.179.98:11434
+Models: 23
+  - qwen3-vl:8b
+  - qwen3-vl:30b
+  - deepseek-v3.1:671b-cloud
+  - gpt-oss:latest
+  - spooknik/kunoichi-dpo-v2-7b:latest
+  - smollm2:135m
+  - nchapman/uwu-7b-instruct:latest
+  - BookWormXtreme/fimbulvetr-11b-v2:latest
+  - cogito:8b
+  - mxbai-embed-large:latest
+  - huihui_ai/gemma3-abliterated:latest
+  - gemma3:latest
+  - qwq:latest
+  - qwen:7b
+  - llama3.2-vision:11b
+  - llama3.2:3b
+  - llama3.3:latest
+  - openhermes:latest
+  - llama3.2-vision:latest
+  - mixtral:8x7b
+  - llama3.2:latest
+  - llava-llama3:latest
+  - mannix/llama3.1-8b-abliterated:latest
+---
 IP: 148.251.182.160
 Port: 11434
 URL: http://148.251.182.160:11434
 Models: 2
   - smollm2:135m
   - llama3:latest
----
-IP: 148.251.182.187
-Port: 11434
-URL: http://148.251.182.187:11434
-Models: 4
-  - smollm2:135m
-  - deepseek-v3.1:671b-cloud
-  - qwen2.5vl:7b
-  - qwen2.5vl:3b
 ---
 IP: 148.251.182.186
 Port: 11434
@@ -16948,6 +17092,15 @@ Models: 7
   - snowflake-arctic-embed:latest
   - nomic-embed-text:latest
   - mxbai-embed-large:latest
+---
+IP: 148.251.182.187
+Port: 11434
+URL: http://148.251.182.187:11434
+Models: 4
+  - smollm2:135m
+  - deepseek-v3.1:671b-cloud
+  - qwen2.5vl:7b
+  - qwen2.5vl:3b
 ---
 IP: 148.251.183.41
 Port: 11434
@@ -16990,11 +17143,6 @@ Models: 13
   - gemma3:27b
   - gemma3:12b
 ---
-IP: 148.251.179.98
-Port: 11434
-URL: http://148.251.179.98:11434
-Models: Error fetching (context deadline exceeded (Client.Timeout or context cancellation while reading body))
----
 IP: 148.251.187.182
 Port: 11434
 URL: http://148.251.187.182:11434
@@ -17021,19 +17169,6 @@ Models: 6
   - llama3.2:1b
   - deepseek-r1:1.5b
 ---
-IP: 148.251.189.183
-Port: 11434
-URL: http://148.251.189.183:11434
-Models: 8
-  - qwen3-embedding:8b
-  - qwen3:8b
-  - bge-m3:latest
-  - deepseek-v3.1:671b-cloud
-  - smollm2:135m
-  - paraphrase-multilingual:latest
-  - embeddinggemma:latest
-  - nomic-embed-text:latest
----
 IP: 148.251.195.98
 Port: 11434
 URL: http://148.251.195.98:11434
@@ -17056,9 +17191,16 @@ Models: 5
 IP: 157.90.12.160
 Port: 11434
 URL: http://157.90.12.160:11434
-Models: 2
+Models: 3
+  - glm-4.7-flash:latest
   - deepseek-v3.1:671b-cloud
   - llama4:latest
+---
+IP: 157.90.20.57
+Port: 11434
+URL: http://157.90.20.57:11434
+Models: 1
+  - llama3.2:1b
 ---
 IP: 157.90.112.87
 Port: 11434
@@ -17126,10 +17268,9 @@ Models: 8
 IP: 157.90.179.180
 Port: 11434
 URL: http://157.90.179.180:11434
-Models: 6
+Models: 5
   - hf.co/unsloth/Qwen3-Coder-Next-GGUF:Q4_K_M
   - gpt-oss:120b
-  - glm-4.7-flash:latest
   - deepseek-v3.1:671b-cloud
   - smollm2:135m
   - gemma3:latest
@@ -17200,6 +17341,15 @@ Models: 13
   - bge-m3:latest
   - mistral:instruct
   - phi3:mini
+---
+IP: 159.69.43.118
+Port: 11434
+URL: http://159.69.43.118:11434
+Models: 4
+  - deepseek-v3.1:671b-cloud
+  - gemma3:latest
+  - qwen2.5:7b-instruct
+  - qwen2.5:3b-instruct
 ---
 IP: 159.69.44.129
 Port: 11434
@@ -17277,6 +17427,15 @@ Models: 6
   - deepseek-coder:latest
   - llama3:latest
   - gemma3:1b
+---
+IP: 159.69.106.192
+Port: 11434
+URL: http://159.69.106.192:11434
+Models: 4
+  - codellama:latest
+  - qwen2.5:latest
+  - mistral:latest
+  - llama3.2:latest
 ---
 IP: 159.69.117.115
 Port: 11434
@@ -17356,14 +17515,21 @@ Models: 3
   - smollm2:135m
   - gemma3:latest
 ---
+IP: 159.69.220.18
+Port: 11434
+URL: http://159.69.220.18:11434
+Models: 2
+  - deepseek-v3.1:671b-cloud
+  - nomic-embed-text:latest
+---
 IP: 159.69.231.94
 Port: 11434
 URL: http://159.69.231.94:11434
 Models: 7
   - smollm2:135m
-  - llama3-backup:latest
   - mario:latest
   - mattw/pygmalion:latest
+  - llama3-backup:latest
   - llama3.2:latest
   - nomic-embed-text:latest
   - llama3.1:latest
@@ -17541,8 +17707,8 @@ URL: http://167.235.22.26:11434
 Models: 5
   - 7gc-fallback:latest
   - llama3.2:1b
-  - 7gc-fast:latest
   - 7gc-balanced:latest
+  - 7gc-fast:latest
   - llama3.2:3b
 ---
 IP: 167.235.27.173
@@ -17557,15 +17723,6 @@ Models: 7
   - gemma3:latest
   - llama3:8b
 ---
-IP: 167.235.49.32
-Port: 11434
-URL: http://167.235.49.32:11434
-Models: 4
-  - hf.co/unsloth/Qwen3-Coder-Next-GGUF:Q4_K_M
-  - smollm2:135m
-  - nomic-embed-text:latest
-  - mistral:latest
----
 IP: 167.235.50.180
 Port: 11434
 URL: http://167.235.50.180:11434
@@ -17576,6 +17733,15 @@ Models: 6
   - mistral:7b
   - gpt-oss:20b
   - llama3.1:latest
+---
+IP: 167.235.49.32
+Port: 11434
+URL: http://167.235.49.32:11434
+Models: 4
+  - hf.co/unsloth/Qwen3-Coder-Next-GGUF:Q4_K_M
+  - smollm2:135m
+  - nomic-embed-text:latest
+  - mistral:latest
 ---
 IP: 167.235.59.39
 Port: 11434
@@ -17822,8 +17988,7 @@ Models: 3
 IP: 168.119.90.100
 Port: 11434
 URL: http://168.119.90.100:11434
-Models: 7
-  - hf.co/unsloth/Qwen3-Coder-Next-GGUF:Q4_K_M
+Models: 6
   - tinyllama:latest
   - smollm2:135m
   - llama2-uncensored:latest
@@ -17856,6 +18021,13 @@ Models: 4
   - deepseek-v3.1:671b-cloud
   - qwen3:8b
   - qwen3-vl:8b
+---
+IP: 168.119.154.198
+Port: 11434
+URL: http://168.119.154.198:11434
+Models: 2
+  - deepseek-v3.1:671b-cloud
+  - llama3.2:3b-instruct-q4_K_M
 ---
 IP: 168.119.117.208
 Port: 11434
@@ -17891,13 +18063,6 @@ Models: 3
   - hf.co/unsloth/Qwen3-Coder-Next-GGUF:Q4_K_M
   - smollm2:135m
   - deepseek-r1:latest
----
-IP: 168.119.154.198
-Port: 11434
-URL: http://168.119.154.198:11434
-Models: 2
-  - deepseek-v3.1:671b-cloud
-  - llama3.2:3b-instruct-q4_K_M
 ---
 IP: 168.119.165.0
 Port: 11434
@@ -18011,8 +18176,8 @@ URL: http://168.119.255.48:11434
 Models: 11
   - deepseek-v3.1:671b-cloud
   - mallorca-coach:latest
-  - llama3.1:8b
   - deepseek-r1:8b
+  - llama3.1:8b
   - mistral-nemo:latest
   - qwen2.5-coder:7b
   - llava-llama3:latest
@@ -18027,6 +18192,28 @@ URL: http://176.9.42.49:11434
 Models: 2
   - qwen2.5:7b
   - llama3:latest
+---
+IP: 176.9.59.147
+Port: 11434
+URL: http://176.9.59.147:11434
+Models: 17
+  - smollm2:135m
+  - deepseek-v3.1:671b-cloud
+  - hf.co/byteshape/Qwen3-30B-A3B-Instruct-2507-GGUF:Qwen3-30B-A3B-Instruct-2507-Q4_K_S-3.92bpw.gguf
+  - gpt-oss:latest
+  - lukashabtoch/plutotext-r3-emotional:latest
+  - gemma3:270m
+  - qwen3:30b-a3b-instruct-2507-q4_K_M
+  - devstral:latest
+  - gemma3:latest
+  - nomic-embed-text:latest
+  - qwen3:latest
+  - gemma3:12b
+  - qwen2.5vl:latest
+  - qwen3:14b
+  - llama3.1:latest
+  - cas/mistral-7b-instruct-v0.3:latest
+  - qwq:latest
 ---
 IP: 176.9.59.170
 Port: 11434
@@ -18119,6 +18306,46 @@ Models: 9
   - llama4:maverick
   - llama4:scout
 ---
+IP: 176.9.90.237
+Port: 11434
+URL: http://176.9.90.237:11434
+Models: 12
+  - hf.co/unsloth/Qwen3-Coder-Next-GGUF:Q4_K_M
+  - smollm2:135m
+  - gemma3:latest
+  - llama3.2:latest
+  - gemma3n:e4b
+  - llama3.1:8b
+  - rhundt/GLM-4-0414-32b-128k-Q4_K_M:latest
+  - llama3.1:8b-instruct-q4_K_M
+  - deepseek-r1:8b
+  - nomic-embed-text:latest
+  - mistral-small3.1:24b-instruct-2503-q4_K_M
+  - gemma3:27b
+---
+IP: 176.9.90.186
+Port: 11434
+URL: http://176.9.90.186:11434
+Models: 6
+  - deepseek-v3.1:671b-cloud
+  - kimi-k2.5:cloud
+  - lfm2.5-thinking:latest
+  - llama3.1:8b
+  - gpt-oss:20b
+  - qwen2.5:7b
+---
+IP: 176.9.90.246
+Port: 11434
+URL: http://176.9.90.246:11434
+Models: 7
+  - nomic-embed-text:latest
+  - glm-4.7-flash:latest
+  - qwen3:14b
+  - qwen3:32b
+  - deepseek-r1:32b
+  - qwen2.5:32b
+  - qwen2.5:14b
+---
 IP: 176.9.84.5
 Port: 11434
 URL: http://176.9.84.5:11434
@@ -18140,46 +18367,6 @@ Models: 3
   - deepseek-v3.1:671b-cloud
   - deepseek-v3.2:cloud
   - phi3:medium
----
-IP: 176.9.90.186
-Port: 11434
-URL: http://176.9.90.186:11434
-Models: 6
-  - deepseek-v3.1:671b-cloud
-  - kimi-k2.5:cloud
-  - lfm2.5-thinking:latest
-  - llama3.1:8b
-  - gpt-oss:20b
-  - qwen2.5:7b
----
-IP: 176.9.90.237
-Port: 11434
-URL: http://176.9.90.237:11434
-Models: 12
-  - hf.co/unsloth/Qwen3-Coder-Next-GGUF:Q4_K_M
-  - smollm2:135m
-  - gemma3:latest
-  - llama3.2:latest
-  - gemma3n:e4b
-  - llama3.1:8b
-  - rhundt/GLM-4-0414-32b-128k-Q4_K_M:latest
-  - llama3.1:8b-instruct-q4_K_M
-  - deepseek-r1:8b
-  - nomic-embed-text:latest
-  - mistral-small3.1:24b-instruct-2503-q4_K_M
-  - gemma3:27b
----
-IP: 176.9.90.246
-Port: 11434
-URL: http://176.9.90.246:11434
-Models: 7
-  - nomic-embed-text:latest
-  - glm-4.7-flash:latest
-  - qwen3:14b
-  - qwen3:32b
-  - deepseek-r1:32b
-  - qwen2.5:32b
-  - qwen2.5:14b
 ---
 IP: 176.9.98.98
 Port: 11434
@@ -18271,6 +18458,17 @@ Models: 2
   - llama3.1:8b
   - mistral:latest
 ---
+IP: 176.9.116.189
+Port: 11434
+URL: http://176.9.116.189:11434
+Models: 6
+  - smollm2:135m
+  - mattw/pygmalion:latest
+  - llama3.1:8b-instruct-q4_K_M
+  - qwen2.5:1.5b
+  - qwen2.5:0.5b
+  - llama3.1:8b
+---
 IP: 176.9.112.215
 Port: 11434
 URL: http://176.9.112.215:11434
@@ -18287,17 +18485,6 @@ Port: 11434
 URL: http://176.9.114.108:11434
 Models: None
 ---
-IP: 176.9.116.189
-Port: 11434
-URL: http://176.9.116.189:11434
-Models: 6
-  - smollm2:135m
-  - mattw/pygmalion:latest
-  - llama3.1:8b-instruct-q4_K_M
-  - qwen2.5:1.5b
-  - qwen2.5:0.5b
-  - llama3.1:8b
----
 IP: 176.9.156.51
 Port: 11434
 URL: http://176.9.156.51:11434
@@ -18306,8 +18493,8 @@ Models: 11
   - deepseek-v3.1:671b-cloud
   - llama3.2:latest
   - gemma3:latest
-  - mattw/pygmalion:latest
   - mario:latest
+  - mattw/pygmalion:latest
   - llama3-backup:latest
   - llama3.1:8b-instruct-q4_K_M
   - hf.co/lmstudio-community/Qwen2.5-7B-Instruct-1M-GGUF:Q4_K_M
@@ -18426,7 +18613,8 @@ Models: 4
 IP: 178.63.61.89
 Port: 11434
 URL: http://178.63.61.89:11434
-Models: 12
+Models: 13
+  - glm-4.7-flash:latest
   - smollm2:135m
   - devstral-small-2:latest
   - lukashabtoch/plutotext-r3-emotional:latest
@@ -18504,7 +18692,8 @@ Models: 6
 IP: 178.63.98.114
 Port: 11434
 URL: http://178.63.98.114:11434
-Models: 7
+Models: 8
+  - glm-4.7-flash:latest
   - mistral:7b
   - mistral:7b-instruct
   - llama3.1:8b
@@ -18536,9 +18725,9 @@ IP: 178.63.141.81
 Port: 11434
 URL: http://178.63.141.81:11434
 Models: 3
-  - smollm2:135m
-  - lukashabtoch/plutotext-r3-emotional:latest
   - deepseek-r1:70b
+  - lukashabtoch/plutotext-r3-emotional:latest
+  - smollm2:135m
 ---
 IP: 178.63.142.20
 Port: 11434
@@ -18559,33 +18748,6 @@ Models: 4
   - phi4:latest
   - llama3.1:8b
   - gemma2:2b
----
-IP: 188.40.39.125
-Port: 11434
-URL: http://188.40.39.125:11434
-Models: 4
-  - smollm2:135m
-  - deepseek-v3.1:671b-cloud
-  - gemini-3-pro-preview:latest
-  - llama3:latest
----
-IP: 188.40.50.34
-Port: 11434
-URL: http://188.40.50.34:11434
-Models: 4
-  - qwen2.5:32b-instruct
-  - deepseek-v3.1:671b-cloud
-  - qwen2.5:7b-instruct
-  - llama3.2:3b
----
-IP: 188.40.56.118
-Port: 11434
-URL: http://188.40.56.118:11434
-Models: 4
-  - deepseek-v3.1:671b-cloud
-  - deepseek-r1:8b
-  - llama3.1-8b-gpu:latest
-  - llama3.1:8b
 ---
 IP: 188.40.67.189
 Port: 11434
@@ -18618,6 +18780,49 @@ Models: 26
   - phi3:14b
   - ministral-3:14b
 ---
+IP: 188.40.39.125
+Port: 11434
+URL: http://188.40.39.125:11434
+Models: 4
+  - smollm2:135m
+  - deepseek-v3.1:671b-cloud
+  - gemini-3-pro-preview:latest
+  - llama3:latest
+---
+IP: 188.40.46.109
+Port: 11434
+URL: http://188.40.46.109:11434
+Models: 10
+  - deepseek-v3.1:671b-cloud
+  - qwen3-vl:8b
+  - deepseek-ocr:latest
+  - deepseek-v2:latest
+  - deepseek-coder:latest
+  - llama4:latest
+  - llava:latest
+  - llama3.2-vision:latest
+  - qwen2.5:7b-instruct
+  - llama3.1:8b-instruct-q4_K_M
+---
+IP: 188.40.50.34
+Port: 11434
+URL: http://188.40.50.34:11434
+Models: 4
+  - qwen2.5:32b-instruct
+  - deepseek-v3.1:671b-cloud
+  - qwen2.5:7b-instruct
+  - llama3.2:3b
+---
+IP: 188.40.56.118
+Port: 11434
+URL: http://188.40.56.118:11434
+Models: 5
+  - glm-4.7-flash:latest
+  - deepseek-v3.1:671b-cloud
+  - deepseek-r1:8b
+  - llama3.1-8b-gpu:latest
+  - llama3.1:8b
+---
 IP: 188.40.85.243
 Port: 11434
 URL: http://188.40.85.243:11434
@@ -18649,18 +18854,6 @@ Models: 4
   - llama3.1:8b
   - llama3.1:latest
 ---
-IP: 188.40.114.14
-Port: 11434
-URL: http://188.40.114.14:11434
-Models: 1
-  - llama3:latest
----
-IP: 188.40.114.37
-Port: 11434
-URL: http://188.40.114.37:11434
-Models: 1
-  - llama3:latest
----
 IP: 188.40.114.29
 Port: 11434
 URL: http://188.40.114.29:11434
@@ -18683,6 +18876,18 @@ Models: 18
   - phi4:latest
   - qwen2.5:7b
   - phi3:mini
+---
+IP: 188.40.114.14
+Port: 11434
+URL: http://188.40.114.14:11434
+Models: 1
+  - llama3:latest
+---
+IP: 188.40.114.37
+Port: 11434
+URL: http://188.40.114.37:11434
+Models: 1
+  - llama3:latest
 ---
 IP: 188.40.115.81
 Port: 11434
@@ -18761,55 +18966,6 @@ Models: 4
   - deepseek-v3.2:cloud
   - llama3.2:latest
 ---
-IP: 188.245.81.249
-Port: 11434
-URL: http://188.245.81.249:11434
-Models: 19
-  - deepseek-v3.1:671b-cloud
-  - nomic-embed-text:v1.5
-  - qwen3-coder-tools:latest
-  - Qwen3-Coder-FNC:latest
-  - qwen3-coder:latest
-  - qwen3-coder:30b
-  - dark-llama3.2-8x3b-MOE:latest
-  - dfebrero/DavidAU-Llama-3.2-8X3B-MOE-Dark-Champion-Instruct-uncensored-abliterated-18.4B:latest
-  - qwen3-coder-30b-q4:latest
-  - qwen3-coder-30b:latest
-  - qwen2.5vl:latest
-  - gemma3:12b
-  - hermes3:latest
-  - llama3.2:latest
-  - minicpm-v:latest
-  - phi3.5:latest
-  - bge-large:latest
-  - deepseek-r1:32b
-  - johanteekens/Llama-4-Scout-17B-16E-Instruct:latest
----
-IP: 188.245.85.20
-Port: 11434
-URL: http://188.245.85.20:11434
-Models: 7
-  - llama3.2:latest
-  - nomic-embed-text:latest
-  - smollm2:135m
-  - gemma3:latest
-  - mattw/pygmalion:latest
-  - llama3-backup:latest
-  - mario:latest
----
-IP: 188.245.95.108
-Port: 11434
-URL: http://188.245.95.108:11434
-Models: 8
-  - smollm2:135m
-  - deepseek-v3.1:671b-cloud
-  - hf.co/unsloth/gemma-3-12b-it-GGUF:Q4_K_M
-  - qwen2.5:7b
-  - gemma3:latest
-  - qwen3-embedding:8b
-  - qwen3:8b
-  - gemma3:4b
----
 IP: 188.245.101.98
 Port: 11434
 URL: http://188.245.101.98:11434
@@ -18825,6 +18981,55 @@ Models: 10
   - nomic-embed-text:latest
   - qwen2.5:3b
 ---
+IP: 188.245.81.249
+Port: 11434
+URL: http://188.245.81.249:11434
+Models: 19
+  - deepseek-v3.1:671b-cloud
+  - nomic-embed-text:v1.5
+  - qwen3-coder-tools:latest
+  - qwen3-coder:latest
+  - Qwen3-Coder-FNC:latest
+  - qwen3-coder:30b
+  - dark-llama3.2-8x3b-MOE:latest
+  - dfebrero/DavidAU-Llama-3.2-8X3B-MOE-Dark-Champion-Instruct-uncensored-abliterated-18.4B:latest
+  - qwen3-coder-30b-q4:latest
+  - qwen3-coder-30b:latest
+  - llama3.2:latest
+  - minicpm-v:latest
+  - phi3.5:latest
+  - hermes3:latest
+  - gemma3:12b
+  - qwen2.5vl:latest
+  - bge-large:latest
+  - deepseek-r1:32b
+  - johanteekens/Llama-4-Scout-17B-16E-Instruct:latest
+---
+IP: 188.245.85.20
+Port: 11434
+URL: http://188.245.85.20:11434
+Models: 7
+  - llama3.2:latest
+  - nomic-embed-text:latest
+  - smollm2:135m
+  - gemma3:latest
+  - mattw/pygmalion:latest
+  - mario:latest
+  - llama3-backup:latest
+---
+IP: 188.245.95.108
+Port: 11434
+URL: http://188.245.95.108:11434
+Models: 8
+  - smollm2:135m
+  - deepseek-v3.1:671b-cloud
+  - hf.co/unsloth/gemma-3-12b-it-GGUF:Q4_K_M
+  - qwen2.5:7b
+  - gemma3:latest
+  - qwen3-embedding:8b
+  - qwen3:8b
+  - gemma3:4b
+---
 IP: 188.245.103.184
 Port: 11434
 URL: http://188.245.103.184:11434
@@ -18838,13 +19043,6 @@ Port: 11434
 URL: http://188.245.114.115:11434
 Models: None
 ---
-IP: 188.245.125.141
-Port: 11434
-URL: http://188.245.125.141:11434
-Models: 2
-  - smollm2:135m
-  - gemma3:latest
----
 IP: 188.245.147.40
 Port: 11434
 URL: http://188.245.147.40:11434
@@ -18853,6 +19051,13 @@ Models: 3
   - gemma3:latest
   - nomic-embed-text:latest
 ---
+IP: 188.245.125.141
+Port: 11434
+URL: http://188.245.125.141:11434
+Models: 2
+  - smollm2:135m
+  - gemma3:latest
+---
 IP: 188.245.148.128
 Port: 11434
 URL: http://188.245.148.128:11434
@@ -18860,13 +19065,6 @@ Models: 3
   - deepseek-v3.1:671b-cloud
   - qwen2.5:3b
   - mxbai-embed-large:latest
----
-IP: 188.245.185.165
-Port: 11434
-URL: http://188.245.185.165:11434
-Models: 2
-  - mistral:7b
-  - phi3:mini
 ---
 IP: 188.245.158.133
 Port: 11434
@@ -18896,6 +19094,43 @@ Models: 3
   - smollm2:135m
   - phi3:mini
 ---
+IP: 188.245.185.165
+Port: 11434
+URL: http://188.245.185.165:11434
+Models: 2
+  - mistral:7b
+  - phi3:mini
+---
+IP: 188.245.211.227
+Port: 11434
+URL: http://188.245.211.227:11434
+Models: 25
+  - glm-5:cloud
+  - nomic-embed-text:latest
+  - dandank/chatgpt:latest
+  - openvoid/Void-Gemini:latest
+  - bjoernb/claude-haiku-4-5:latest
+  - bjoernb/claude-sonet-4-5:latest
+  - bjoernb/claude-opus-4-5:latest
+  - bobowg/gemini-3-flash:latest
+  - gemma3:27b-cloud
+  - gemma3:12b-cloud
+  - gemma3:4b-cloud
+  - minimax-m2.1:cloud
+  - minimax-m2:cloud
+  - gpt-oss:120b-cloud
+  - gpt-oss:20b-cloud
+  - mistral-large-3:675b-cloud
+  - kimi-k2:1t-cloud
+  - kimi-k2-thinking:cloud
+  - glm-4.7:cloud
+  - deepseek-v3.2:cloud
+  - deepseek-v3.1:671b-cloud
+  - devstral-small-2:24b-cloud
+  - nemotron-3-nano:30b-cloud
+  - ministral-3:14b-cloud
+  - qwen3-coder-next:cloud
+---
 IP: 188.245.214.181
 Port: 11434
 URL: http://188.245.214.181:11434
@@ -18906,14 +19141,12 @@ Models: 5
   - gemma3:latest
   - nomic-embed-text:latest
 ---
-IP: 188.245.205.101
+IP: 188.245.222.30
 Port: 11434
-URL: http://188.245.205.101:11434
-Models: 4
+URL: http://188.245.222.30:11434
+Models: 2
   - smollm2:135m
-  - deepseek-v3.1:671b-cloud
-  - llama3.1:8b
-  - llama3.1:latest
+  - llama3.2:latest
 ---
 IP: 188.245.233.12
 Port: 11434
@@ -18922,13 +19155,6 @@ Models: 3
   - smollm2:135m
   - deepseek-r1:1.5b
   - nomic-embed-text:latest
----
-IP: 188.245.222.30
-Port: 11434
-URL: http://188.245.222.30:11434
-Models: 2
-  - smollm2:135m
-  - llama3.2:latest
 ---
 IP: 188.245.235.51
 Port: 11434
@@ -18977,11 +19203,6 @@ Models: 2
   - smollm2:135m
   - llama3.2:latest
 ---
-IP: 195.201.16.166
-Port: 11434
-URL: http://195.201.16.166:11434
-Models: None
----
 IP: 195.201.4.5
 Port: 11434
 URL: http://195.201.4.5:11434
@@ -19007,6 +19228,11 @@ Models: 6
   - phi3:mini
   - llama3:latest
 ---
+IP: 195.201.16.166
+Port: 11434
+URL: http://195.201.16.166:11434
+Models: None
+---
 IP: 195.201.23.50
 Port: 11434
 URL: http://195.201.23.50:11434
@@ -19023,15 +19249,6 @@ Models: 4
   - gemma2:latest
   - gemma3:latest
   - gemma3:1b
----
-IP: 195.201.27.210
-Port: 11434
-URL: http://195.201.27.210:11434
-Models: 4
-  - smollm2:135m
-  - deepseek-v3.1:671b-cloud
-  - nomic-embed-text:latest
-  - qwen2.5:3b-instruct
 ---
 IP: 195.201.39.68
 Port: 11434
@@ -19051,6 +19268,18 @@ Models: 6
   - qwen3-embedding:latest
   - qwen2.5-coder:32b
 ---
+IP: 195.201.107.102
+Port: 11434
+URL: http://195.201.107.102:11434
+Models: 7
+  - smollm2:135m
+  - gpt-oss:120b
+  - qwen2.5-coder:latest
+  - gemma3:latest
+  - deepseek-r1:8b
+  - llama3.1:8b
+  - llama3.1:8b-instruct-q4_K_M
+---
 IP: 195.201.105.242
 Port: 11434
 URL: http://195.201.105.242:11434
@@ -19061,29 +19290,16 @@ Models: 5
   - llama3.2:3b
   - llama3.1:latest
 ---
-IP: 195.201.107.102
-Port: 11434
-URL: http://195.201.107.102:11434
-Models: 8
-  - hf.co/unsloth/Qwen3-Coder-Next-GGUF:Q4_K_M
-  - smollm2:135m
-  - gpt-oss:120b
-  - qwen2.5-coder:latest
-  - gemma3:latest
-  - deepseek-r1:8b
-  - llama3.1:8b
-  - llama3.1:8b-instruct-q4_K_M
----
 IP: 195.201.111.56
 Port: 11434
 URL: http://195.201.111.56:11434
 Models: 16
+  - glm-4.7-flash:latest
   - minimax-m2.5:cloud
   - glm-5:cloud
   - smollm2:135m
   - gemini-3-flash-preview:latest
   - deepseek-v3.1:671b-cloud
-  - glm-4.7-flash:latest
   - translategemma:latest
   - deepseek-r1:8b
   - qwen3-coder:30b
@@ -19094,31 +19310,6 @@ Models: 16
   - llama2:latest
   - gemma3:27b
   - gpt-oss:20b
----
-IP: 195.201.149.225
-Port: 11434
-URL: http://195.201.149.225:11434
-Models: 20
-  - llama3.2:latest
-  - smollm2:135m
-  - deepseek-v3.1:671b-cloud
-  - glm-4.7-flash:q8_0
-  - deepseek-v3.2:cloud
-  - hf.co/lmstudio-community/DeepSeek-R1-Distill-Llama-8B-GGUF:Q3_K_L
-  - nomic-embed-text:latest
-  - mxbai-embed-large:latest
-  - granite3.3:2b
-  - qwen2.5-coder:1.5b
-  - hhao/qwen2.5-coder-tools:1.5b
-  - llama3.2:3b
-  - llama3.2:1b
-  - gemma3:1b
-  - phi3.5:latest
-  - deepseek-r1:7b
-  - deepseek-r1:1.5b
-  - hf.co/bartowski/Llama-3.2-1B-Instruct-GGUF:Q6_K
-  - qwen2.5-coder:0.5b
-  - gemma3:latest
 ---
 IP: 195.201.118.139
 Port: 11434
@@ -19147,6 +19338,31 @@ Port: 11434
 URL: http://195.201.147.106:11434
 Models: 1
   - llama3.2:latest
+---
+IP: 195.201.149.225
+Port: 11434
+URL: http://195.201.149.225:11434
+Models: 20
+  - llama3.2:latest
+  - smollm2:135m
+  - deepseek-v3.1:671b-cloud
+  - glm-4.7-flash:q8_0
+  - deepseek-v3.2:cloud
+  - hf.co/lmstudio-community/DeepSeek-R1-Distill-Llama-8B-GGUF:Q3_K_L
+  - nomic-embed-text:latest
+  - mxbai-embed-large:latest
+  - granite3.3:2b
+  - qwen2.5-coder:1.5b
+  - hhao/qwen2.5-coder-tools:1.5b
+  - llama3.2:3b
+  - llama3.2:1b
+  - gemma3:1b
+  - phi3.5:latest
+  - deepseek-r1:7b
+  - deepseek-r1:1.5b
+  - hf.co/bartowski/Llama-3.2-1B-Instruct-GGUF:Q6_K
+  - qwen2.5-coder:0.5b
+  - gemma3:latest
 ---
 IP: 195.201.184.212
 Port: 11434
@@ -19209,6 +19425,15 @@ Models: 3
   - smollm2:135m
   - gemma3:latest
   - llama3.2:latest
+---
+IP: 195.201.245.228
+Port: 11434
+URL: http://195.201.245.228:11434
+Models: 4
+  - smollm2:135m
+  - deepseek-v3.1:671b-cloud
+  - ministral-3:14b
+  - gpt-oss:latest
 ---
 IP: 5.75.129.217
 Port: 11434
@@ -19378,27 +19603,19 @@ Models: 33
   - gpt-oss:20b
   - phi4-mini:latest
   - phi3:medium-128k
+  - mistral-small:latest
   - mistral-small3.1:latest
   - mistral-small3.2:latest
-  - mistral-small:latest
-  - llama3.1:8b-instruct-fp16
   - llama3.3:latest
+  - llama3.1:8b-instruct-fp16
   - llama3.1:8b
   - llama3.1:70b
-  - gemma3:12b
   - gemma3:27b
-  - gemma2:27b
+  - gemma3:12b
   - gemma2:27b-instruct-q3_K_S
+  - gemma2:27b
   - granite3.2:latest
   - falcon3:10b-instruct-fp16
----
-IP: 23.88.36.201
-Port: 11434
-URL: http://23.88.36.201:11434
-Models: 3
-  - smollm2:135m
-  - deepseek-v3.1:671b-cloud
-  - llama3.2:1b
 ---
 IP: 23.88.35.40
 Port: 11434
@@ -19411,10 +19628,19 @@ Models: 6
   - nomic-embed-text:v1.5
   - llama3.1:8b
 ---
+IP: 23.88.36.201
+Port: 11434
+URL: http://23.88.36.201:11434
+Models: 3
+  - smollm2:135m
+  - deepseek-v3.1:671b-cloud
+  - llama3.2:1b
+---
 IP: 23.88.70.147
 Port: 11434
 URL: http://23.88.70.147:11434
-Models: 8
+Models: 9
+  - glm-4.7-flash:latest
   - hf.co/unsloth/Qwen3-Coder-Next-GGUF:Q4_K_M
   - gpt-oss:120b
   - deepseek-r1:1.5b
@@ -19650,23 +19876,6 @@ Models: 3
   - deepseek-v3.1:671b-cloud
   - llama3.2:latest
 ---
-IP: 46.62.165.169
-Port: 11434
-URL: http://46.62.165.169:11434
-Models: 2
-  - phi3:mini
-  - llama3.2:3b
----
-IP: 46.62.175.173
-Port: 11434
-URL: http://46.62.175.173:11434
-Models: 5
-  - deepseek-v3.1:671b-cloud
-  - smollm2:135m
-  - qwen2.5:0.5b-instruct
-  - qwen2.5:1.5b-instruct-q4_K_M
-  - qwen2.5:1.5b
----
 IP: 46.62.168.229
 Port: 11434
 URL: http://46.62.168.229:11434
@@ -19715,14 +19924,15 @@ Models: 4
   - cludan-pulse:2.0
   - cludan-nano:latest
 ---
-IP: 46.62.194.30
+IP: 46.62.175.173
 Port: 11434
-URL: http://46.62.194.30:11434
-Models: 4
-  - smollm2:135m
+URL: http://46.62.175.173:11434
+Models: 5
   - deepseek-v3.1:671b-cloud
-  - llama3.2:latest
-  - qwen2.5:3b
+  - smollm2:135m
+  - qwen2.5:0.5b-instruct
+  - qwen2.5:1.5b-instruct-q4_K_M
+  - qwen2.5:1.5b
 ---
 IP: 46.62.189.175
 Port: 11434
@@ -19738,8 +19948,8 @@ Models: 8
   - tinyllama:latest
   - phi3:medium
   - codellama:7b
-  - qwen2.5:7b
   - mistral:7b
+  - qwen2.5:7b
   - deepseek-coder:6.7b
   - codellama:13b
   - qwen2.5:32b
@@ -19757,6 +19967,15 @@ Models: 9
   - mistral:7b
   - llama3.2:3b
   - phi3:mini
+---
+IP: 46.62.194.30
+Port: 11434
+URL: http://46.62.194.30:11434
+Models: 4
+  - smollm2:135m
+  - deepseek-v3.1:671b-cloud
+  - llama3.2:latest
+  - qwen2.5:3b
 ---
 IP: 46.62.199.84
 Port: 11434
@@ -19796,6 +20015,18 @@ Models: 4
   - mistral:latest
   - gemma:2b
 ---
+IP: 46.62.219.192
+Port: 11434
+URL: http://46.62.219.192:11434
+Models: 7
+  - smollm2:135m
+  - deepseek-v3.1:671b-cloud
+  - llama3.2:latest
+  - qwen3:4b
+  - qwen:14b
+  - qwen:4b
+  - qwen2.5-coder:7b
+---
 IP: 46.62.212.248
 Port: 11434
 URL: http://46.62.212.248:11434
@@ -19819,18 +20050,6 @@ Models: 3
   - deepseek-v3.1:671b-cloud
   - smollm2:135m
   - moondream:latest
----
-IP: 46.62.219.192
-Port: 11434
-URL: http://46.62.219.192:11434
-Models: 7
-  - smollm2:135m
-  - deepseek-v3.1:671b-cloud
-  - llama3.2:latest
-  - qwen3:4b
-  - qwen:14b
-  - qwen:4b
-  - qwen2.5-coder:7b
 ---
 IP: 46.62.221.161
 Port: 11434
@@ -19877,8 +20096,8 @@ Models: 7
   - qwen2.5:14b
   - qwen2.5:7b
   - deepseek-r1:14b
-  - deepseek-r1:8b
   - gemma3:latest
+  - deepseek-r1:8b
   - llama3.2:latest
 ---
 IP: 46.62.230.38
@@ -19929,13 +20148,6 @@ Models: 3
   - smollm2:135m
   - nomic-embed-text:latest
 ---
-IP: 46.62.244.154
-Port: 11434
-URL: http://46.62.244.154:11434
-Models: 2
-  - deepseek-v3.1:671b-cloud
-  - llama3.1:8b
----
 IP: 46.62.238.17
 Port: 11434
 URL: http://46.62.238.17:11434
@@ -19965,13 +20177,12 @@ Models: 4
   - deepseek-v3.2:cloud
   - smollm2:135m
 ---
-IP: 46.62.245.242
+IP: 46.62.244.154
 Port: 11434
-URL: http://46.62.245.242:11434
-Models: 3
-  - glm-4.7-flash:latest
-  - phi4-mini-reasoning:latest
-  - phi3:latest
+URL: http://46.62.244.154:11434
+Models: 2
+  - deepseek-v3.1:671b-cloud
+  - llama3.1:8b
 ---
 IP: 46.62.246.47
 Port: 11434
@@ -19979,6 +20190,14 @@ URL: http://46.62.246.47:11434
 Models: 2
   - deepseek-v3.1:671b-cloud
   - nomic-embed-text:latest
+---
+IP: 46.62.245.242
+Port: 11434
+URL: http://46.62.245.242:11434
+Models: 3
+  - glm-4.7-flash:latest
+  - phi4-mini-reasoning:latest
+  - phi3:latest
 ---
 IP: 46.62.248.118
 Port: 11434
@@ -20007,12 +20226,13 @@ Models: 5
   - gemma3:1b
   - gemma3:270m
 ---
-IP: 77.42.34.60
+IP: 77.42.37.42
 Port: 11434
-URL: http://77.42.34.60:11434
-Models: 2
+URL: http://77.42.37.42:11434
+Models: 3
+  - smollm2:135m
   - deepseek-v3.1:671b-cloud
-  - gemma:2b
+  - phi3:latest
 ---
 IP: 77.42.17.170
 Port: 11434
@@ -20059,8 +20279,8 @@ IP: 77.42.23.24
 Port: 11434
 URL: http://77.42.23.24:11434
 Models: 7
-  - hf.co/unsloth/gemma-3-12b-it-GGUF:Q4_K_M
   - llama3.2:3b
+  - hf.co/unsloth/gemma-3-12b-it-GGUF:Q4_K_M
   - qwen2.5:3b
   - gemma3:4b
   - deepseek-v3.1:671b-cloud
@@ -20100,19 +20320,18 @@ Port: 11434
 URL: http://77.42.33.175:11434
 Models: None
 ---
+IP: 77.42.34.60
+Port: 11434
+URL: http://77.42.34.60:11434
+Models: 2
+  - deepseek-v3.1:671b-cloud
+  - gemma:2b
+---
 IP: 77.42.38.106
 Port: 11434
 URL: http://77.42.38.106:11434
 Models: 1
   - llama3.2:3b
----
-IP: 77.42.37.42
-Port: 11434
-URL: http://77.42.37.42:11434
-Models: 3
-  - smollm2:135m
-  - deepseek-v3.1:671b-cloud
-  - phi3:latest
 ---
 IP: 77.42.37.254
 Port: 11434
@@ -20123,14 +20342,13 @@ Models: 4
   - phi3:mini
   - llama3.1:8b
 ---
-IP: 77.42.70.87
+IP: 77.42.68.92
 Port: 11434
-URL: http://77.42.70.87:11434
-Models: 4
-  - Ling_mini_2_Q4:latest
-  - LFM2.5-1.2B-Instruct:latest
-  - LFM2.5-1.2B-Thinking:latest
-  - sam860/LFM2:8b
+URL: http://77.42.68.92:11434
+Models: 3
+  - deepseek-v3.1:671b-cloud
+  - llama3.2:1b
+  - qwen2.5:0.5b
 ---
 IP: 77.42.39.167
 Port: 11434
@@ -20167,14 +20385,6 @@ Models: 7
   - gemini-3-flash-preview:cloud
   - minimax-m2.1:cloud
   - glm-4.7:cloud
----
-IP: 77.42.68.92
-Port: 11434
-URL: http://77.42.68.92:11434
-Models: 3
-  - deepseek-v3.1:671b-cloud
-  - llama3.2:1b
-  - qwen2.5:0.5b
 ---
 IP: 77.42.69.113
 Port: 11434
@@ -20244,6 +20454,12 @@ Models: 13
   - martain7r/finance-llama-8b:q4_k_m
   - llama3.2:3b
 ---
+IP: 89.167.30.129
+Port: 11434
+URL: http://89.167.30.129:11434
+Models: 1
+  - qwen2.5-coder:7b
+---
 IP: 89.167.0.21
 Port: 11434
 URL: http://89.167.0.21:11434
@@ -20297,12 +20513,6 @@ URL: http://89.167.29.181:11434
 Models: 2
   - llama3.2:3b
   - nomic-embed-text:latest
----
-IP: 89.167.30.129
-Port: 11434
-URL: http://89.167.30.129:11434
-Models: 1
-  - qwen2.5-coder:7b
 ---
 IP: 89.167.32.193
 Port: 11434
@@ -20395,9 +20605,9 @@ Models: 10
   - lukashabtoch/moirai-agent:latest
   - lukashabtoch/plutotext-r3-emotional:latest
   - gemma3:270m
+  - mario:latest
   - mattw/pygmalion:latest
   - llama3-backup:latest
-  - mario:latest
   - llama3.2:latest
   - llama3.1:8b-instruct-q4_K_M
   - llama3.1:8b
@@ -20416,8 +20626,8 @@ IP: 91.107.224.244
 Port: 11434
 URL: http://91.107.224.244:11434
 Models: 2
-  - llama3.2:3b
   - nomic-embed-text:latest
+  - llama3.2:3b
 ---
 IP: 91.107.234.37
 Port: 11434
@@ -20475,8 +20685,8 @@ URL: http://128.140.7.124:11434
 Models: 12
   - smollm2:135m
   - hf.co/mradermacher/moirai-agent-GGUF:latest
-  - mario:latest
   - llama3-backup:latest
+  - mario:latest
   - mattw/pygmalion:latest
   - llama3.2:latest
   - llama3.1:8b-instruct-q4_K_M
@@ -20556,6 +20766,15 @@ Models: 4
   - llama3.1:8b-instruct-q4_K_M
   - llama3.1:8b
 ---
+IP: 128.140.116.111
+Port: 11434
+URL: http://128.140.116.111:11434
+Models: 4
+  - deepseek-v3.1:671b-cloud
+  - deepseek-v3.2:cloud
+  - llama3.2:1b
+  - tinyllama:latest
+---
 IP: 128.140.116.157
 Port: 11434
 URL: http://128.140.116.157:11434
@@ -20572,14 +20791,18 @@ Models: 3
   - deepseek-coder:latest
   - gemma:2b
 ---
-IP: 128.140.116.111
+IP: 138.199.159.41
 Port: 11434
-URL: http://128.140.116.111:11434
-Models: 4
-  - deepseek-v3.1:671b-cloud
-  - deepseek-v3.2:cloud
-  - llama3.2:1b
-  - tinyllama:latest
+URL: http://138.199.159.41:11434
+Models: 8
+  - hf.co/unsloth/Qwen3-Coder-Next-GGUF:Q4_K_M
+  - lukashabtoch/moirai-agent:latest
+  - hf.co/mradermacher/moirai-agent-GGUF:latest
+  - lukashabtoch/plutotext-r3-emotional:latest
+  - gemma3:270m
+  - smollm2:135m
+  - gemma3:latest
+  - qwen3:30b-a3b-instruct-2507-q4_K_M
 ---
 IP: 138.199.141.40
 Port: 11434
@@ -20597,19 +20820,6 @@ Models: 4
   - mistral:latest
   - nomic-embed-text:latest
   - mistral:7b
----
-IP: 138.199.159.41
-Port: 11434
-URL: http://138.199.159.41:11434
-Models: 8
-  - hf.co/unsloth/Qwen3-Coder-Next-GGUF:Q4_K_M
-  - lukashabtoch/moirai-agent:latest
-  - hf.co/mradermacher/moirai-agent-GGUF:latest
-  - lukashabtoch/plutotext-r3-emotional:latest
-  - gemma3:270m
-  - smollm2:135m
-  - gemma3:latest
-  - qwen3:30b-a3b-instruct-2507-q4_K_M
 ---
 IP: 138.199.171.169
 Port: 11434
@@ -20707,12 +20917,12 @@ Models: 21
   - deepseek-v3.1:671b-cloud
   - ministral-3:14b
   - nemotron-3-nano:30b
-  - phi3:medium-128k
   - phi4-mini:latest
+  - phi3:medium-128k
   - mistral-small3.1:latest
   - mistral-small3.2:latest
-  - llama3.3:latest
   - mistral-small:latest
+  - llama3.3:latest
   - llama3.1:8b
   - llama3.1:8b-instruct-fp16
   - granite3.2:latest
@@ -20761,12 +20971,6 @@ Port: 11434
 URL: http://142.132.152.220:11434
 Models: 1
   - all-minilm:22m
----
-IP: 142.132.161.198
-Port: 11434
-URL: http://142.132.161.198:11434
-Models: 1
-  - llama3.2:1b
 ---
 IP: 142.132.164.37
 Port: 11434
@@ -20836,15 +21040,6 @@ Models: 6
   - codestral:latest
   - dolphin-mistral:latest
 ---
-IP: 157.180.29.237
-Port: 11434
-URL: http://157.180.29.237:11434
-Models: 4
-  - smollm2:135m
-  - gemma3:latest
-  - nomic-embed-text:latest
-  - llama3.1:latest
----
 IP: 157.180.6.83
 Port: 11434
 URL: http://157.180.6.83:11434
@@ -20857,14 +21052,14 @@ Models: 16
   - gpt-oss:20b
   - qwen3:8b
   - cow/tulu3_tools:70b
+  - cow/tulu3_tools:8b
   - llama3.1:8b
   - mistral:7b
-  - llama3.2:3b
-  - mistral:latest
-  - cow/tulu3_tools:8b
   - deepseek-llm:7b
   - llama3.2:1b
+  - llama3.2:3b
   - mistral:7b-instruct
+  - mistral:latest
 ---
 IP: 157.180.6.122
 Port: 11434
@@ -20918,6 +21113,23 @@ Models: 4
   - kahnwong/lfm2:8b-a1b
   - phi4:latest
 ---
+IP: 157.180.29.237
+Port: 11434
+URL: http://157.180.29.237:11434
+Models: 4
+  - smollm2:135m
+  - gemma3:latest
+  - llama3.1:latest
+  - nomic-embed-text:latest
+---
+IP: 157.180.56.202
+Port: 11434
+URL: http://157.180.56.202:11434
+Models: 3
+  - deepseek-v3.1:671b-cloud
+  - smollm2:135m
+  - mistral:latest
+---
 IP: 157.180.44.172
 Port: 11434
 URL: http://157.180.44.172:11434
@@ -20944,14 +21156,6 @@ Models: 4
   - gpt-oss:120b
   - smollm2:135m
   - llama3:8b
----
-IP: 157.180.56.202
-Port: 11434
-URL: http://157.180.56.202:11434
-Models: 3
-  - deepseek-v3.1:671b-cloud
-  - smollm2:135m
-  - mistral:latest
 ---
 IP: 157.180.67.190
 Port: 11434
@@ -21041,8 +21245,8 @@ Models: 11
   - gemma3:270m
   - gemma3:latest
   - gemma:2b-instruct-q4_K_M
-  - mario:latest
   - llama3.2:latest
+  - mario:latest
   - mattw/pygmalion:latest
   - llama3:latest
   - mistral:latest
@@ -21062,19 +21266,6 @@ Models: 3
   - smollm2:135m
   - mistral:instruct
 ---
-IP: 157.180.115.157
-Port: 11434
-URL: http://157.180.115.157:11434
-Models: None
----
-IP: 157.180.115.213
-Port: 11434
-URL: http://157.180.115.213:11434
-Models: 3
-  - deepseek-v3.1:671b-cloud
-  - deepseek-v3.2:cloud
-  - qwen:0.5b
----
 IP: 157.180.103.121
 Port: 11434
 URL: http://157.180.103.121:11434
@@ -21089,10 +21280,8 @@ Models: 6
 IP: 157.180.117.11
 Port: 11434
 URL: http://157.180.117.11:11434
-Models: 12
-  - hf.co/unsloth/Qwen3-Coder-Next-GGUF:Q4_K_M
+Models: 10
   - smollm2:135m
-  - lukashabtoch/plutotext-r3-emotional:latest
   - gemma3:270m
   - nomic-embed-text:latest
   - llama3.2-vision:11b
@@ -21111,6 +21300,19 @@ Models: 4
   - deepseek-v3.2:cloud
   - smollm2:135m
   - qwen3-8b-custom:latest
+---
+IP: 157.180.115.157
+Port: 11434
+URL: http://157.180.115.157:11434
+Models: None
+---
+IP: 157.180.115.213
+Port: 11434
+URL: http://157.180.115.213:11434
+Models: 3
+  - deepseek-v3.1:671b-cloud
+  - deepseek-v3.2:cloud
+  - qwen:0.5b
 ---
 IP: 157.180.121.208
 Port: 11434
@@ -21206,8 +21408,8 @@ IP: 85.10.195.113
 Port: 11434
 URL: http://85.10.195.113:11434
 Models: 2
-  - qwen2.5:7b
-  - minicpm-v:8b
+  - llava:34b
+  - qwen2.5:32b
 ---
 IP: 85.10.196.142
 Port: 11434
@@ -21283,11 +21485,10 @@ Models: 4
 IP: 213.133.99.73
 Port: 11434
 URL: http://213.133.99.73:11434
-Models: 7
+Models: 6
   - seamon67/Gemma3-Abliterated:27b-q4_K_M
   - ukjin/Qwen3-30B-A3B-Thinking-2507-Deepseek-v3.1-Distill:latest
   - smollm2:1.7b
-  - glm-4.7-flash:latest
   - llama3.2:1b
   - smollm2:135m
   - qwen2.5:1.5b
@@ -21297,6 +21498,6 @@ Port: 11434
 URL: http://213.133.123.172:11434
 Models: 3
   - deepseek-v3.1:671b-cloud
-  - bge-m3:latest
   - qwen2.5:7b-instruct-q4_0
+  - bge-m3:latest
 ---
